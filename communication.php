@@ -22,7 +22,7 @@
 
 If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, where all EMF Client Platform framework developers are subscribed to:
 
-<a href="mailto:emfstore-dev@eclipse.org"> emfstore-dev@eclipse.org </a>
+<a href="mailto:emfclient-dev@eclipse.org"> emfclient-dev@eclipse.org </a>
 </p>
 
 
