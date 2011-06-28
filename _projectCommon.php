@@ -22,26 +22,29 @@
 	# these are optional
 	
 	# If you want to override the eclipse.org navigation, uncomment below.
-	# $Nav->setLinkList(array());
+	$Nav->setLinkList(array());
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("MyProject", 	"/default");
-	$Nav->addCustomNav("Download", "/project/download.php", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
+	$Nav->addCustomNav("Home", "/emfclient", "_self", 3);
+	$Nav->addCustomNav("Download", "/emfclient/download.php", "_self", 3);
+	$Nav->addCustomNav("Communication", "/emfclient/communication.php", "_blank", 3);
+	# $Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
+	# $Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
+	# $Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
-	$pageKeywords	= "xtext, dsl, modeling, domain specific language, textual";
-	$pageAuthor		= "Your name";
-	# $pageTitle 		= "Xtext";
+	$pageKeywords	= "emf, client, platform, eef, reflectiv, editor";
+	$pageAuthor		= "Jonas";
+	$pageTitle 		= "EMF Client Platform";
 
 
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
-	# $Menu->setMenuItemList(array());
-	# $Menu->addMenuItem("Home", "/project", "_self");
-	# $Menu->addMenuItem("Download", "/project/download.php", "_self");
+	$Menu->setMenuItemList(array());
+	$Menu->addMenuItem("Home", "/emfclient", "_self");
+	$Menu->addMenuItem("Download", "/emfclient/download.php", "_self");
+	$Menu->addMenuItem("Communication", "/emfclient/communication.php", "_self");
 	# $Menu->addMenuItem("Documentation", "/project/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/project/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
