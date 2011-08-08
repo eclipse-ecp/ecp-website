@@ -46,7 +46,7 @@
 	$Menu->addMenuItem("Home", "/emfclient", "_self");
 	$Menu->addMenuItem("Download", "/emfclient/download.php", "_self");
 	$Menu->addMenuItem("Communication", "/emfclient/communication.php", "_self");
-	$Menu->addMenuItem("Communication", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft", "_self");
+	$Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft", "_self");
 	# $Menu->addMenuItem("Documentation", "/project/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/project/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
