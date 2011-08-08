@@ -29,6 +29,7 @@
 	$Nav->addCustomNav("Home", "/emfclient", "_self", 3);
 	$Nav->addCustomNav("Download", "/emfclient/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emfclient/communication.php", "_blank", 3);
+	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft", "_blank", 4);
 	# $Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
 	# $Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
 	# $Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
