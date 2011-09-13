@@ -10,20 +10,11 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Download";
+	$pageTitle 		= "EMF Client Platform - Getting involved";
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
-<h2>$pageTitle</h2>
-<p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
-<p>To install the EMF Client Platform, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
-
-<h3>Milestone Builds</h3>
-<p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse. You can get the the latest milestone build from <a href="http://download.eclipse.org/emf-store/">this update site (http://download.eclipse.org/emf-store/)</a>. If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
-
-
-
-
+Everyone is invited to getting involved with the EMF Client project. Before you plan any kind of contribution, it is a good idea to contact the <a href="communication.php">project team</a>.<br /> Contributing may include:<br /> <ul> <li>Writing bug reports: Please provide a short and concise explanation of the problem, a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. See the <a href="support.php">support page</a> for details. You are also invited to enter feature requests.<br /> </li> <li>Providing a patch to an existing bug report: If you are no committer on the project, please upload your bug report in the <a href="support.php">bugzilla</a><br /> </li> <li>Contribute documentation, i.e. if you found something which is not documented yet, please share you knowledge with other users. Please <a href="communication.php">contact us</a>, to find the appropriate place to add your documentation.</li> </ul> 
 </div>
 EOHTML;
 	# Generate the web page
