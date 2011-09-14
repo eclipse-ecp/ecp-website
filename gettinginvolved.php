@@ -20,7 +20,12 @@
 <h2>Developer Ressources</h2>
 <p>To work on the source code of the EMF Client Platform, you should use <a href="files/EMFStoreECPSelfContained_GIT.yoxos">this Yoxos profile</a> (use right click => save as). Yoxos is a free tool, which will automatically configure most of your workspace settings. You can get a free version <a href ="http://eclipsesource.com/en/yoxos/">here.</a> Once you have installed the Yoxos launcher, you can simply double click the Yoxos Profile. Yoxos will download and create a Eclipse instance for you containing all relevant settings. Please note, that Yoxos will already clone the GIT repository for you, therefore you have to enter your committer ID. Although, we do not recommend, it is of course possible to manually configure your workspace.</p>
 
-<p>Please download <a href="http://dl.dropbox.com/u/23674036/emfcptargetplatform.zip">this target platform</a> unzip this folder in your workspace and set the target.
+<p>Please download <a href="http://dl.dropbox.com/u/23674036/emfcptargetplatform.zip">this target platform</a> unzip this folder in your workspace and set the target:
+<ul>
+<li>Select Import => Existing Projects into Workspace<li>
+<li>Select the downloaded archive and the contained project "target"</li>
+<li>After import, open the target project, double click the target definition file and click "set as target" in the right upper corner</li>
+</ul>
 
 <p>Now, you can import the projects from the cloned GIT repository. <a href="http://wiki.eclipse.org/Yoxos_Profile">See here how to import projects from a GIT repository</a></p>
 
