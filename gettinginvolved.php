@@ -29,6 +29,8 @@
 
 <p>Now, you can import the projects from the cloned GIT repository. <a href="http://wiki.eclipse.org/Yoxos_Profile">See here how to import projects from a GIT repository</a></p>
 
+<p><b>Please note: if you are not using the same id as set in your global GIT settings you have to manually clone the repository</b></p>
+
 <p>You can check out the source manually from these GIT repositories:
 <ul>
 If you want to use GIT as a committer please use the following URIs:
