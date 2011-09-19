@@ -16,14 +16,12 @@
 <div id="midcolumn">
 <h2>Documentation</h2>
 We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
-We are currently moving our documentatio from our previous website. Until this is finished some parts of the documentation link to the old google code website.
 
 <h3>Tutorials</h3>
 <li><a href="gettingstarted.php">Getting started</a></li>
 <li><a href="documentation/registermodel.php">Register a model to be used with EMF Client Platform</a></li>
-<li>Enter EMF Client Platform Update Site: http://unicase.googlecode.com/svn/updatesite/ecpNightly</li>
-<li>Important: Uncheck "Group Items by Category" and "Contact all update sites ..."</li>
-<li>Select all Features from the update site and install</li> 
+<li><a href="documentation/customizeeditor.php"></a>Customize the editor</li>
+
 
 
 <h3>Start EMF Client Platform</h3>
