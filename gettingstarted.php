@@ -16,7 +16,7 @@
 <div id="midcolumn">
 <h2>Getting Started</h2>
 This tutorial shows the easiest way to get started with the EMF Client platform. You find more documentation <a href="documentation.php">here</a>.
-<h3>Step 1: Download and install an Eclipse Modeling Edition</h3>
+<h3>Step 1: Download and install an <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">Eclipse Modeling Edition</a></h3>
 <h3>Step 2: Install the current release of the EMF Client Platform</h3>
 <ul>
 <li>Add Update Site to your Eclipse: Help => Install new Software => Add Update Site</li>

@@ -10,38 +10,31 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Getting involved";
+	$pageTitle 		= "EMF Client Platform - Register a model";
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
-<h2>Getting Started</h2>
-This tutorial shows the easiest way to get started with the EMF Client platform.
-<h3>Step 1: Download and install an Eclipse Modeling Edition</h3>
-<h3>Step 2: Install the current release of the EMF Client Platform</h3>
-<ul>
-<li>Add Update Site to your Eclipse: Help => Install new Software => Add Update Site</li>
-<li>Enter EMF Client Platform Update Site: http://unicase.googlecode.com/svn/updatesite/ecpNightly</li>
-<li>Important: Uncheck "Group Items by Category" and "Contact all update sites ..."</li>
-<li>Select all Features from the update site and install</li> 
-</ul>
-3. Import example model
+<h2>Register a model</h2>
 
-    * Download the Example Model Plugins for ECP
-    * Select File => Import
-    * Select "Existing projects into workspace"
-    * Select "Archive" and the downloaded zip file
-    * Finish Import 
+<div id="screencast">
 
-<h3>Start EMF Client Platform</h3>
 
-    * Launch a default debug configuration including all plugins in your workspace 
-
-Links to required resources:
-
-    * Eclipse Modeling Edition Download
-    * EMFCP Update Site
-    * Example Model Plugins for ECP 
-
+<object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/0cwRzQU3GJY?hl=de&fs=1">
+</param>
+<param name="allowFullScreen" value="true">
+</param>
+<param name="allowscriptaccess" value="always">
+</param>
+<embed src="http://www.youtube.com/watch?v=tqQhB2L0cno?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+<p>
+The only information required by the EMF Client Platform, is which model shall be used. Usually there are several EMF models registered in an Eclipse instance, for example GMF. As you probably only want to see your own model in the application, in our example the library model. The EMF Client Platform will try to guess the right model, once you launch it with your own model. A better way is to register your model and explicitly tell EMF Client Platform which modle to use. This is done with the following extension point. The example shows the registration of the library example model, please replace the model package with your model URI. The URI can be found in your Ecore: Open the Properties View on the root node of your model.</p>
+<code>
+<extension point="org.unicase.ui.common.ecpModelPackage">
+      <modelPackage
+            modelPackage="http:///org/eclipse/example/library.ecore">
+      </modelPackage>
+<extension>
+</code>
 
  
 </div>
