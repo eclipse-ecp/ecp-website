@@ -15,8 +15,8 @@
 	$html  = <<<EOHTML
 <div id="midcolumn">
 <h2>Getting Started</h2>
-
-1. Download and install an Eclipse Modeling Edition
+<ol>
+<li>Download and install an Eclipse Modeling Edition</li>
 2. Install the current release of the EMF Client Platform:
 <ul>
 <li>Add Update Site to your Eclipse: Help => Install new Software => Add Update Site</li>
@@ -35,7 +35,7 @@
 4. Start EMF Client Platform
 
     * Launch a default debug configuration including all plugins in your workspace 
-
+</ol>
 Links to required resources:
 
     * Eclipse Modeling Edition Download
