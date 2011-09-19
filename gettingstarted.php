@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Getting involved";
+	$pageTitle 		= "EMF Client Platform - Getting started";
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
