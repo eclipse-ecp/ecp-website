@@ -15,25 +15,32 @@
 	$html  = <<<EOHTML
 <div id="midcolumn">
 <h2>Getting Started</h2>
-This tutorial shows the easiest way to get started with the EMF Client platform. You find more documentation <a href="documentation.php">here</a>.
+This tutorial shows the easiest way to get started with the EMF Client platform.
 <h3>Step 1: Download and install an Eclipse Modeling Edition</h3>
 <h3>Step 2: Install the current release of the EMF Client Platform</h3>
 <ul>
 <li>Add Update Site to your Eclipse: Help => Install new Software => Add Update Site</li>
-<li>Enter <a href="download.php">EMF Client Platform Update Site</a></li>
+<li>Enter EMF Client Platform Update Site: http://unicase.googlecode.com/svn/updatesite/ecpNightly</li>
 <li>Important: Uncheck "Group Items by Category" and "Contact all update sites ..."</li>
-<li>Select "EMF Client Platform complete" from the update site and install</li> 
+<li>Select all Features from the update site and install</li> 
 </ul>
-<h3>Step 4: Import example model</h3>
-<ul>
-<li>Download the <a href="exampleModel.zip">Example Model Plugins for ECP</a></li>
-<li>Select File => Import</li>
-<li>Select "Existing projects into workspace"</li>
-<li>Select "Archive" and the downloaded zip file</li>
-<li>Finish Import</li>
-</ul>
-<h3>Step 5: Start EMF Client Platform</h3>
-Launch a default debug configuration including all plugins in your workspace 
+3. Import example model
+
+    * Download the Example Model Plugins for ECP
+    * Select File => Import
+    * Select "Existing projects into workspace"
+    * Select "Archive" and the downloaded zip file
+    * Finish Import 
+
+<h3>Start EMF Client Platform</h3>
+
+    * Launch a default debug configuration including all plugins in your workspace 
+
+Links to required resources:
+
+    * Eclipse Modeling Edition Download
+    * EMFCP Update Site
+    * Example Model Plugins for ECP 
 
 
  
