@@ -30,9 +30,9 @@ If you want to use GIT as a committer please use the following URIs:
 </ul>
 If you want to use GIT as an anonymous user (read only) please use the following URIs:
 <ul>
-<li>org.eclipse.emf.emfstore.core.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</li>
-<li>org.eclipse.emf.emfstore.other.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
-<li>org.eclipse.emf.emfstore.releng.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.releng.git)</li>
+<li>org.eclipse.emf.ecp.core.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</li>
+<li>org.eclipse.emf.ecp.other.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
+<li>org.eclipse.emf.ecp.releng.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.releng.git)</li>
 </ul>
 Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this tutorial</a> to clone GIT repositories.
 </p>
