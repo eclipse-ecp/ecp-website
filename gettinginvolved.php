@@ -46,6 +46,10 @@ Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_
 <li>Select the downloaded archive and the contained project "target"</li>
 <li>After import, open the target project, double click the target definition file and click "set as target" in the right upper corner</li>
 </ul>
+</p>
+<p>
+To run the EMF Client Platform please include an EMF model in the launch configuration. For testing, you can use <a href="http://www.eclipse.org/emfstore/exampleModel.zip">this example model.</a> Import it into your EMFCP workspace and start it along with EMFCP. You should be able to create instances of the example model (bowling).
+</p>
 
 
 
