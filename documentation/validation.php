@@ -12,7 +12,7 @@
 
 	$pageTitle 		= "EMFStore - Getting involved";
 
-	$html  = 	$html = file_get_contents('pages/_gettinginvolved.html');
+	$html  = 	$html = file_get_contents('_validation.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
