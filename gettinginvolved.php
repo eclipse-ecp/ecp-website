@@ -17,9 +17,9 @@
 <h2>Getting Involved</h2>
 <p>Everyone is invited to getting involved with the EMF Client project. Before you plan any kind of contribution, it is a good idea to contact the <a href="communication.php">project team</a>.<br /> Contributing may include:<br /> <ul> <li>Writing bug reports: Please provide a short and concise explanation of the problem, a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. See the <a href="support.php">support page</a> for details. You are also invited to enter feature requests.<br /> </li> <li>Providing a patch to an existing bug report: If you are no committer on the project, please upload your bug report in the <a href="support.php">bugzilla</a><br /> </li> <li>Contribute documentation, i.e. if you found something which is not documented yet, please share you knowledge with other users. Please <a href="communication.php">contact us</a>, to find the appropriate place to add your documentation.</li> </ul></p>
 
-<h2>Developer Ressources</h2>
+<h2>Developer Resources</h2>
 <p>To work on the source code of the EMF Client Platform, you should use <a href="http://dl.dropbox.com/u/23674036/EMFStoreECP.yoxos">this Yoxos profile</a> (use right click => save as). Yoxos is a free tool, which will automatically create an Eclipse instance for you containing all necessary development tools. You can get a free version <a href ="http://eclipsesource.com/en/yoxos/">here.</a> Once you have installed the Yoxos launcher, you can simply double click the Yoxos Profile. Yoxos will download and create a Eclipse instance for you containing all relevant settings. Although, we do not recommend, it is of course possible to manually set up your Eclipse Instance.</p>
-
+<p>Yoxos will try to already clone the GIT repositories for you. This only works, if your id is set correctly in the global settings. If you are unsure, or if you want to check out anonymous, please delete the repositories created by Yoxos and clone the again manually. If you have clone them as a committer with the wrong ID, you will not be able to commit later on.</p>
 <p>You can clone the following GIT repositories:
 <ul>
 If you want to use GIT as a committer please use the following URIs:
