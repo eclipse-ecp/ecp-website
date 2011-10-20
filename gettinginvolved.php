@@ -48,6 +48,11 @@ Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_
 </ul>
 </p>
 <p>
+The final step is to create a check style configuration. We are using checkstyle 5. Please open the global preferences (Window => Preferences) and add a new Checkstyle configuration named "emfstoreStyle" with a relative pointer to our config file. Set this configuration as default. You do not have to configure the projects individually.
+  
+<br></p>
+<p><img  src="images/emfcpcheckstyle.png" ></p>
+<p>
 To run the EMF Client Platform please include an EMF model in the launch configuration. For testing, you can use <a href="http://www.eclipse.org/emfstore/exampleModel.zip">this example model.</a> Import it into your EMFCP workspace and start it along with EMFCP. You should be able to create instances of the example model (bowling).
 </p>
 
