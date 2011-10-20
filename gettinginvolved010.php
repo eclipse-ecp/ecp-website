@@ -12,7 +12,7 @@
 
 	$pageTitle 		= "EMF Client Platform - Getting Involved for Juno";
 
-	$html  = <$html = file_get_contents('pages/_gettinginvolved010.html');
+	$html  = $html = file_get_contents('pages/_gettinginvolved010.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
