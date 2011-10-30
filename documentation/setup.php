@@ -12,7 +12,7 @@
 
 	$pageTitle 		= "EMF Client Platform - Getting started";
 
-	$html  = $html  =file_get_contents('documentation/_setup.html');
+	$html  = $html  =file_get_contents('_setup.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
