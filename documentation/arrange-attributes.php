@@ -10,31 +10,9 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Documentation";
+	$pageTitle 		= "EMFClient Platform - arrange attributes in the editor";
 
-	$html  = <<<EOHTML
-<div id="midcolumn">
-<h2>Documentation</h2>
-We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
-
-<h3>Tutorials</h3>
-<li><a href="documentation/setup.php">How to set tup the EMF Client Platform</a></li>
-<li><a href="documentation/replace-editor.php">How to replace the editor which is opened on double click with a custom view</a></li>
-<li><a href="documentation/arrange-attributes.php">Change the order of attributes which are shown in the editor</a></li>
-<li><a href="documentation/registermodel.php">Register a model to be used with EMF Client Platform</a></li>
-<li><a href="documentation/customizeeditor.php"></a>Customize the editor</li>
-
-
-
-<h3>Start EMF Client Platform</h3>
-
-    * Launch a default debug configuration including all plugins in your workspace 
-
-
-
- 
-</div>
-EOHTML;
+	$html  = 	$html = file_get_contents('_arrange-attributes.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
