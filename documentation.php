@@ -21,6 +21,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/setup.php">How to set tup the EMF Client Platform</a></li>
 <li><a href="documentation/replace-editor.php">How to replace the editor which is opened on double click with a custom view</a></li>
 <li><a href="documentation/arrange-attributes.php">Change the order of attributes which are shown in the editor</a></li>
+<li><a href="documentation/customize-navigator.php">Customize the navigator</a></li>
 <li><a href="documentation/registermodel.php">Register a model to be used with EMF Client Platform</a></li>
 <li><a href="documentation/customizeeditor.php"></a>Customize the editor</li>
 

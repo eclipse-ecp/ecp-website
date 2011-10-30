@@ -1,0 +1,29 @@
+<div id="midcolumn">
+	<h2>How to customize the Navigator view (EMFCP)</h2>
+	<p>If you have setup your Eclipse developer environment as outlined in the previous tutorials, you have learned how to run and use a EMFCP instance and edit the Editor.</p>
+	<p>The following steps will explain how to customize the Navigator View in EMFCP. You can either change the opener that is used after double-clicking an element in the EMFCP or change the behaviour of the drag-and-drop functionality.</p>
+	
+	<b>Step 1: Default behaviour of the EMFCP editor</b>
+	<p>Based on the example model, the default opener for a model element of the type <em>library</em> in EMFCP will look as follows.</p>
+	<p><img src="images/customize-navigator-default_view.png" alt="EMFCP with the default editor" /></p>
+	<p>We will change the UI to open our own editor instead of the default one.</p>
+	
+	<b>Step 2: Register another editor</b>
+	<p>In your Eclipse developer environment, open the plugin definition by double-clicking the file <em>plugins.xml</em> in <em>exampleModel.navigatorCustomizations</em>.</p>
+	<p><img src="images/customize-navigator-plugin_setting.png" alt="The plugins.xml of the navigatorCustomizations plugin" /></p>
+	<p>In this editor you change to the <em>Extensions</em> tab. Here you can add for example another Opener file for a specific object (registration on an object in the next step) or another drag-and-drop behaviour class.</p>
+	
+	<b>Step 3: Changing the Opener</b>
+	<p>Now we have a look at the <em>LibraryOpener.java</em> file.<br />
+	The function <em>canOpen</em> is responsible for the registration to a specific object. EMFCP uses a priority-based approach to decide which generator is getting opened on user action. Therefore we have to tell EMFCP that our opener should be used for <em>Library</em> objects. This is happening in the highlighted area in which we check if the <em>EObject</em> is an instance of a <em>Library</em> and return 2 as priority.</p>
+	<p><img src="images/customize-navigator-libraryOpener.png" alt="The LibraryOpener.java file" /></p>
+	<p>The method <em>openModelElement</em> is defining the customized editor. This simple example just displays a list of <em>Book</em> elements in the Library.</p>
+	<p><img src="images/customize-navigator-customizedEditor.png" alt="The customized editor" /></p>
+	
+	<b>Step 4: Changing the drag-and-drop Adapter</b>
+	<p>You can also change the behaviour of the drag-and-drop feature. An example implementation of an adapter can be found in the <em>MEDropAdapater.java</em> class.</p>	
+	<p>The main functionality is the same as in the editor example. One needs two different methods in which the <em>isDropAdapterfor</em> method is used to bind the adapter to one object type. The other method (<em>drop</em>) is called once an object is dropped on the specified object type.</p>
+	<p><img src="images/customize-navigator-DropAdapter.png" alt="Sample Drop Adpter implementation" /></p>
+	<p>You can handle the drag event depending on the source type as it is shown in the sample implementation in <em>MEDropAdapter.java</em>. In this example a <em>Writer</em> is automatically added to the <em>Book</em> once it is dropped on it.</p>
+
+</div>
