@@ -1,0 +1,33 @@
+<div id="midcolumn">
+<h2>How to replace the editor of the EMF Client Platform</h2>
+
+<b>Step 1: Check default editor behaviour</b>
+<p>
+In your running EMFCP instance, which contains the exampleModel (see other tutorials), you can add a new library and doubleclick it, which opens the default editor. 
+</p>
+<p><img src="documentation/images/editor-default.png" alt="Default editor for Library-objects"/></p>
+
+<b>Step 2: Check the extension</b>
+<p>
+Open the running eclipse and the plugin.xml in <em>exampleModel.navigatorCustomizations</em>. In the <em>org.unicase.common.modelelementopener</em> extension you can see the LibraryOpener class, where to modify the behaviour. To add a new ModelElementOpener you just need a new extension and create a new class similar the class described in step 3.
+</p>
+<p><img src="documentation/images/editor-extension.png" alt="Extensions page of the plugin.xml"/></p>
+
+<b>Step 3: Modify the ModelElementOpener class</b>
+<p>
+In the LibraryOpener you have two methods:
+<ul>
+	<li><em>canOpen</em>, which defines, if this is the right opener for a specific type. The integer returned by this method represents the priority given to this class. The higher the number, the higher the priority. You can uncomment the existing code, which results in the opening of <em>Library</em>-objects using the code specified here.</li>
+	<li><em>openModelElement</em>, which defines the behaviour, when the user opens the object. In this case, a dialog displaying the books of the library is shown.</li>
+</ul>
+Note that you can replace the behaviour with everything you want, e.g. a view or another editor.
+</p>
+<p><img src="documentation/images/editor-opener.png" alt="LibraryOpener source code"/></p>
+
+<b>Step 4: Try the new behaviour</b>
+<p>
+After this you can restart the EMFCP instance and doubleclick the library. You will see that it now shows the described dialog.
+</p>
+<p><img src="documentation/images/editor-special.png" alt="EMFCP with modified LibraryOpener"/></p>
+
+</div>
