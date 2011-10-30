@@ -10,22 +10,22 @@
 	
 	<b>Step 2: Check the default model</b>
 	<p>In your Eclipse developer environment, open the model definition by double-clicking the file <em>library.ecore</em> in <em>exampleModel/model</em>.</p>
-	<p><img src="images/dev-model-definition.png" alt="The default model definition" /></p>
+	<p><img width=700 src="images/dev-model-definition.png" alt="The default model definition" /></p>
 	<p>As you can see, the elements <em>Book.author</em> and <em>Writer.books</em> are already annotated.</p>
 	
 	<b>Step 3: Editing the model elements</b>
 	<p>Right-click on the attribute <em>title</em> of the model element <em>Book</em> and select <em>New Child >> EAnnotation</em>. In the Properties-View, set the <em>source</em> to <em>org.unicase.ui.meeditor</em>. Next, right-click on the new EAnnotation and add a new <em>Details Entry</em> child. In the Properties-View, set the <em>key</em> to <em>position</em> and the <em>value</em> to <em>bottom</em>. Add a second <em>Details Entry</em>-child and set the <em>key</em> to <em>priority</em> and the <em>value</em> to <em>0</em>. In the editor, this will change the position of the input-field for the <em>title</em> to the bottom.</p>
-	<p><img src="images/dev-model-definition-title.png" alt="The annotated title element" /></p>
+	<p><img  width=700 src="images/dev-model-definition-title.png" alt="The annotated title element" /></p>
 	<p>Next, add an EAnnotation to the <em>pages</em>-attribute and give it the source <em>org.unicase.ui.meeditor</em>. Add a first <em>Details Entry</em> with the <em>key</em> <em>position</em> and the <em>value</em> <em>right</em>. Now, add a second entry with the <em>key</em> <em>priority</em> and the <em>value</em> <em>1</em>. These changes will position the editor-field for the <em>pages</em>-attribute to be displayed below the editor-field for the <em>author</em>, on the right side of the editor window.</p>
-	<p><img src="images/dev-model-definition-pages.png" alt="The annotated pages element" /></p>
+	<p><img width=700 src="images/dev-model-definition-pages.png" alt="The annotated pages element" /></p>
 	
 	<b>Step 4: Generating the code</b>
 	<p>In the Package Explorer, right-click on <em>library.genmodel</em> and select <em>Reload ...</em>. In the popup-window, select <em>Next</em>, <em>Next</em> and <em>Finish</em>.</p>	
 	<p>In the <em>library.genmodel</em>-Editor, right-click on <em>Library</em> and select <em>Generate Model Code</em>. Right-click again and select <em>Generate Edit Code</em>.</p>
-	<p><img src="images/dev-model-genmodel.png" alt="Model generation" /></p>
+	<p><img  width=700 src="images/dev-model-genmodel.png" alt="Model generation" /></p>
 	
 	<b>Step 5: Check the results</b>
 	<p>When you start your EMFCP instance, the new editor for a model element of the type <em>Book</em> will look as follows:</p>
-	<p><img src="images/emfcp-editor-result.png" alt="EMFCP with the modified editor" /></p>
+	<p><img width=700 src="images/emfcp-editor-result.png" alt="EMFCP with the modified editor" /></p>
 	<p>As expected, the input-field for the <em>title</em>-attribute is displayed on the bottom of the editor-window now, whereas the <em>pages</em>-attribute can be edited on the right side below the <em>author</em>.</p>
 </div>
