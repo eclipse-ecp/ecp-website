@@ -27,10 +27,6 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 
 
 
-<h3>Start EMF Client Platform</h3>
-
-    * Launch a default debug configuration including all plugins in your workspace 
-
 
 
  
