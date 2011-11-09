@@ -10,9 +10,9 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - How to replace the editor";
+	$pageTitle 		= "EMF Client Platform - Core Features";
 
-	$html  = 	$html = file_get_contents('_replace-editor.html');
+	$html  = 	$html = file_get_contents('_core-feature-demo.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
