@@ -18,7 +18,8 @@
 We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
 
 <h3>Tutorials</h3>
-<li><a href="documentation/setup.php">How to set tup the EMF Client Platform</a></li>
+<li><a href="documentation/setup.php">How to set up the EMF Client Platform</a></li>
+<li><a href="documentation/core-feature-demo.php">Demonstration of the core features</a></li>
 <li><a href="documentation/replace-editor.php">How to replace the editor which is opened on double click with a custom view</a></li>
 <li><a href="documentation/arrange-attributes.php">Change the order of attributes which are shown in the editor</a></li>
 <li><a href="documentation/customize-navigator.php">Customize the navigator</a></li>
