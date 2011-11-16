@@ -19,7 +19,12 @@
 <p>To install the EMF Client Platform, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
 
 <h3>Milestone Builds</h3>
-<p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse. You can get the the latest milestone build from <a href="http://download.eclipse.org/emf-store/">this update site (http://download.eclipse.org/emf-store/)</a>. If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
+<p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse.
+You can get the the latest milestone build from 
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
+</ul>
+If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
 
 
 
