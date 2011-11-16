@@ -24,7 +24,7 @@ You can get the the latest milestone build from this update site
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
 </ul>
-To learn how to setup and run EMF Client Platform read the tutorial <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a>.
+To learn how to setup and run EMF Client Platform read the tutorial <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a>.<br />
 
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
 
