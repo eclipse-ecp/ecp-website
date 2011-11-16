@@ -20,7 +20,7 @@
 
 <h3>Milestone Builds</h3>
 <p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse.
-You can get the the latest milestone build from 
+You can get the the latest milestone build from this update site
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
 </ul>
