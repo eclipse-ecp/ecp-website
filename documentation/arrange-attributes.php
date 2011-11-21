@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMFClient Platform - arrange attributes in the editor";
+	$pageTitle 		= "EMFClient Platform - How to change the order of attributes which are shown in the editor";
 
 	$html  = 	$html = file_get_contents('_arrange-attributes.html');
 	# Generate the web page

@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Core Features";
+	$pageTitle 		= "EMF Client Platform - How to use the core features";
 
 	$html  = 	$html = file_get_contents('_core-feature-demo.html');
 	# Generate the web page

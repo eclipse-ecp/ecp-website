@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Getting started";
+	$pageTitle 		= "EMF Client Platform - How to set up the EMF Client Platform";
 
 	$html  = $html  =file_get_contents('_setup.html');
 	# Generate the web page

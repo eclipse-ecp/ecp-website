@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMFStore - Getting involved";
+	$pageTitle 		= "EMFStore - How to add custom validation rules";
 
 	$html  = 	$html = file_get_contents('_validation.html');
 	# Generate the web page

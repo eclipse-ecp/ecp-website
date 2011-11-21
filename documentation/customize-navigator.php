@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMFClient Platform - Customize the navigator";
+	$pageTitle 		= "EMFClient Platform - How to customize the Navigator view";
 
 	$html  = 	$html = file_get_contents('_customize-navigator.html');
 	# Generate the web page

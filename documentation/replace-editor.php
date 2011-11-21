@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - How to replace the editor";
+	$pageTitle 		= "EMF Client Platform - How to replace the editor which is opened on double click with a custom view";
 
 	$html  = 	$html = file_get_contents('_replace-editor.html');
 	# Generate the web page

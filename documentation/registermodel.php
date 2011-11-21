@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Register a model";
+	$pageTitle 		= "EMF Client Platform - How to register a model to the EMF Client Platform";
 
 	$html  = $html  = 	$html = file_get_contents('_registerModel.html');
 	# Generate the web page
