@@ -30,7 +30,7 @@
 	$Nav->addCustomNav("Download", "/emfclient/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emfclient/communication.php", "_blank", 3);
 	$Nav->addCustomNav("Getting Involved", "/emfclient/gettinginvolved.php", "_blank", 3);
-	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft", "_blank", 3);
+	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client", "_blank", 3);
 	$Nav->addCustomNav("Documentation", "/emfclient/documentation.php", "_blank", 3);
 	# $Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
 	# $Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
@@ -48,7 +48,7 @@
 	$Menu->addMenuItem("Download", "/emfclient/download.php", "_self");
 	$Menu->addMenuItem("Communication", "/emfclient/communication.php", "_self");
 	$Menu->addMenuItem("Getting involved", "/emfclient/gettinginvolved.php", "_self");
-	$Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft", "_self");
+	$Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client", "_self");
 	$Menu->addMenuItem("Documentation", "/emfclient/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/project/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
