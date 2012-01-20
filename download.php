@@ -22,7 +22,11 @@
 <p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse.
 You can get the the latest milestone build from this update site
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/">0.8.9M905 (http://download.eclipse.org/emf-store/)</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/latest">http://download.eclipse.org/emf-store/latest</a>.</li>
+</ul>
+An archive of milestone builds is available here
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/archive">http://download.eclipse.org/emf-store/archive</a>.</li>
 </ul>
 To learn how to setup and run EMF Client Platform read the tutorial <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a>.<br />
 
