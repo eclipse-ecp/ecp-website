@@ -21,7 +21,7 @@
 	
 	
 	// 	# Paste your HTML content between the EOHTML markers!
-	$header = file_get_contents('pages/_f.html');
+	$header = file_get_contents('pages/_index.html');
 	
 	$html = $header;
 	
