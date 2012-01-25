@@ -21,7 +21,7 @@
 <h3>Milestone Builds</h3>
 <p>EMF Client Platform has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Client Platform has been developed 3 years before it moved to Eclipse.
 
-<p>You can get the the latest milestone build from this update site:
+<p>You can get the the latest milestone build from this update site. <b>To run ECP, you will also need a persistence layer. Please install the EMFStore persistence layer from the same update site:</b>
 
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/latest">http://download.eclipse.org/emf-store/latest</a>.</li>
