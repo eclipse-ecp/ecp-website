@@ -21,9 +21,9 @@
 	
 	
 	// 	# Paste your HTML content between the EOHTML markers!
-	$header = file_get_contents('pages/_index.html');
+	$html = file_get_contents('pages/_index.html');
 	
-	$html = $header;
+	
 	
 	# Generate the web page
 	$App->generatePage($theme, $Menu, null, $pageAuthor, $pageKeywords, $pageTitle, $html);
