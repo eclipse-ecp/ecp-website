@@ -13,12 +13,10 @@
       <preamble>
          <html:div></html:div>
       </preamble>
-      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
-      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
-      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
-      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
-      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
-      <milestone date="2/10/2012" milestone="0.8.9"/>
+  	  <milestone date="24/1/2012" milestone="M920"><html:div></html:div></milestone>
+      <milestone date="7/2/2012" milestone="M921"><html:div></html:div></milestone>
+      <milestone date="14/2/2012" milestone="M922"><html:div></html:div></milestone>
+      <milestone date="2/3/2012" milestone="0.8.9"/>
       <postamble><html:div>html content</html:div></postamble>
    </release_milestones>
    <target_environments>
