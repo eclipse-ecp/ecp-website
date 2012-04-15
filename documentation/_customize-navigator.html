@@ -9,9 +9,9 @@
 	<p>We will change the UI to open our own editor instead of the default one.</p>
 	
 	<b>Step 2: Register another editor</b>
-	<p>In your Eclipse developer environment, open the plugin definition by double-clicking the file <em>plugins.xml</em> in <em>exampleModel.navigatorCustomizations</em>.</p>
+	<p>In your Eclipse developer environment, open the plugin definition by double-clicking the file <em>plugins.xml</em>  <em>(see exampleModel.navigatorCustomizations for examples)</em>.</p>
 	<p><img width=700 src="images/customize-navigator-plugin_setting.png" alt="The plugins.xml of the navigatorCustomizations plugin" /></p>
-	<p>In this editor you change to the <em>Extensions</em> tab. Here you can add for example another Opener file for a specific object (registration on an object in the next step) or another drag-and-drop behaviour class.</p>
+	<p>In this editor you change to the <em>Extensions</em> tab. Here you can add for example another Opener (org.eclipse.emf.ecp.common.modelelementopener) for a specific object (registration on an object in the next step) or another drag-and-drop behaviour class (org.eclipse.emf.ecp.common.dropadapter).</p>
 	
 	<b>Step 3: Changing the Opener</b>
 	<p>Now we have a look at the <em>LibraryOpener.java</em> file.<br />
