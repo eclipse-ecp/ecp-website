@@ -27,6 +27,9 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/customize-navigator.php">How to customize the Navigator view</a></li>
 <li><a href="documentation/validation.php">How to add custom validation rules</a></li>
 
+<h3>JavaDoc</h3>
+The latest JavaDoc can always be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/257/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">here</a>
+
 
 
 
