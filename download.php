@@ -33,6 +33,8 @@
 <li><a href="http://download.eclipse.org/emf-store/releases/archive">http://download.eclipse.org/emf-store/releases/archive</a>.</li>
 </ul>
 
+A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
+
 <h3>Milestone Builds</h3>
 <p>
 
