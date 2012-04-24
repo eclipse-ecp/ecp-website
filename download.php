@@ -47,6 +47,12 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 
 <p>A list of archived milestone builds is available here
 
+<h6>0.8.9.M948</h6>
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M948">http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M948</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M948/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M948/site.p2.zip</a>.</li>
+</ul>
+
 <h6>0.8.9.M947</h6>
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M947">http://download.eclipse.org/emf-store/milestones/archive/0.8.9.M947</a>.</li>
