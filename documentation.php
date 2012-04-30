@@ -26,6 +26,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/how_to_extend_ecp_editor.php">How to extend the editor of ECP by replacing control displays</a></li>
 <li><a href="documentation/customize-navigator.php">How to customize the Navigator view</a></li>
 <li><a href="documentation/validation.php">How to add custom validation rules</a></li>
+<li><a href="http://wiki.eclipse.org/How_to_create_a_release_of_EMFStore">How to create a release of EMF Client Platform</a></li>
 
 <h3>JavaDoc</h3>
 The latest JavaDoc can always be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/264/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">here</a>.
