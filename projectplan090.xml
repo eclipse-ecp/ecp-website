@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
+      name="Project Name">
+   <release projectid="modeling.emft.emf-client" version="0.8.9"/>
+   <introduction>
+     <html:div>This plan describes the 0.8.9 Eclipse release of the EMF Client Platform. The main goals of the release are to improve stability</html:div>
+   </introduction>
+   <release_deliverables>
+     <html:div>The EMF Client platform delivers a generic UI for EMF model instances.</html:div>
+   </release_deliverables>
+   <release_milestones>
+      <preamble>
+         <html:div></html:div>
+      </preamble>
+      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
+      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
+      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
+      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
+      <milestone date="2/10/2012" milestone="0.8.9"/>
+      <postamble><html:div>html content</html:div></postamble>
+   </release_milestones>
+   <target_environments>
+     <html:div>The 0.8.9 release targets Eclipse Indigo and EMF 2.6</html:div>
+     <internationalization>
+          <html:div>The UI  does currently not support internationalization.</html:div>
+     </internationalization>
+   </target_environments>
+   <compatibility_with_previous_releases>
+       <html:div>The release contains minor API improvements compared to previous versions.</html:div>
+   </compatibility_with_previous_releases>
+   <themes_and_priorities>
+     <preamble>
+         <html:div>The releases focuses on stability</html:div>
+     </preamble>
+     <theme name="Bug Fixing">
+        <description>...(optional) html...</description>
+       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=0.8.9">
+           ...(optional alternate) html...</committed>
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emfclient&amp;target_milestone=0.8.9">
+           ...(optional alternate) html...</proposed>
+        <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=0.9.0M1">
+           ...(optional alternate) html...</deferred>
+     </theme>
+     
+   </themes_and_priorities>
+   <appendix name="Project Refactoring">
+   </appendix>	
+ </plan>
