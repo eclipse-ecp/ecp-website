@@ -33,9 +33,9 @@
      </preamble>
      <theme name="Bug Fixing">
         <description>...(optional) html...</description>
-       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=0.9.0">
+       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=0.9.0M1">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emfclient&amp;target_milestone=0.9.0">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emfclient&amp;target_milestone=0.9.0M1">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=0.10.0">
            ...(optional alternate) html...</deferred>
