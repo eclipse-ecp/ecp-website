@@ -30,10 +30,11 @@
 
 <p>An archive of release builds is available here:
 
+
 <h6>0.8.9</h6>
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9/site.p2.zip</a>.</li>
 </ul>
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
