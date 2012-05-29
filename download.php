@@ -21,16 +21,19 @@
 <h3>Release Builds</h3>
 <p>
 
-<p>You can get the the latest release build from this update site. <b>To run ECP, you will also need a persistence layer. Please install the EMFStore persistence layer from the same update site:</b>
+<p>You can get the the latest release build from this update site:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases1/latest">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases1/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases1/latest/site.p2.zip</a>.</li>
 </ul>
 
 <p>An archive of release builds is available here:
 
+<h6>0.8.9</h6>
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive">http://download.eclipse.org/emf-store/releases/archive</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/site.p2.zip</a>.</li>
 </ul>
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
