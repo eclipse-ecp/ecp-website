@@ -24,7 +24,7 @@
 <p>You can get the the latest release build from this update site:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases1/latest">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases1/latest">http://download.eclipse.org/emf-store/releases1/latest</a>.</li>
 <li><a href="http://download.eclipse.org/emf-store/releases1/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases1/latest/site.p2.zip</a>.</li>
 </ul>
 
