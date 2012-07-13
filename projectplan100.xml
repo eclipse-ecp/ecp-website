@@ -14,10 +14,10 @@
          <html:div></html:div>
       </preamble>
       
-      <milestone date="7/15/2012" milestone="M1"><html:div></html:div></milestone>
-      <milestone date="8/20/2012" milestone="M2"/>
-      <milestone date="9/15/2012" milestone="M3"/>
-      <milestone date="10/1/2012" milestone="RC1"/>
+      <milestone date="7/20/2012" milestone="M1"><html:div></html:div></milestone>
+      <milestone date="8/23/2012" milestone="M2"/>
+      <milestone date="9/24/2012" milestone="M3"/>
+      <milestone date="10/4/2012" milestone="RC1"/>
       <postamble><html:div>html content</html:div></postamble>
    </release_milestones>
    <target_environments>
@@ -35,9 +35,9 @@
      </preamble>
      <theme name="Bug Fixing">
         <description>...(optional) html...</description>
-       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;product=EMFT.emfclient&amp;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=0.9.1">
            ...(optional alternate) html...</deferred>
