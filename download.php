@@ -24,7 +24,7 @@
 <p>You can get the the latest release 0.9.3 from this update site:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/lates">http://download.eclipse.org/emf-store/releases/lates</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/lates">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
 <li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/latest/site.p2.zip</a>.</li>
 </ul>
 
