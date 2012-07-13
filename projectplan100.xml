@@ -27,7 +27,7 @@
      </internationalization>
    </target_environments>
    <compatibility_with_previous_releases>
-       <html:div>The release contains major API changes compared to previous versions. We will document the necesarry steps for migration</html:div>
+       <html:div>The release contains major API changes compared to previous versions. We will document the necessary steps for migration</html:div>
    </compatibility_with_previous_releases>
    <themes_and_priorities>
      <preamble>
