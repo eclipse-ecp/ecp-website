@@ -33,13 +33,13 @@
      <preamble>
          <html:div>The main goals of the release are to improve modularity and offer support for multiple providers</html:div>
      </preamble>
-     <theme name="Bug Fixing">
+     <theme name="1.0.0">
         <description>...(optional) html...</description>
-       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;product=EMFT.emfclient&amp;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</proposed>
-        <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=0.9.1">
+        <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=1.1.0">
            ...(optional alternate) html...</deferred>
      </theme>
      
