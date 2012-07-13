@@ -15,7 +15,7 @@
       </preamble>
       
       <milestone date="7/15/2012" milestone="M1"><html:div></html:div></milestone>
-      <milestone date="8/15/2012" milestone="M2"/>
+      <milestone date="8/20/2012" milestone="M2"/>
       <milestone date="9/15/2012" milestone="M3"/>
       <milestone date="10/1/2012" milestone="RC1"/>
       <postamble><html:div>html content</html:div></postamble>
