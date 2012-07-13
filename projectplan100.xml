@@ -37,7 +37,7 @@
         <description>...(optional) html...</description>
        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0&amp;target_milestone=1.0.0M1&amp;target_milestone=1.0.0M2&amp;target_milestone=1.0.0M3">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0&amp;target_milestone=1.0.0M1&amp;target_milestone=1.0.0M2&amp;target_milestone=1.0.0M3&amp;product=EMFT.emfclient">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;target_milestone=1.1.0">
            ...(optional alternate) html...</deferred>
