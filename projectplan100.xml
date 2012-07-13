@@ -35,7 +35,7 @@
      </preamble>
      <theme name="Bug Fixing">
         <description>...(optional) html...</description>
-       <committed bugzilla=https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
+       <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;bug_status=CLOSED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</committed>
         <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;bug_status=RESOLVED;bug_status=VERIFIED;target_milestone=1.0.0;target_milestone=1.0.0M1;target_milestone=1.0.0M2;target_milestone=1.0.0M3;product=EMFT.emfclient">
            ...(optional alternate) html...</proposed>
