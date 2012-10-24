@@ -42,7 +42,20 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 <h3>Milestone Builds</h3>
 <p>
 
-<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:
+<p>Milestone builds reflect the most current development and are not as stable as release builds.</p>
+
+<p>EMF Client Platform currently develops two branches. The 0.9.x branch has several stable releases, but will soon be maintanance only. The 1.x branch has not been release yet. The planed release for 1.x is in November. The 1.x branch contains the integration of different backends, such as CDO, while the 0.9.x branch works with EMFStore. If you are looking for a stable version, you should go for 0.9.x. If you want to test the new features of 1.x and provide feedback, please use the 1.x milestone build. For the 1.x milestone, you will need to install at least one backend, e.g. <a href="http://eclipse.org/cdo">CDO</a> or <a href="http://emfstore.org">EMFStore</a>.</p> 
+
+<h3>1.x Milestone Builds<h3>
+
+<h6>1.0.0M3</h6>
+<ul>
+<li><a href="http://download.eclipse.org/emfclient/milestones/100M3">http://download.eclipse.org/emfclient/milestones/100M3</a>.</li>
+</ul>
+
+<h3>0.9.x Milestone Builds<h3>
+
+<p>You can get the the latest milestone build from this update site or download as zip file:</p>
 
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/latest</a>.</li>
