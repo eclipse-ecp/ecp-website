@@ -48,6 +48,12 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 
 <h3>1.x Milestone Builds<h3>
 
+<h6>1.0.0M4</h6>
+<ul>
+<li><a href="http://download.eclipse.org/emfclient/nightly/100M4_nightly">http://download.eclipse.org/emfclient/milestones/100M4_nightly</a>.</li>
+<li><a href="http://download.eclipse.org/emfclient/nightly/100M4_nightly.zip">http://download.eclipse.org/emfclient/milestones/100M4_nightly.zip</a>.</li>
+</ul>
+
 <h6>1.0.0M3</h6>
 <ul>
 <li><a href="http://download.eclipse.org/emfclient/milestones/100M3">http://download.eclipse.org/emfclient/milestones/100M3</a>.</li>
