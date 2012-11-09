@@ -47,41 +47,71 @@
 				offer support for multiple providers.
 			</html:div>
 		</preamble>
-		<theme name="1.0.0">
-			<description>
+		<theme name="1.0.0M1">
+		<description>
 				<html:div>M1 Bugs</html:div>
 			</description>
 			<committed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0M1">
 				...(optional alternate) html...
 			</committed>
-			<description>
+			<proposed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0M1&amp;product=EMFT.emfclient">
+				...(optional alternate) html...
+			</proposed>
+		</theme>
+		<theme name="1.0.0M2">
+		<description>
 				<html:div>M2 Bugs</html:div>
 			</description>
 			<committed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0M2">
 				...(optional alternate) html...
 			</committed>
-			<description>
+			<proposed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0M2&amp;product=EMFT.emfclient">
+				...(optional alternate) html...
+			</proposed>
+		</theme>
+		<theme name="1.0.0M3">
+		<description>
 				<html:div>M3 Bugs</html:div>
 			</description>
 			<committed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0M3">
 				...(optional alternate) html...
 			</committed>
-			<description>
+			<proposed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0M3&amp;product=EMFT.emfclient">
+				...(optional alternate) html...
+			</proposed>
+		</theme>
+		<theme name="1.0.0M4">
+		<description>
 				<html:div>M4 Bugs</html:div>
 			</description>
 			<committed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0M4">
 				...(optional alternate) html...
 			</committed>
-			<description>
+			<proposed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0M4&amp;product=EMFT.emfclient">
+				...(optional alternate) html...
+			</proposed>
+		</theme>
+		<theme name="1.0.0RC1">
+		<description>
 				<html:div>RC1 Bugs</html:div>
 			</description>
 			<committed
 				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emfclient&amp;target_milestone=1.0.0RC1">
 			</committed>
+			<proposed
+				bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emfclient&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;target_milestone=1.0.0RC1&amp;product=EMFT.emfclient">
+				...(optional alternate) html...
+			</proposed>
+		</theme>
+		<theme name="1.0.0">
 			<description>
 				<html:div>Release Bugs</html:div>
 			</description>
