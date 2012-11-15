@@ -220,7 +220,7 @@
     <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="High Complexity Code Warning Suppression"/>
   </module>
   <module name="RegexpHeader">
-    <property name="headerFile" value="http://www.eclipse.org/emfclient/checkstyle/header.txt"/>
+    <property name="headerFile" value="header.txt"/>
     <property name="fileExtensions" value="java"/>
   </module>
 </module>
