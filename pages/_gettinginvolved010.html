@@ -1,85 +1,95 @@
 <div id="midcolumn">
 	<h2>Getting Involved</h2>
-	<div style="margin:10;">
+	<div style="margin: 10;">
 		Everyone is invited to getting involved with the EMF Client project.
 		Before you plan any kind of contribution, it is a good idea to contact
 		the <a href="communication.php">project team</a>.<br /> Contributing
 		may include:<br />
-	<ul>
-		<li>Writing bug reports: Please provide a short and concise
-			explanation of the problem, a snippet to reproduce the issue, ideally
-			a JUnit test case that outlines the expected behavior. See the <a
-			href="support.php">support page</a> for details. You are also invited
-			to enter feature requests.<br />
-		</li>
-		<li>Providing a patch to an existing bug report: If you are no
-			committer on the project, please upload your bug report in the <a
-			href="support.php">bugzilla</a><br />
-		</li>
-		<li>Contribute documentation, i.e. if you found something which
-			is not documented yet, please share you knowledge with other users.
-			Please <a href="communication.php">contact us</a>, to find the
-			appropriate place to add your documentation.
-		</li>
-	</ul>
+		<ul>
+			<li>Writing bug reports: Please provide a short and concise
+				explanation of the problem, a snippet to reproduce the issue,
+				ideally a JUnit test case that outlines the expected behavior. See
+				the <a href="support.php">support page</a> for details. You are also
+				invited to enter feature requests.<br />
+			</li>
+			<li>Providing a patch to an existing bug report: If you are no
+				committer on the project, please upload your bug report in the <a
+				href="support.php">bugzilla</a><br />
+			</li>
+			<li>Contribute documentation, i.e. if you found something which
+				is not documented yet, please share you knowledge with other users.
+				Please <a href="communication.php">contact us</a>, to find the
+				appropriate place to add your documentation.
+			</li>
+		</ul>
 	</div>
 
 	<h2>Developer Resources for the Juno version of EMF Client
 		Platform</h2>
 
-	<div style="margin:10;">
+	<div style="margin: 10;">
 		This tutorial describes how to install the workspace for the Juno
 		branch of EMF Client Platform. Please note that this branch will not
 		be compatible to version 0.9.x if you want to develop based on version
 		0.9.x, please see <a href="gettinginvolved.php">here</a>.
 	</div>
 	<b>Step 1: Download and install Eclipse</b>
-	<div style="margin:10;">
+	<div style="margin: 10;">
 		Please download and install Eclipse Modeling Tools 4.2 from <a
 			href="http://download.eclipse.org/eclipse/downloads">http://download.eclipse.org/eclipse/downloads</a>
 	</div>
 	<b>Step 2: Additional Plug-Ins</b>
-	<div style="margin:10;">
-		Install Checkstyle Plug-In from either the Marketplace (Help-&gt;Eclipse
-		Marketplace...) or from the <a href="http://eclipse-cs.sf.net/update/">Checkstyle
-			Updatesite</a>.
+	<div style="margin: 10;">
+		Install Checkstyle Plug-In from either the Marketplace
+		(Help-&gt;Eclipse Marketplace...) or from the <a
+			href="http://eclipse-cs.sf.net/update/">Checkstyle Updatesite</a>.
 	</div>
 
 	<b>Step 3: Check-out the source</b>
-	<div style="margin:10;">
-	You can clone the following GIT repository: If you want to use
-		GIT as a committer please use the following URI:
-	<ul>
-		<li>org.eclipse.emf.ecp.other.git
-			(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
-	</ul>
-	If you want to use GIT as an anonymous user (read only) please use the
-	following URIs:
-	<ul>
-		<li>org.eclipse.emf.ecp.other.git
-			(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
-	</ul>
-	Please checkout all projects from /ECP2.<br/><br/>
-	Please refer to <a
-		href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this
-		tutorial</a> to clone GIT repositories. <br />
-	<br /> Now, you can import the projects from the cloned GIT repository.
-	<a href="http://wiki.eclipse.org/ImportGitProjects">See here how to
-		import projects from a GIT repository</a>
+	<div style="margin: 10;">
+		You can clone the following GIT repository: If you want to use GIT as
+		a committer please use the following URI:
+		<ul>
+			<li>org.eclipse.emf.ecp.other.git
+				(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
+		</ul>
+		If you want to use GIT as an anonymous user (read only) please use the
+		following URIs:
+		<ul>
+			<li>org.eclipse.emf.ecp.other.git
+				(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
+		</ul>
+		Select only the "master" branch. On the "Import Project" page hit
+		"Deselect all" and enter "ECP2" as the filter term. Press "Select all"
+		and proceed with the import. <br /> <br /> Please refer to <a
+			href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this
+			tutorial</a> to clone GIT repositories. <br /> <br /> Now, you can
+		import the projects from the cloned GIT repository. <a
+			href="http://wiki.eclipse.org/ImportGitProjects">See here how to
+			import projects from a GIT repository</a>
 
 	</div>
-	
+
 	<b>Step 4: Set the target</b>
-	<div style="margin:10;">Open the _target/ecp.target definition file. When it is
-		resolved, set this definition as the target platform.</div>
-	<b>Step 5: Start ECP</b>	
-	<div style="margin:10;">
-		To run the EMF Client Platform please include an EMF model in the
-		launch configuration. For testing, you can use <a
+	<div style="margin: 10;">Open the _target/ecp.target definition
+		file. When it is resolved, set this definition as the target platform.
+		If the target is not resolved, select the emfstore update site and
+		press update again. The resolution of the target platform takes a
+		while.</div>
+	<b>Step 5: Start ECP</b>
+	<div style="margin: 10;">
+		For testing, you can use <a
 			href="http://www.eclipse.org/emfstore/exampleModel.zip">this
-			example model.</a> Import it into your EMFCP workspace and start it along
-		with EMFCP. You should be able to create instances of the example
-		model (bowling).
+			example model</a>. Import it into your EMFCP workspace.<br/> Go to Run->Run
+		Configurations.. , select an Eclipse Application and press "New launch
+		configuration". Give the created launch configuration an arbitrary
+		name (e.g. ecp). Under "Program to Run" select "Run an application",
+		and as the application "org.eclipse.ui.ide.workbench". <br/>On the plug-ins
+		tab select under "Launch with" "plug-ins selected below only". Then
+		press "Deselect All". In the tree view select all plug-ins under
+		Workspace. Uncheck "Include optional dependencies when computing
+		required plug-ins" and press "Add required Plug-ins". <br/>Now
+			you are ready to start ECP by pressing "Run".
 	</div>
 	<!-- 
 		<p>
