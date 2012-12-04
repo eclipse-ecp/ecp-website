@@ -1,18 +1,18 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 /*******************************************************************************
- * Copyright (c) 2009 
+ * Copyright (c) 2009
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *
  * Contributors:
- *    
- *******************************************************************************/
+ *
+*******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Download";
+$pageTitle 		= "EMF Client Platform - Download";
 
-	$html  = <<<EOHTML
+$html  = <<<EOHTML
 <div id="midcolumn">
 <h2>$pageTitle</h2>
 <p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
@@ -44,17 +44,17 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 
 <p>Milestone builds reflect the most current development and are not as stable as release builds.</p>
 
-<p>EMF Client Platform currently develops two branches. The 0.9.x branch has several stable releases, but will soon be maintanance only. The 1.x branch has not been release yet. The planed release for 1.x is in November. The 1.x branch contains the integration of different backends, such as CDO, while the 0.9.x branch works with EMFStore. If you are looking for a stable version, you should go for 0.9.x. If you want to test the new features of 1.x and provide feedback, please use the 1.x milestone build. For the 1.x milestone, you will need to install at least one backend, e.g. <a href="http://eclipse.org/cdo">CDO</a> or <a href="http://emfstore.org">EMFStore</a>.</p> 
+<p>EMF Client Platform currently develops two branches. The 0.9.x branch has several stable releases, but will soon be maintanance only. The 1.x branch has not been release yet. The planed release for 1.x is in November. The 1.x branch contains the integration of different backends, such as CDO, while the 0.9.x branch works with EMFStore. If you are looking for a stable version, you should go for 0.9.x. If you want to test the new features of 1.x and provide feedback, please use the 1.x milestone build. For the 1.x milestone, you will need to install at least one backend, e.g. <a href="http://eclipse.org/cdo">CDO</a> or <a href="http://emfstore.org">EMFStore</a>.</p>
 
 <h3>1.x Milestone Builds<h3>
-<h6>1.0.0 Nightly</h6>
-	You can download the latest product build of ecp including an example model <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.products/target/products/">here</a>.
-		<br/>
-	The latest update site can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.site-feature/target/repository/">here</a>.	
-		<br/>
-		The corresponding JavaDoc can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/javadoc/">here</a>.
+<h4>1.0.0 Nightly</h4>
+	<p>You can download the latest product build of ecp including an example model <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.products/target/products/">here</a>.
+		</p>
+	<p>The latest update site can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.site-feature/target/repository/">here</a>.
+		</p>
+		<p>The corresponding JavaDoc can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/javadoc/">here</a>.</p>
 
-<h6>1.0.0M3</h6>
+<h4>1.0.0M3</h4>
 <ul>
 <li><a href="http://download.eclipse.org/emfclient/milestones/100M3">http://download.eclipse.org/emfclient/milestones/100M3</a>.</li>
 </ul>
@@ -112,6 +112,6 @@ If you have any questions, please do not hesitate <a href="communication.php"> c
 
 </div>
 EOHTML;
-	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+# Generate the web page
+$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
