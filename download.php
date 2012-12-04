@@ -47,14 +47,14 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 <p>EMF Client Platform currently develops two branches. The 0.9.x branch has several stable releases, but will soon be maintanance only. The 1.x branch has not been release yet. The planed release for 1.x is in November. The 1.x branch contains the integration of different backends, such as CDO, while the 0.9.x branch works with EMFStore. If you are looking for a stable version, you should go for 0.9.x. If you want to test the new features of 1.x and provide feedback, please use the 1.x milestone build. For the 1.x milestone, you will need to install at least one backend, e.g. <a href="http://eclipse.org/cdo">CDO</a> or <a href="http://emfstore.org">EMFStore</a>.</p>
 
 <h3>1.x Milestone Builds<h3>
-<h5>1.0.0 Nightly</h5>
+<h4>1.0.0 Nightly</h4>
 	<p>You can download the latest product build of ecp including an example model <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.products/target/products/">here</a>.
 		</p>
 	<p>The latest update site can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/lastSuccessfulBuild/artifact/git/ECP2/org.eclipse.emf.ecp.site-feature/target/repository/">here</a>.
 		</p>
 		<p>The corresponding JavaDoc can be found <a href="https://hudson.eclipse.org/hudson/job/emf-emfclient-maintenance/javadoc/">here</a>.</p>
 
-<h5>1.0.0M3</h5>
+<h4>1.0.0M3</h4>
 <ul>
 <li><a href="http://download.eclipse.org/emfclient/milestones/100M3">http://download.eclipse.org/emfclient/milestones/100M3</a>.</li>
 </ul>
