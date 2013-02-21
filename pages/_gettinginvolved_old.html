@@ -1,0 +1,62 @@
+<div id="midcolumn">
+<h2>Getting Involved</h2>
+<p>Everyone is invited to getting involved with the EMF Client project. Before you plan any kind of contribution, it is a good idea to contact the <a href="communication.php">project team</a>.<br /> Contributing may include:<br /> <ul> <li>Writing bug reports: Please provide a short and concise explanation of the problem, a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. See the <a href="support.php">support page</a> for details. You are also invited to enter feature requests.<br /> </li> <li>Providing a patch to an existing bug report: If you are no committer on the project, please upload your bug report in the <a href="support.php">bugzilla</a><br /> </li> <li>Contribute documentation, i.e. if you found something which is not documented yet, please share you knowledge with other users. Please <a href="communication.php">contact us</a>, to find the appropriate place to add your documentation.</li> </ul></p>
+
+<h2>Developer Resources</h2>
+
+Follow the below steps to setup the development environment for EMF Client:
+<br/><br/>
+
+<b>Step 1: Download and install an Eclipse Modeling Edition</b>
+<p></p>
+
+
+<b>Step 2: Check-out the source</b>
+
+
+<p>You can clone the following GIT repositories:
+
+If you want to use GIT as a committer please use the following URIs:
+<ul>
+<li>org.eclipse.emf.ecp.core.git (ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git): Contains all core plugins, this is what you usually need as a developer</li>
+<li>org.eclipse.emf.ecp.other.git (ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git): Contains additional optional features (e.g. XMI Workspace)</li>
+<li>org.eclipse.emf.ecp.releng.git (ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.releng.git): Contains release engineering resources such as features and updates sites</li> 
+</ul>
+If you want to use GIT as an anonymous user (read only) please use the following URIs:
+<ul>
+<li>org.eclipse.emf.ecp.core.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</li>
+<li>org.eclipse.emf.ecp.other.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.other.git)</li>
+<li>org.eclipse.emf.ecp.releng.git (git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.releng.git)</li>
+</ul>
+Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this tutorial</a> to clone GIT repositories.
+<br/><br/>
+Now, you can import the projects from the cloned GIT repository. <a href="http://wiki.eclipse.org/ImportGitProjects">See here how to import projects from a GIT repository</a>
+
+</p>
+
+<b>Step 3: Setting the Target Platform</b>
+<p>Please download <a href="http://dl.dropbox.com/u/23674036/emfcptargetplatform.zip">this target platform</a> unzip this folder in your workspace and set the target:
+<ul>
+<li>Select Import => Existing Projects into Workspace</li>
+<li>Select the downloaded archive and the contained project "target"</li>
+<li>After import, open the target project, double click the target definition file and click "set as target" in the right upper corner</li>
+</ul>
+</p>
+
+<b>Step 4: Checkstyle Configuration</b>
+<p>
+The final step is to create a check style configuration. We are using checkstyle 5. Please open the global preferences (Window => Preferences) and add a new Checkstyle configuration named "emfcpStyle" with a relative pointer to our config file. Set this configuration as default. You do not have to configure the projects individually.
+</p>
+
+<p><img  src="images/emfcpcheckstyle2.png" ></p>
+
+<b>Run the EMF Client</b>
+<p>
+To run the EMF Client Platform please include an EMF model in the launch configuration. For testing, you can use <a href="http://www.eclipse.org/emfstore/exampleModel.zip">this example model.</a> Import it into your EMFCP workspace and start it along with EMFCP. You should be able to create instances of the example model (bowling).
+</p>
+
+
+
+
+ 
+</div>
