@@ -25,6 +25,7 @@ $html  = <<<EOHTML
 <h5>1.0.0RC1</h4>
 <ul>
 <li><a href="http://download.eclipse.org/emfclient/milestones/100RC1">http://download.eclipse.org/emfclient/milestones/100RC1</a>.</li>
+<li><a href="http://download.eclipse.org/emfclient/milestones/100RC1/repository.zip">http://download.eclipse.org/emfclient/milestones/100RC1/repository.zip</a>.</li>
 </ul>
 
 <h3>Release Builds</h3>
