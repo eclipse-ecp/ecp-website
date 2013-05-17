@@ -22,6 +22,12 @@ $html  = <<<EOHTML
 <p>
 
 <p>These are the release candidate builds for the upcoming 1.0.0 release of the EMF Client Platform. If you want to try out EMF Client Platform or plan on using it please use these release candidates until the 1.0.0 release.</p>
+
+<h5>1.0.0RC3</h4>
+<ul>
+<li><a href="http://download.eclipse.org/emfclient/milestones/100RC3">http://download.eclipse.org/emfclient/milestones/100RC3</a>.</li>
+<li><a href="http://download.eclipse.org/emfclient/milestones/100RC3/repository.zip">http://download.eclipse.org/emfclient/milestones/100RC3/repository.zip</a>.</li>
+</ul>
 <h5>1.0.0RC2</h4>
 <ul>
 <li><a href="http://download.eclipse.org/emfclient/milestones/100RC2">http://download.eclipse.org/emfclient/milestones/100RC2</a>.</li>
