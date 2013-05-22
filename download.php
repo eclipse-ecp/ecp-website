@@ -57,7 +57,7 @@ $html  = <<<EOHTML
 </ul>
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
-
+<!--
 <h3>Milestone Builds</h3>
 <p>
 
@@ -121,7 +121,7 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
 
-
+ -->
 To learn how to setup and run EMF Client Platform read the tutorial <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a>.<br />
 
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
