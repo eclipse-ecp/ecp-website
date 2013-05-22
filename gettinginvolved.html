@@ -1,183 +1,231 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>EMF Client Platform</title>
-      <link rel="stylesheet" media="screen" href="public/stylesheets/bootstrap.css">
-      <link rel="stylesheet" media="screen" href="public/stylesheets/bootstrap-responsive.css">
-      <link rel="stylesheet" media="screen" href="public/stylesheets/theme.css">
-      <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
-      <link rel="icon" href="public/images/favicon.ico"/>
-      <script src="public/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
-      <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
-   </head>
-   <body>
-      <div class="container-fluid fill">
-         <div class="banner" >
-            <div class="row-fluid">
-               <div class="span2" style="padding: 0.5em;">
-                  <a href="index.html">
-                  <img src="public/images/ecp.png"/>
-                  </a>
-               </div>
-               <div class="span10 pull-left">
-                  <h2>EMF Client Platform</h2>
-                  <p>Build an EMF application with one click</p>
-               </div>
-            </div>
-         </div>
-         <div class="row-fluid">
-            <div class="navbar span12">
-               <div class="navbar-inner" id= "topbar">
-                  <button id="topbtn" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  <div class = "nav-collapse">
-                     <ul class="nav pull-left">
-                        <li><a href="index.html"><img src="public/images/home.png" width="16px" height="16px"/>&nbsp;Home</a></li>
-                        <li><a href="download.html"><img src="public/images/download.png" width="16px" height="16px"/>&nbsp;Download</a></li>
-                        <li><a href="documentation.html"><img src="public/images/documentation.png" width="16px" height="16px">&nbsp;Documentation</a></li>
-                        <li><a href="support.html"><img src="public/images/support.png" width="16px" height="16px">&nbsp;Support</a></li>
-                        <li><a href="gettinginvolved.html"><img src="public/images/getting-involved.png" width="16px" height="16px">&nbsp;Getting involved</a></li>
-						<li><a href="communication.html"><img src="public/images/communication.png" width="16px" height="16px">&nbsp;Communication</a></li>                                                
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="content">
-            <h3>GETTING INVOLVED</h3>
-            <p>
-               Everyone is invited to getting involved with the EMF Client project. Before you plan any kind of contribution, it is a good idea to contact the 
-               <a href="http://eclipse.org/emfclient/communication.html">project team.</a>.
-            </p>
-            <ul class="no-bullets">
-            	<li><em>Writing bug reports</em>
-            		<p>
-               			Please provide a short and concise explanation of the problem, a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. 
-               			See the <a href="http://eclipse.org/emfclient/support.html">support page</a> for details. You are also invited to enter feature requests.
-            		</p>
-            	</li>
-            	<li><em>Providing a patch to an existing bug report</em>
-            		<p>
-               			If you are no committer on the project, please upload your bug report in the <a href="http://eclipse.org/emfclient/support.html">bugzilla</a>.
-            		</p>
-            	</li>
-            	<li><em>Contribute documentation</em>
-            		<p>
-               			If you found something which is not documented yet, please share you knowledge with other users. 
-               			Please <a href="http://eclipse.org/emfclient/communication.html">contact us</a>, to find the appropriate place to add your documentation.
-            		</p>
-            	</li>
-            </ul>
-            <h4>Developer Resources for the Juno version of EMF Client Platform</h4>
-            <p>
-               This tutorial describes how to install the workspace for the Juno
-               branch of EMF Client Platform. Please note that this branch will not
-               be compatible to version 0.9.x if you want to develop based on version
-               0.9.x, please see <a href="gettinginvolved.html">here</a>.
-            </p>
-            <ul class="no-bullets">
-            	<li><b>Step 1: Download and install Eclipse</b> 
-             		<p>
-             			Please download and install Eclipse Modeling Tools 4.2 from <a href="http://download.eclipse.org/eclipse/downloads">http://download.eclipse.org/eclipse/downloads</a>
-             		</p>
-             	</li>
-             	<li><b>Step 2: Additional Plug-Ins</b>
-             		<p> 
-               			Install Checkstyle Plug-In from either the Marketplace (Help-&gt;Eclipse Marketplace...) or from the <a href="http://eclipse-cs.sf.net/update/">Checkstyle Updatesite</a>.
-               		</p>
-               	</li>
-            	<li><b>Step 3: Check-out the source</b> 
-               		<p>
-               			You can clone the following GIT repository: If you want to use GIT as a committer please use the following URI:
-               		</p>
-               		<p>
-               			<code>(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
-                  	</p>
-                  	<p>
-              	 		If you want to use GIT as an anonymous user (read only) please use the following URIs:
-              	 	</p>
-              	 	<p>
-                     	<code>(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
-               		</p>
+<head>
+<title>EMF Client Platform</title>
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap-responsive.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/theme.css">
+<link rel='stylesheet'
+	href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
+<link rel="icon" href="public/images/favicon.ico" />
+<script src="public/javascripts/jquery-1.9.0.min.js"
+	type="text/javascript"></script>
+<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container-fluid fill">
+		<div class="banner">
+			<div class="row-fluid">
+				<div class="span2" style="padding: 0.5em;">
+					<a href="index.html"> <img src="public/images/ecp.png" />
+					</a>
+				</div>
+				<div class="span10 pull-left">
+					<h2>EMF Client Platform</h2>
+					<p>Build an EMF application with one click</p>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="navbar span12">
+				<div class="navbar-inner" id="topbar">
+					<button id="topbtn" type="button" class="btn btn-navbar"
+						data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span
+							class="icon-bar"></span>
+					</button>
+					<div class="nav-collapse">
+						<ul class="nav pull-left">
+							<li><a href="index.html"><img
+									src="public/images/home.png" width="16px" height="16px" />&nbsp;Home</a></li>
+							<li><a href="download.html"><img
+									src="public/images/download.png" width="16px" height="16px" />&nbsp;Download</a></li>
+							<li><a href="documentation.html"><img
+									src="public/images/documentation.png" width="16px"
+									height="16px">&nbsp;Documentation</a></li>
+							<li><a href="support.html"><img
+									src="public/images/support.png" width="16px" height="16px">&nbsp;Support</a></li>
+							<li><a href="gettinginvolved.html"><img
+									src="public/images/getting-involved.png" width="16px"
+									height="16px">&nbsp;Getting involved</a></li>
+							<li><a href="communication.html"><img
+									src="public/images/communication.png" width="16px"
+									height="16px">&nbsp;Communication</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<h3>GETTING INVOLVED</h3>
+			<p>
+				Everyone is invited to getting involved with the EMF Client project.
+				Before you plan any kind of contribution, it is a good idea to
+				contact the <a
+					href="http://eclipse.org/emfclient/communication.html">project
+					team.</a>.
+			</p>
+			<ul class="no-bullets">
+				<li><em>Writing bug reports</em>
 					<p>
-               			Select only the "master" branch. Press "Select all" and proceed with the import.
-               		</p>
-               		<p>
-               			Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this tutorial</a> to clone GIT repositories. 
-               			Now, you can import the projects from the cloned GIT repository.
-               			See <a href="http://wiki.eclipse.org/ImportGitProjects">here</a> how to import projects from a GIT repository.
-               		</p> 
+						Please provide a short and concise explanation of the problem, a
+						snippet to reproduce the issue, ideally a JUnit test case that
+						outlines the expected behavior. See the <a
+							href="http://eclipse.org/emfclient/support.html">support page</a>
+						for details. You are also invited to enter feature requests.
+					</p></li>
+				<li><em>Providing a patch to an existing bug report</em>
+					<p>
+						If you are no committer on the project, please upload your bug
+						report in the <a href="http://eclipse.org/emfclient/support.html">bugzilla</a>.
+					</p></li>
+				<li><em>Contribute documentation</em>
+					<p>
+						If you found something which is not documented yet, please share
+						you knowledge with other users. Please <a
+							href="http://eclipse.org/emfclient/communication.html">contact
+							us</a>, to find the appropriate place to add your documentation.
+					</p></li>
+			</ul>
+			<h4>Developer Resources for the Juno version of EMF Client
+				Platform</h4>
+			<p>
+				This tutorial describes how to install the workspace for the Juno
+				branch of EMF Client Platform. Please note that this branch will not
+				be compatible to version 0.9.x if you want to develop based on
+				version 0.9.x, please see <a href="gettinginvolved.html">here</a>.
+			</p>
+			<ul class="no-bullets">
+				<li><b>Step 1: Download and install Eclipse</b>
+					<p>
+						Please download and install Eclipse Modeling Tools 4.2 from <a
+							href="http://download.eclipse.org/eclipse/downloads">http://download.eclipse.org/eclipse/downloads</a>
+					</p></li>
+				<li><b>Step 2: Additional Plug-Ins</b>
+					<p>
+						Install Checkstyle Plug-In from either the Marketplace
+						(Help-&gt;Eclipse Marketplace...) or from the <a
+							href="http://eclipse-cs.sf.net/update/">Checkstyle Updatesite</a>.
+					</p></li>
+				<li><b>Step 3: Check-out the source</b>
+					<p>You can clone the following GIT repository: If you want to
+						use GIT as a committer please use the following URI:</p>
+					<p>
+						<code>(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
+					</p>
+					<p>If you want to use GIT as an anonymous user (read only)
+						please use the following URIs:</p>
+					<p>
+						<code>(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
+					</p>
+					<p>Select only the "master" branch. Press "Select all" and
+						proceed with the import.</p>
+					<p>
+						Please refer to <a
+							href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this
+							tutorial</a> to clone GIT repositories. Now, you can import the
+						projects from the cloned GIT repository. See <a
+							href="http://wiki.eclipse.org/ImportGitProjects">here</a> how to
+						import projects from a GIT repository.
+					</p></li>
+				<li><b>Step 4: Set the target</b>
+					<p>
+						Open the <em>_target/ecp.target</em> definition file. When it is
+						resolved, set this definition as the target platform. If the
+						target is not resolved, select the emfstore update site and press
+						update again. The resolution of the target platform takes a while.
+					</p></li>
+				<li><b>Step 5: Start ECP</b>
+					<p>
+						For testing, you can use <a
+							href="http://www.eclipse.org/emfstore/exampleModel.zip">this
+							example model</a>. Import it into your EMFCP workspace. Go to
+						Run->Run Configurations.. , select the "ECP" launch configuration.
+						On the plug-ins tab select the added plugins in the tree view.
+						Then press "Add required Plug-ins". Now you are ready to start ECP
+						by pressing "Run".
+					</p></li>
+			</ul>
+			<h4>Extension points - How to</h4>
+			<p>When adding a new extension point please mind the following
+				guidelines:</p>
+			<ul>
+				<li>The Plug-in ID must be the same as the id of the project
+					defining the extension point.</li>
+				<li>The Point ID must not be fully qualified. The name must be
+					camel cased.</li>
+				<li>The Point Name must be understandable and give a good hint
+					at what the extension point is doing.</li>
+				<li>The Description tab must contain a description for the
+					extension point. If the point is experimental (API not fixed) add
+					the following line:
+					<div class="listing">&lt;b&gt;This extension point is
+						experimental and is likely to change in the future releases as the
+						activity support evolves.&lt;/b&gt;</div>
 				</li>
-            	<li><b>Step 4: Set the target</b> 
-            		<p>
-            			Open the <em>_target/ecp.target</em> definition file. When it is resolved, set this definition as the target platform.
-               			If the target is not resolved, select the emfstore update site and
-               			press update again. The resolution of the target platform takes a while.
-               		</p>
-               	</li>
-               	<li><b>Step 5: Start ECP</b> 
-	               <p>
-	               	For testing, you can use <a href="http://www.eclipse.org/emfstore/exampleModel.zip">this example model</a>. 
-	               	Import it into your EMFCP workspace. Go to Run->Run Configurations.. , select the "ECP" launch configuration.
-	               	On the plug-ins tab select the added plugins in the tree view. Then press "Add required Plug-ins". 
-	               	Now you are ready to start ECP by pressing "Run".
-            	   </p>
-            	</li>
-            </ul>
-            <h4>Extension points - How to</h4>
-            <p>
-            	When adding a new extension point please mind the following guidelines:
-            </p>
-            <ul>
-            	<li>The Plug-in ID must be the same as the id of the project defining the extension point.</li>
-                <li>The Point ID must not be fully qualified. The name must be camel cased.</li>
-                <li>The Point Name must be understandable and give a good hint at what the extension point is doing.</li>
-                <li>The Description tab must contain a description for the extension point. If the point is experimental (API not fixed) add the following line:
-                	<div class="listing">
-                     	&lt;b&gt;This extension point is experimental and is likely to change in the future releases as the activity support evolves.&lt;/b&gt;
-                    </div>
-                </li>
-                <li>The Since tab must contain the Version of the plugin since which it is part of the API. (Even if it is experimental). The Version format is maj.min, e.g. 1.1 . </li>
-                <li>The Examples tab should contain an example of an usage of this extension point. Use the &lt;pre&gt;&lt;/pre&gt; tags to display markup.</li>
-                <li>The API Information tab should contain a description of classes being used for defining this extension point.</li>
-                <li>The Supplied Implementation tab should contain a description of a supplied implementation of this extension point, if one implementation is supplied.</li>
-                <li>The Copyright tab must contain the copyright agreement, it look like this:
-                     <div class="listing"> 
-                     Copyright (c) 2011-2013 EclipseSource Muenchen GmbH and others.<br/> 
-                     All rights reserved. This program and the accompanying materials<br/>
-                     are made available under the terms of the Eclipse Public License v1.0<br/>
-                     which accompanies this distribution, and is available at<br/>
-                     http://www.eclipse.org/legal/epl-v10.html<br/>
-                     </div> 
-                     The company name must be adjusted if necessary.
-                  </li>
-             </ul>
-              You can use HTML tags in all tabs. Use this possibility to improve the readability of your texts.  
-         </div>
-      </div>
-      <div class="footer">
-            <div class="row-fluid">
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/privacy.php">
-                  Privacy Policy
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/termsofuse.php">
-                  Terms of Use
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/copyright.php">
-                  Copyright
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/">
-                  Legal
-                  </a>
-               </div>
-            </div>
-         </div>
-   </body>
+				<li>The Since tab must contain the Version of the plugin since
+					which it is part of the API. (Even if it is experimental). The
+					Version format is maj.min, e.g. 1.1 .</li>
+				<li>The Examples tab should contain an example of an usage of
+					this extension point. Use the &lt;pre&gt;&lt;/pre&gt; tags to
+					display markup.</li>
+				<li>The API Information tab should contain a description of
+					classes being used for defining this extension point.</li>
+				<li>The Supplied Implementation tab should contain a
+					description of a supplied implementation of this extension point,
+					if one implementation is supplied.</li>
+				<li>The Copyright tab must contain the copyright agreement, it
+					look like this:
+					<div class="listing">
+						Copyright (c) 2011-2013 EclipseSource Muenchen GmbH and others.<br />
+						All rights reserved. This program and the accompanying materials<br />
+						are made available under the terms of the Eclipse Public License
+						v1.0<br /> which accompanies this distribution, and is available
+						at<br /> http://www.eclipse.org/legal/epl-v10.html<br />
+					</div> The company name must be adjusted if necessary.
+				</li>
+			</ul>
+			You can use HTML tags in all tabs. Use this possibility to improve
+			the readability of your texts.
+		</div>
+	</div>
+	<div class="footer">
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/legal/privacy.php"> Privacy
+					Policy </a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of
+					Use </a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/legal/copyright.php"> Copyright
+				</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/legal/"> Legal </a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-31075157-1' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
 </html>

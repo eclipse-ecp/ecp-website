@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>EMF Client Platform</title>
-      <link rel="stylesheet" media="screen" href="public/stylesheets/bootstrap.css">
-      <link rel="stylesheet" media="screen" href="public/stylesheets/bootstrap-responsive.css">
-      <link rel="stylesheet" media="screen" href="public/stylesheets/theme.css">
-      <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
-      <link rel="icon" href="public/images/favicon.ico"/>
-      <script src="public/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
-      <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
-   </head>
-   <body>
-      <div class="container-fluid fill">
-         <div class="banner" >
-            <div class="row-fluid">
-               <div class="span2" style="padding: 0.5em;">
-                  <a href="index.html">
-                  <img src="public/images/ecp.png"/>
-                  </a>
-               </div>
-               <div class="span10 pull-left">
-                  <h2>EMF Client Platform</h2>
-                  <p>Build an EMF application with one click</p>
-               </div>
-            </div>
-         </div>
-         <div class="row-fluid">
-            <div class="navbar span12">
-               <div class="navbar-inner" id= "topbar">
-                  <button id="topbtn" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  <div class = "nav-collapse">
-                     <ul class="nav pull-left">
-                        <li><a href="index.html"><img src="public/images/home.png" width="16px" height="16px"/>&nbsp;Home</a></li>
-                        <li><a href="download.html"><img src="public/images/download.png" width="16px" height="16px"/>&nbsp;Download</a></li>
-                        <li><a href="documentation.html"><img src="public/images/documentation.png" width="16px" height="16px">&nbsp;Documentation</a></li>
-                        <li><a href="support.html"><img src="public/images/support.png" width="16px" height="16px">&nbsp;Support</a></li>
-                        <li><a href="gettinginvolved.html"><img src="public/images/getting-involved.png" width="16px" height="16px">&nbsp;Getting involved</a></li>
-                        <li><a href="communication.html"><img src="public/images/communication.png" width="16px" height="16px">&nbsp;Communication</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="content">
-            <h3>HOW TO GET IN CONTACT</h3>
-            <h4>Mailinglists and Newsgroup</h4>
-            <p>
-            	Please post any questions about the EMF Client Platform in the <a href="http://www.eclipse.org/forums/index.php/f/19/">EMFT Eclipse newsgroup</a>.
-                If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, 
-                where all EMF Client Platform framework developers are subscribed to:
-               <a href="mailto:emfcp-dev@eclipse.org">emfcp-dev@eclipse.org</a> 
-            </p>
-            <h4>Bug Reports and Feature Requests</h4>
-            <p>
-            	You can report bugs and feature requests in the <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emfclient"> bugzilla of Eclipse</a>.
-            	Also you can report bugs and feature requests to the <a href="mailto:emfcp-dev@eclipse.org"> developer mailinglist</a>.
-            </p>
-            <h4>Twitter</h4>
-            <p>
-            	We announce import news such as releases on Twitter: <a href="http://twitter.com/emfstore">http://twitter.com/emfcp</a>.
-            	We always use the #emfcp tag.
-            </p>
-            <h4>Plain Email</h4>
-            <p>Of course you can also send direct email to one of the project leads:</p>
-            <div class="row-fluid">
-            	<ul class="span12">
-  					<li class="span6 text-center">
-      					<img src="public/images/maximilian.jpg" /> 		
-  					</li>
-					<li class="span6 text-center">
-    					<img src="public/images/jonas.jpg" />
-  					</li>
+<head>
+<title>EMF Client Platform</title>
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap-responsive.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/theme.css">
+<link rel='stylesheet'
+	href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
+<link rel="icon" href="public/images/favicon.ico" />
+<script src="public/javascripts/jquery-1.9.0.min.js"
+	type="text/javascript"></script>
+<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container-fluid fill">
+		<div class="banner">
+			<div class="row-fluid">
+				<div class="span2" style="padding: 0.5em;">
+					<a href="index.html"> <img src="public/images/ecp.png" />
+					</a>
+				</div>
+				<div class="span10 pull-left">
+					<h2>EMF Client Platform</h2>
+					<p>Build an EMF application with one click</p>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="navbar span12">
+				<div class="navbar-inner" id="topbar">
+					<button id="topbtn" type="button" class="btn btn-navbar"
+						data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span
+							class="icon-bar"></span>
+					</button>
+					<div class="nav-collapse">
+						<ul class="nav pull-left">
+							<li><a href="index.html"><img
+									src="public/images/home.png" width="16px" height="16px" />&nbsp;Home</a></li>
+							<li><a href="download.html"><img
+									src="public/images/download.png" width="16px" height="16px" />&nbsp;Download</a></li>
+							<li><a href="documentation.html"><img
+									src="public/images/documentation.png" width="16px"
+									height="16px">&nbsp;Documentation</a></li>
+							<li><a href="support.html"><img
+									src="public/images/support.png" width="16px" height="16px">&nbsp;Support</a></li>
+							<li><a href="gettinginvolved.html"><img
+									src="public/images/getting-involved.png" width="16px"
+									height="16px">&nbsp;Getting involved</a></li>
+							<li><a href="communication.html"><img
+									src="public/images/communication.png" width="16px"
+									height="16px">&nbsp;Communication</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<h3>HOW TO GET IN CONTACT</h3>
+			<h4>Mailinglists and Newsgroup</h4>
+			<p>
+				Please post any questions about the EMF Client Platform in the <a
+					href="http://www.eclipse.org/forums/index.php/f/19/">EMFT
+					Eclipse newsgroup</a>. If you have feature requests, questions, bugs or
+				if you want to discuss something, you can send us email to this
+				mailinglist, where all EMF Client Platform framework developers are
+				subscribed to: <a href="mailto:emfcp-dev@eclipse.org">emfcp-dev@eclipse.org</a>
+			</p>
+			<h4>Bug Reports and Feature Requests</h4>
+			<p>
+				You can report bugs and feature requests in the <a
+					href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emfclient">
+					bugzilla of Eclipse</a>. Also you can report bugs and feature requests
+				to the <a href="mailto:emfcp-dev@eclipse.org"> developer
+					mailinglist</a>.
+			</p>
+			<h4>Twitter</h4>
+			<p>
+				We announce import news such as releases on Twitter: <a
+					href="http://twitter.com/emfstore">http://twitter.com/emfcp</a>. We
+				always use the #emfcp tag.
+			</p>
+			<h4>Plain Email</h4>
+			<p>Of course you can also send direct email to one of the project
+				leads:</p>
+			<div class="row-fluid">
+				<ul class="span12">
+					<li class="span6 text-center"><img
+						src="public/images/maximilian.jpg" /></li>
+					<li class="span6 text-center"><img
+						src="public/images/jonas.jpg" /></li>
 				</ul>
 			</div>
 			<div class="row-fluid">
-            	<ul class="span12">
-  					<li class="span6 text-center">
-    					<a href="mailto:maximilian@emfstore.org">Maximilian</a>
-  					</li>
-					<li class="span6 text-center">
-						<a href="mailto:jonas@emfstore.org">Jonas</a>
-  					</li>
+				<ul class="span12">
+					<li class="span6 text-center"><a
+						href="mailto:maximilian@emfstore.org">Maximilian</a></li>
+					<li class="span6 text-center"><a
+						href="mailto:jonas@emfstore.org">Jonas</a></li>
 				</ul>
 			</div>
-			
-         </div>
-         <div class="footer">
-            <div class="row-fluid">
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/privacy.php">
-                  Privacy Policy
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/termsofuse.php">
-                  Terms of Use
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/copyright.php">
-                  Copyright
-                  </a>
-               </div>
-               <div class="span3 text-center">
-                  <a href="http://www.eclipse.org/legal/">
-                  Legal
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+
+		</div>
+		<div class="footer">
+			<div class="row-fluid">
+				<div class="span3 text-center">
+					<a href="http://www.eclipse.org/legal/privacy.php"> Privacy
+						Policy </a>
+				</div>
+				<div class="span3 text-center">
+					<a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of
+						Use </a>
+				</div>
+				<div class="span3 text-center">
+					<a href="http://www.eclipse.org/legal/copyright.php"> Copyright
+					</a>
+				</div>
+				<div class="span3 text-center">
+					<a href="http://www.eclipse.org/legal/"> Legal </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-31075157-1' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
 </html>
