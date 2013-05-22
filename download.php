@@ -25,22 +25,17 @@ $html  = <<<EOHTML
 
 <h5>1.0.0RC3</h4>
 <ul>
-<li><a href="http://download.eclipse.org/emfclient/milestones/100RC3">http://download.eclipse.org/emfclient/milestones/100RC3</a>.</li>
-<li><a href="http://download.eclipse.org/emfclient/milestones/100RC3/repository.zip">http://download.eclipse.org/emfclient/milestones/100RC3/repository.zip</a>.</li>
-</ul>
-<h5>1.0.0RC2</h4>
-<ul>
-<li><a href="http://download.eclipse.org/emfclient/milestones/100RC2">http://download.eclipse.org/emfclient/milestones/100RC2</a>.</li>
-<li><a href="http://download.eclipse.org/emfclient/milestones/100RC2/repository.zip">http://download.eclipse.org/emfclient/milestones/100RC2/repository.zip</a>.</li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/milestones/100RC3/content.jar&format=xml">1.0.0 RC3 (Update Site)</a>.</li>
+<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/milestones/100RC3/repository.zip">1.0.0 RC3 (Update Site as ZIP)</a>.</li>
 </ul>
 <a name="demo-products"></a><h3>Demo Products<h3>
 <ul>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip">Windows 32bit</a></li>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip">Windows 64bit</a></li>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86">Mac OS 32bit</a></li>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip">Mac OS 64bit</a></li>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip">Linux 32bit</a></li>
-		<li><a href="http://download.eclipse.org/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip">Linux 64bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip">Windows 32bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip">Windows 64bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86">Mac OS 32bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip">Mac OS 64bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip">Linux 32bit</a></li>
+		<li><a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip">Linux 64bit</a></li>
 </ul>
 <h3>Release Builds</h3>
 <p>
