@@ -17,7 +17,7 @@ $html  = <<<EOHTML
 <h2>$pageTitle</h2>
 <p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 <p>To install the EMF Client Platform, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
-
+<p>We recommend to use the release candidates and not the releases. Since the last release we did a huge refactoring, fixed a lot of bugs and added a much more clean API.</p> 
 <h3>1.0.0 RC Builds</h3>
 <p>
 
@@ -122,7 +122,7 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/ECP_-_News_and_Noteworthy">here</a>. <br/>
 
  -->
-To learn how to setup and run EMF Client Platform read the tutorial <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a>.<br />
+To learn how to setup and run EMF Client Platform read the tutorial <a href="http://eclipsesource.com/blogs/tutorials/getting-started-with-the-emf-client-platform/">here</a>.<br />
 
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
 
