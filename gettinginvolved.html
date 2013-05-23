@@ -100,7 +100,7 @@
 			<ul class="no-bullets">
 				<li><b>Step 1: Download and install Eclipse</b>
 					<p>
-						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads">Eclipse downloads</a> section. 
+						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads" target="_blank">Eclipse downloads</a> section. 
 					</p></li>
 				<li><b>Step 2: Additional Plug-Ins</b>
 					<p>
@@ -108,7 +108,7 @@
 						(Help-&gt;Eclipse Marketplace...) or from the <a
 							href="http://eclipse-cs.sf.net/update/">Checkstyle Updatesite</a>.
 					</p></li>
-				<li><b>Step 3: Check-out the source</b>
+				<li><b>Step 3: Check-out the source via GIT</b>
 					<p>
 						If you want to use GIT as an anonymous user (read only) please use the following URIs:
 					</p>
@@ -134,21 +134,25 @@
 					</p></li>
 				<li><b>Step 4: Set the target</b>
 					<p>
-						Open the <em>_target/ecp.target</em> definition file. When it is
-						resolved, set this definition as the target platform. If the
-						target is not resolved, select the emfstore update site and press
-						update again. The resolution of the target platform takes a while.
+						Locate and open the <em>ecp.target</em> file in the <em>_target</em> bundle imported from the repository. 
+						When it is resolved, set this definition as the target platform. 
+						Please note that the resolution of the target platform may take some time at the first time.
 					</p></li>
 				<li><b>Step 5: Start ECP</b>
 					<p>
-						For testing, you can use <a
-							href="http://www.eclipse.org/emfstore/exampleModel.zip">this
-							example model</a>. Import it into your EMFCP workspace. Go to
-						Run->Run Configurations.. , select the "ECP" launch configuration.
-						On the plug-ins tab select the added plugins in the tree view.
-						Then press "Add required Plug-ins". Now you are ready to start ECP
-						by pressing "Run".
-					</p></li>
+						For testing purposes, you can use <a href="http://www.eclipse.org/emfstore/exampleModel.zip">this
+							example model</a>. Import it into your EMFCP workspace.
+					</p>
+					<p> 
+						Now you can start the model with EMF Client platform by creating a run configuration.
+						This run configuration will automatically also contain the testing model from your developer workspace. 
+						To create a run configuration, select the Eclipse menu <em>Run 	&rarr; Run Configurations</em>. 
+						Create a new run configuration and run the application <em>org.eclipse.emf.ecp.application.e3.application</em>, 
+						as shown in the following screenshot.
+						<img src="public/images/runningconfig.png"/>
+						Now you can start your application; it should present you with an empty EMFCP workbench containing the testing model.
+					</p>
+				</li>
 			</ul>
 			<h4>Extension points - How to</h4>
 			<p>When adding a new extension point please mind the following
