@@ -20,7 +20,8 @@ html, body {
 	padding-top: 1em;
 }
 .container-fluid {
-    border-radius:0.35em;
+    border-top-left-radius: 0.35em;
+    border-top-right-radius: 0.35em;
     box-shadow:0 0 0.3em gray;
     max-width:900px;
     margin:0 auto;
