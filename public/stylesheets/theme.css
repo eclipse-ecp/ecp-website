@@ -16,6 +16,9 @@ html, body {
 .fill {
     min-height:100%;
 }
+.incubation-logo {
+	padding-top: 1em;
+}
 .container-fluid {
     border-radius:0.35em;
     box-shadow:0 0 0.3em gray;
