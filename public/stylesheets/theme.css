@@ -23,7 +23,7 @@ html, body {
     border-top-left-radius: 0.35em;
     border-top-right-radius: 0.35em;
     box-shadow:0 0 0.3em gray;
-    max-width:900px;
+    max-width:1000px;
     margin:0 auto;
     background:-webkit-radial-gradient(bottom, ellipse cover, rgba(100,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
     background:-moz-radial-gradient(bottom, ellipse cover, rgba(100,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
@@ -96,13 +96,18 @@ html, body {
     right:0;
     bottom:0;
     font-size:0.7em;
-    max-width:900px;
+    max-width:1000px;
     margin:0 auto;
     padding-top:0.3em;
     background: #474747;
 }
 ul {
     list-style-type: circle;
+}
+.nav-image {
+	width: 20px;
+	heigth: 20px;
+	vertical-align: middle;
 }
 a:link {
     color:#c795e4;
