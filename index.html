@@ -25,7 +25,7 @@
 				</div>
 				<div class="span10 pull-left">
 					<h2>EMF Client Platform</h2>
-					<p>Build an EMF application with one click</p>
+					<p>Are you still manually coding UIs?</p>
 				</div>
 			</div>
 		</div>
@@ -91,10 +91,9 @@
 			<div class="row-fluid">
 				<p class="span4">
 					The EMF Client Platform is a framework for building	EMF-based client applications. 
-					The goal is to provide a one-click application based on a given EMF model. 
-					Besides the EMF model, no additional components have to be developed or generated. 
-					Therefore, ECP provides a standard solution including the most common features
-					needed for EMF-based client applications.</p>
+					The goal is to provide reusable, adaptable and extensible UI components to develop applications based on a given EMF model. 
+					All components can be used stand-alone and be embedded into your own application. To get started, ECP provides a demo application, which integrates all provided components. This demo application allows you to get started by only providing your EMF model.
+					</br><b style="color:red">Looking for View Modeling (EclipseCon and "Java aktuell") please see <a href="http://eclipsesource.com/blogs/tutorials/emf-client-platform-how-to-customize-the-editor-layout/">here</a>.</b></p>
 				<div class="span8">
 					<div id="carousel" class="carousel slide">
 						<ol class="carousel-indicators">
@@ -147,10 +146,62 @@
 			<div class="row-fluid">
 			<div class="span8">
 			<div class="row-fluid">
+			<div class="span6">
+					<div class="feature">
+						<h6>Form-Based UI (EMF Forms)</h6>
+						<ul>
+							<li>Editing of all existing entities and their child elements</li>
+							<li>Default Widgets for all existing data types</li>
+							<li>UI Validation</li>
+							<li>Extensible and adaptable</li>
+							<li>UI can be expressed model-based</li>
+							<li>Exchangable renderers (SWT, JavaFX, Web, ...)</li>
+							<li class="no-bullets"><a href="#editor" role="button"
+								data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+								<div id="editor" class="modal hide fade" tabindex="-1"
+									role="dialog" aria-labelledby="editorLabel" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="editorLabel">Editor</h3>
+									</div>
+									<div class="modal-body">
+										<p>Many applications require to display and modify entities in a form-based UI. 
+										"EMF Forms", a sub project of the EMF Client Platform provides support for this.
+										It allows to render a form-based UI for a single entity or several entities. The form-based UI allows the
+											modification of all  attributes and references. By default, the UI
+											is rendered reflectively, meaning you can open any entity of
+											your application without any additional adaptations or code
+											generation. If you add new entity types to your model, the
+											EMF Forms will still work out-of-the-box.</p>
+											<p>EMF Forms can be embedded into any kind of UI, even in dialogs. The demo application shows the integration of EMF Forms as an RCP editor.</p>
+										<p>Additionally, the EMF Forms shows the result of validation
+											constraints. This way, users are informed about malformed
+											data, e.g. a missing attribute.</p>
+										<p>EMF Forms highly customizable, it is possible to
+											add custom components (widgets) for certain attributes or
+											references. Additionally EMF Forms allows to customize the layout of the UI and include specific UI customizations, such as rule-based visibility of controls.
+											Customizations can be expressed in a simple model and are interpreted by a rendering component.
+											Therefore you do not have to manually write UI code. The approach is even independant from a UI toolkit, you can migrate your UI to JavaFX or to the Web just by replacing the renderer.
+											EMF Forms allows to customize and optimized form-based UIs for
+											your application. As the relfective default UI still works for all
+											elements you perform customization in small iterative steps.
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Good
+											stuff!</button>
+									</div>
+								</div></li>
+						</ul>
+					</div>
+				</div>
 				<div class="span6">
 					<div class="feature">
 						<h6>One-Click Application</h6>
 						<ul>
+							<li>Demo application including all components</li>
+							<li>Enables quick prototyping</li>
 							<li>No additional coding or code generation</li>
 							<li>Requires only an EMF Model</li>
 							<li>Launch your application in less than one minute</li>
@@ -206,6 +257,10 @@
 					</div>
 				</div>
 				<!--/span6-->
+				
+			</div>
+			<!--/row-->
+			<div class="row-fluid">
 				<div class="span6">
 					<div class="feature">
 						<h6>Explorer</h6>
@@ -246,52 +301,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
-			<!--/row-->
-			<div class="row-fluid">
-				<div class="span6">
-					<div class="feature">
-						<h6>Editor</h6>
-						<ul>
-							<li>Editing of all existing entities</li>
-							<li>Widgets for all existing data types</li>
-							<li>UI Validation</li>
-							<li>Extensible and adaptable</li>
-							<li class="no-bullets"><a href="#editor" role="button"
-								data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-								<div id="editor" class="modal hide fade" tabindex="-1"
-									role="dialog" aria-labelledby="editorLabel" aria-hidden="true">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal"
-											aria-hidden="true">x</button>
-										<h3 id="editorLabel">Editor</h3>
-									</div>
-									<div class="modal-body">
-										<p>The editor shows a single entity and allows the
-											modification of all its attributes and references. The editor
-											is rendered reflectively, meaning you can open any entity of
-											your application without any additional adaptations or code
-											generation. If you add new entity types to your model, the
-											editor will still work out-of-the-box.</p>
-										<p>Additionally, the editor shows the result of validation
-											constraints. This way, users are informed about malformed
-											data, e.g. a missing attribute.</p>
-										<p>The editor is highly customizable, it is possible to
-											add custom components (widgets) for certain attributes or
-											references as well as to customize the layout of the editor.
-											This way you can create a custom and optimized editor for
-											your application. As the default editor works for all
-											elements you perform customization in small iterative steps.
-										</p>
-									</div>
-									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Good
-											stuff!</button>
-									</div>
-								</div></li>
-						</ul>
-					</div>
-				</div>
+				
 				<!--/span-->
 				<div class="span6">
 					<div class="feature">
@@ -461,6 +471,9 @@
 				<div class="span2 text-center">
 					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
 				</div>
+			</div>
+			<div class="text-center">
+				Icons are from <a href="http://www.icondeposit.com/theicondeposit:108" target="_blank">Icon Deposit</a>
 			</div>
 		</div>
 	</div>

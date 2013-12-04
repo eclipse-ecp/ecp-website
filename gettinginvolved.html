@@ -25,7 +25,7 @@
 				</div>
 				<div class="span10 pull-left">
 					<h2>EMF Client Platform</h2>
-					<p>Build an EMF application with one click</p>
+					<p>Are you still manually coding UIs?</p>
 				</div>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 						snippet to reproduce the issue, ideally a JUnit test case that
 						outlines the expected behavior. You are also invited to enter feature requests.
 						Please use 
-						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emfclient"
+						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
 						   target="_blank">
 							Bugzilla
 						</a> to report bugs and feature requests.
@@ -110,7 +110,7 @@
 				<li><em>Providing a patch to fix a bug or add a feature</em>
 					<p>
 						Please attach your patch to the bug report in question or create a new report using
-						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emfclient"
+						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
 						   target="_blank">
 						   Bugzilla
 						</a>.
@@ -130,15 +130,17 @@
 					<p>
 						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads" target="_blank">Eclipse downloads</a> section. 
 					</p></li>
-				<li><b>Step 2: Additional Plug-Ins</b>
+				<li><b>Step 2: Additional Plug-Ins and Settings</b>
 					<p>
 						Install Checkstyle Plug-In from either the Marketplace
 						(Help-&gt;Eclipse Marketplace...) or from the
 						<a href="http://eclipse-cs.sf.net/update/"
 						   target="_blank">
 						   Checkstyle Updatesite
-						</a>.
+						</a>. All projects have a project specific checkstyle setting, so no need to set this.
 					</p>
+					<p>Set the API baseline to the latest release. For this you need to download the release as a zip file and create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
+					<p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one</p>
 					<p>Install the "API Tools Execution Environment Descriptions" from the Eclipse Project Updates site.	 
 					</p></li>
 				<li><b>Step 3: Check out the source via GIT</b>
@@ -262,6 +264,9 @@
 				<div class="span2 text-center">
 					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
 				</div>
+			</div>
+			<div class="text-center">
+				Icons are from <a href="http://www.icondeposit.com/theicondeposit:108" target="_blank">Icon Deposit</a>
 			</div>
 		</div>
 </body>
