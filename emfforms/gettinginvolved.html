@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EMF Client Platform</title>
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/bootstrap-responsive.css">
+<link rel="stylesheet" media="screen"
+	href="public/stylesheets/theme.css">
+<link rel='stylesheet'
+	href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
+<link rel="icon" href="public/images/favicon.ico" />
+<script src="public/javascripts/jquery-1.9.0.min.js"
+	type="text/javascript"></script>
+<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container-fluid fill">
+		<div class="banner">
+			<div class="row-fluid">
+				<div class="span2" style="padding: 0.5em;">
+					<a href="index.html"> <img src="public/images/ecp.png" />
+					</a>
+				</div>
+				<div class="span10 pull-left">
+					<h2>EMF Client Platform</h2>
+					<p>Are you still manually coding UIs?</p>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="navbar span12">
+				<div class="navbar-inner" id="topbar">
+					<button id="topbtn" type="button" class="btn btn-navbar"
+						data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span
+							class="icon-bar"></span>
+					</button>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li>
+								<a href="index.html">
+									<img class="nav-image" src="public/images/home.png" />
+									<span>&nbsp;Home</span>
+								</a>
+								</li>
+							<li>
+								<a href="gettingstarted.html">
+									<img class="nav-image" src="public/images/getting-started.png" />
+									<span>&nbsp;Getting Started</span>
+								</a>
+							</li>
+							<li>
+								<a href="download.html">
+									<img class="nav-image" src="public/images/download.png"  />
+									<span>&nbsp;Download</span>
+								</a>
+							</li>
+							<li>
+								<a href="documentation.html">
+									<img class="nav-image" src="public/images/documentation.png"/>
+									<span>&nbsp;Documentation</span>
+								</a>
+							</li>
+							<li>
+								<a href="support.html">
+									<img class="nav-image" src="public/images/support.png"/>
+									<span>&nbsp;Support</span>
+								</a>
+							</li>
+							<li>
+								<a href="gettinginvolved.html">
+									<img class="nav-image" src="public/images/getting-involved.png"/>
+									<span>&nbsp;Getting Involved</span>
+								</a>
+							</li>
+							<li>
+								<a href="communication.html">
+									<img class="nav-image" src="public/images/communication.png"/>
+									<span>&nbsp;Contact</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<h3>GETTING INVOLVED</h3>
+			<p>
+				Everyone is invited to get involved with the EMF Client project.
+				Before you plan any kind of contribution, it is a good idea to
+				contact the <a
+					href="http://eclipse.org/emfclient/communication.html">project
+					team</a>.
+			</p>
+			<ul class="no-bullets">
+				<li><em>Writing bug reports</em>
+					<p>
+						Please provide a short and concise explanation of the problem and a
+						snippet to reproduce the issue, ideally a JUnit test case that
+						outlines the expected behavior. You are also invited to enter feature requests.
+						Please use 
+						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
+						   target="_blank">
+							Bugzilla
+						</a> to report bugs and feature requests.
+					</p></li>
+				<li><em>Providing a patch to fix a bug or add a feature</em>
+					<p>
+						Please attach your patch to the bug report in question or create a new report using
+						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
+						   target="_blank">
+						   Bugzilla
+						</a>.
+					</p></li>
+				<li><em>Contribute documentation</em>
+					<p>
+						If you found something that is not documented yet, please share
+						your knowledge with other users. Please <a
+							href="http://eclipse.org/emfclient/communication.html">contact
+							us</a> to find the appropriate place to add your documentation.
+					</p></li>
+			</ul>
+			<h4>Developer Resources for EMF Client
+				Platform</h4>
+			<ul class="no-bullets">
+				<li><b>Step 1: Download and install Eclipse</b>
+					<p>
+						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads" target="_blank">Eclipse downloads</a> section. 
+					</p></li>
+				<li><b>Step 2: Additional Plug-Ins and Settings</b>
+					<p>
+						Install Checkstyle Plug-In from either the Marketplace
+						(Help-&gt;Eclipse Marketplace...) or from the
+						<a href="http://eclipse-cs.sf.net/update/"
+						   target="_blank">
+						   Checkstyle Updatesite
+						</a>. All projects have a project specific checkstyle setting, so no need to set this.
+					</p>
+					<p>Set the API baseline to the latest release. For this you need to download the release as a zip file and create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
+					<p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one</p>
+					<p>Install the "API Tools Execution Environment Descriptions" from the Eclipse Project Updates site.	 
+					</p></li>
+				<li><b>Step 3: Check out the source via GIT</b>
+					<p>
+						If you want to use GIT as an anonymous user (read only) please use the following URL:
+					</p>
+					<p>
+						<code>(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
+					</p>
+					<p>
+						If you want to use GIT as a committer please use the following URL:
+					</p>
+					<p>
+						<code>(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
+					</p>
+					<p>
+						Select only the "master" branch. Press "Select all" and proceed with the import.
+					</p>
+					<p>
+						Please refer to 
+						<a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories"
+						   target="_blank">
+							this tutorial
+						</a> to clone GIT repositories. Now, you can import the
+						projects from the cloned GIT repository. See 
+						<a href="http://wiki.eclipse.org/ImportGitProjects"
+						   target="_blank">
+							here
+						</a> for information on how to import projects from a GIT repository.
+					</p></li>
+				<li><b>Step 4: Set the target</b>
+					<p>
+						Locate and open the <em>ecp.target</em> file in the <em>_target</em> bundle imported from the repository. 
+						When it is resolved, set this definition as the target platform. 
+						Please note that the resolution of the target platform may take a while to load the first time you open it.
+					</p></li>
+				<li><b>Step 5: Start ECP</b>
+					<p>
+						For testing purposes, you can use <a href="http://download.eclipse.org/emfclient/example/examplemodel.zip">this
+							example model</a>. Import it into your EMFCP workspace.
+					</p>
+					<p> 
+						Now you can start the model with EMF Client platform by creating a run configuration.
+						This run configuration will automatically also contain the example model from your developer workspace. 
+						To create a run configuration, select <em>Run &rarr; Run Configurations</em> from the Eclipse menu.
+					</p>
+					<p> 
+						Create a new run configuration and run the application <em>org.eclipse.emf.ecp.application.e3.application</em>, 
+						as shown in the following screenshot.
+					</p>
+					<p>
+						<img src="public/images/runningconfig.png"/>
+					</p>
+					<p>
+						Now you can start your application; it should present you with an empty EMFCP workbench containing the example model.
+					</p>
+				</li>
+			</ul>
+			<h4>Framework Developer Documentation</h4>
+			<ul class="no-bullets">
+				<li>
+				<p>We keep this information in our <a class="link" href="http://wiki.eclipse.org/EMFStoreDevelopers">developer wiki</a>.</p>
+				</li>
+			</ul>
+			<h4>Branching scheme</h4>
+			<ul class="no-bullets">
+				<li>
+					<p>In our GIT Repositories we are using the branching scheme described <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.</p>
+				</li>
+				<li>
+					<p>We have a master branch containing the last release. A development branch containing the current development state and (hopefully) some feature branches containing new feature developments.</p>
+				</li>
+				<li>
+					<p>So if you are a developer please commit on the develop branch in the future. If you develop a new feature please open a feature branch and merge it back to the develop branch when your feature is finished. Don't commit on the master branch as it should only contain stable release versions merged there by the release engineer.</p>
+				</li>
+				<li>
+					<img alt="Branching Scheme" src="public/images/branchStrategy.png" height="452" width="355"/>
+				</li>
+			</ul>
+			<h4>Profiling and Performance Debugging</h4>
+			<ul class="no-bullets">
+				<li>
+					YourKit is kindly supporting the EMF Client Platform open source project with its full-featured 
+				<a target="_blank" href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>, which helped us to greatly improve EMFCP.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+			<div class="row-fluid">
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/legal/privacy.php"
+					   target="_blank">
+					   Privacy Policy
+					</a>
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/legal/termsofuse.php"
+					   target="_blank">
+						Terms of Use
+					</a>
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/legal/copyright.php"
+					   target="_blank">
+						Copyright
+					</a>
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/legal/"
+					   target="_blank">
+					   Legal
+				    </a>
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+					   target="_blank">
+					   About
+					</a>					
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
+				</div>
+			</div>
+			<div class="text-center">
+				Icons are from <a href="http://www.icondeposit.com/theicondeposit:108" target="_blank">Icon Deposit</a>
+			</div>
+		</div>
+</body>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-31075157-1' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</html>
