@@ -7,10 +7,10 @@ body {
     padding-top:0;
     padding-bottom:0;
     margin-bottom:0;
-    background-image:-webkit-radial-gradient(top center, ellipse cover, rgba(00,22,128,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
-    background-image:-moz-radial-gradient(top center, ellipse cover, rgba(00,22,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
-    background-image:-o-radial-gradient(top center, ellipse cover, rgba(00,22,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
-    background-image:-ms-radial-gradient(top center, ellipse cover, rgba(00,103,128,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
+    background-image:-webkit-radial-gradient(top center, ellipse cover, rgba(00,22,0,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
+    background-image:-moz-radial-gradient(top center, ellipse cover, rgba(200,00,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
+    background-image:-o-radial-gradient(top center, ellipse cover, rgba(200,00,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
+    background-image:-ms-radial-gradient(top center, ellipse cover, rgba(200,00,128,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');
     min-height:100%;
 }
 .fill {
@@ -22,10 +22,10 @@ body {
     box-shadow:0 0 0.3em gray;
     max-width:1000px;
     margin:0 auto;
-    background:-webkit-radial-gradient(bottom, ellipse cover, rgba(00,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
-    background:-moz-radial-gradient(bottom, ellipse cover, rgba(00,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
-    background:-ms-radial-gradient(bottom, ellipse cover, rgba(00,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
-    background:-o-radial-gradient(bottom, ellipse cover, rgba(00,00,100,0.5) 0%,rgba(50,50,50,0.8) 100%);
+    background:-webkit-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);
+    background:-moz-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);
+    background:-ms-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);
+    background:-o-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);
     padding-left:0;
     padding-right:0;
 }
