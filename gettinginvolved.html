@@ -199,17 +199,30 @@
                 Please note that the resolution of the target platform may take a while to load the first time you open
                 it.
             </p></li>
-        <li><b>Step 5: Set the API baseline</b>
-            <p>
-                To help detecting source changes that would break the API of ECP, we use the API tools provided by Eclipse.
-                Therefore you'll need to set up an API baseline which Eclipse will compare your current workspace against.
-            </p>
-            <p>
-                To set up an API baseline, download the latest ECP release and open up your Preferences. Navigate to
-                <em>Plug-in Development > API Baselines</em>. Select "<strong>Add Baseline</strong>", name your baseline meaningful
-                and click "<strong>Browse</strong>"  to select the root folder of your downloaded ECP SDK. Click <strong>OK</strong> and once the
-                baseline is initialized, click <strong>Finish</strong>.
-            </p>
+        <li><b>Step 5: Configure your workspace</b>
+            <ul>
+                <li>
+                    <b>Set the API baseline</b>
+                    <p>
+                        To help detecting source changes that would break the API of ECP, we use the API tools provided by Eclipse.
+                        Therefore you'll need to set up an API baseline which Eclipse will compare your current workspace against.
+                    </p>
+                    <p>
+                        To set up an API baseline, download the latest ECP release and open up your Preferences. Navigate to
+                        <em>Plug-in Development > API Baselines</em>. Select "<strong>Add Baseline</strong>", name your baseline meaningful
+                        and click "<strong>Browse</strong>"  to select the root folder of your downloaded ECP SDK. Click <strong>OK</strong> and once the
+                        baseline is initialized, click <strong>Finish</strong>.
+                    </p>
+                </li>
+                <li>
+                    <b>Set encoding and line delimiter</b>
+                    <p>
+                        Navigate to <em>General > Workspace</em> and and set the <em>Text file encoding</em> to <strong>UTF-8</strong> and the
+                        <em>New text file line delimiter</em> to <strong>Unix</strong>.
+                        <img src="public/images/ws-preferences.png"/>
+                    </p>
+                </li>
+            </ul>
         </li>
         <li><b>Step 6: Start ECP</b>
 
