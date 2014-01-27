@@ -199,12 +199,24 @@
                 Please note that the resolution of the target platform may take a while to load the first time you open
                 it.
             </p></li>
-        <li><b>Step 5: Start ECP</b>
+        <li><b>Step 5: Set the API baseline</b>
+            <p>
+                To help detecting source changes that would break the API of ECP, we use the API tools provided by Eclipse.
+                Therefore you'll need to set up an API baseline which Eclipse will compare your current workspace against.
+            </p>
+            <p>
+                To set up an API baseline, download the latest ECP release and open up your Preferences. Navigate to
+                <em>Plug-in Development > API Baselines</em>. Select "<strong>Add Baseline</strong>", name your baseline meaningful
+                and click "<strong>Browse</strong>"  to select the root folder of your downloaded ECP SDK. Click <strong>OK</strong> and once the
+                baseline is initialized, click <strong>Finish</strong>.
+            </p>
+        </li>
+        <li><b>Step 6: Start ECP</b>
 
             <p>
                 For testing purposes, you can use <a
                     href="http://download.eclipse.org/emfclient/example/examplemodel.zip">this
-                example model</a>. Import it into your EMFCP workspace.
+                example model</a>, which you can import into your EMFCP workspace.
             </p>
 
             <p>
