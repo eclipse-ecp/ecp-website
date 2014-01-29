@@ -73,12 +73,10 @@
 				<p class="span6">
 					EMF Forms provides a new way of developing form-based UIs. Instead
 					of manually coding form-based layouts, it allows you to describe
-					the UI with a simple model instead of with code. The goals of the
-					approach are to: <br>more efficiently produce form-based UIs <br>adapt
-					form-based UIs to changes in data models with minimum effort <br>maintain
-					or easily change a uniform look and feel <br>enable a much
-					shorter turnaround for stakeholders <br>lower the technical
-					entry barrier to create form-based UIs A modeled UI part is
+					the UI with a simple model instead of with code. The approach
+					allows to more efficiently produce and iterativley refine form-based
+					UIs, which conform to a uniform look and feel. It also lowers the technical
+					entry barrier to create form-based UIs. The UI description is
 					interpreted by a rendering engine and allows you to switch between
 					the UI technology stack to Swing, SWT, JavaFX or Web – just by
 					replacing the renderer. </br> EMF Forms is a new sub component of the <a
@@ -138,123 +136,26 @@
 					<div class="row-fluid">
 						<div class="span6">
 							<div class="feature">
-								<h6>Form-Based UI (EMF Forms)</h6>
+								<h6>Form-Based UI with one click</h6>
 								<ul>
-									<li>Editing of all existing entities and their child
-										elements</li>
+									<li>Works out-of-the-box</li>
+									<li>Requires only an EMF Model</li>
+									<li>No initial coding or code generation</li>
 									<li>Default Widgets for all existing data types</li>
-									<li>UI Validation</li>
-									<li>Extensible and adaptable</li>
-									<li>UI can be expressed model-based</li>
-									<li>Exchangable renderers (SWT, JavaFX, Web, ...)</li>
-									<li class="no-bullets"><a href="#editor" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="editor" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="editorLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="editorLabel">Editor</h3>
-											</div>
-											<div class="modal-body">
-												<p>Many applications require to display and modify
-													entities in a form-based UI. "EMF Forms", a sub project of
-													the EMF Client Platform provides support for this. It
-													allows to render a form-based UI for a single entity or
-													several entities. The form-based UI allows the modification
-													of all attributes and references. By default, the UI is
-													rendered reflectively, meaning you can open any entity of
-													your application without any additional adaptations or code
-													generation. If you add new entity types to your model, the
-													EMF Forms will still work out-of-the-box.</p>
-												<p>EMF Forms can be embedded into any kind of UI, even
-													in dialogs. The demo application shows the integration of
-													EMF Forms as an RCP editor.</p>
-												<p>Additionally, the EMF Forms shows the result of
-													validation constraints. This way, users are informed about
-													malformed data, e.g. a missing attribute.</p>
-												<p>EMF Forms highly customizable, it is possible to add
-													custom components (widgets) for certain attributes or
-													references. Additionally EMF Forms allows to customize the
-													layout of the UI and include specific UI customizations,
-													such as rule-based visibility of controls. Customizations
-													can be expressed in a simple model and are interpreted by a
-													rendering component. Therefore you do not have to manually
-													write UI code. The approach is even independant from a UI
-													toolkit, you can migrate your UI to JavaFX or to the Web
-													just by replacing the renderer. EMF Forms allows to
-													customize and optimized form-based UIs for your
-													application. As the relfective default UI still works for
-													all elements you perform customization in small iterative
-													steps.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Good
-													stuff!</button>
-											</div>
-										</div></li>
+
+
 								</ul>
 							</div>
 						</div>
 						<div class="span6">
 							<div class="feature">
-								<h6>One-Click Application</h6>
+								<h6>Custom form-based UIs Customizable</h6>
 								<ul>
-									<li>Demo application including all components</li>
-									<li>Enables quick prototyping</li>
-									<li>No additional coding or code generation</li>
-									<li>Requires only an EMF Model</li>
-									<li>Launch your application in less than one minute</li>
-									<li>Robust against data/model evolution</li>
-									<li class="no-bullets"><a href="#oneClick" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="oneClick" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="oneClickLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="oneClickLabel">One Click Applications</h3>
-											</div>
-											<div class="modal-body">
-												<p>EMF enables the automatic generation of the entity
-													model for an application. Additionally, EMF provides
-													frameworks for a variety of tasks, e.g., to store and
-													collaboratively work on these entities. However, creating a
-													user interface for browsing and modifying entities based on
-													an EMF model still requires a lot of manual work. The same
-													is true for the integration of different storage
-													technologies.</p>
-												<p>The EMF Client Platform enables you to set up the
-													first version of your own application in less than one
-													minute, just by providing your entity model in EMF. In
-													contrast to the generated editor of EMF, the EMF Client
-													Platform provides not only a generic UI but a highly
-													extensible and adaptable UI to create, modify and share EMF
-													model instances. No manual coding or code generation is
-													required. As a prerequisite, you only need to provide an
-													EMF model plugin describing the entity objects of your
-													application as well as the corresponding edit plugin - both
-													generated from your EMF Ecore model. The EMF Client
-													Platform is able to render its UI reflectively, based only
-													on the information contained in the model.</p>
-												Since the EMF Client Platform provides a reflective UI, the
-												resulting application is robust against a change in the data
-												model. That means you can evolve the underlying data model
-												without any manual adaptations of the UI. Based on the
-												provided application, the EMF Client Platform is highly
-												customizable. It allows to iteratively add custom pieces to
-												the already running application. Therefore it enables you to
-												develop an application in a very agile manner, maintain a
-												shippable application at any point in time and focus only on
-												the things you want to adapt.
-												</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Cool!</button>
-											</div>
-										</div></li>
+									<li>Fully customizable layout</li>
+									<li>Custom controls integratable</li>
+									<li>UI can be expressed model-based</li>
+									<li>No "ugly" layouting code</li>
+
 								</ul>
 							</div>
 						</div>
@@ -265,41 +166,14 @@
 					<div class="row-fluid">
 						<div class="span6">
 							<div class="feature">
-								<h6>Explorer</h6>
+								<h6>Business UI features</h6>
 								<ul>
-									<li>Displays all entities in a hierarchy</li>
-									<li>Allows to create, group, move and delete entities</li>
-									<li>Works out-of-the-box</li>
-									<li>Iteratively Customizable</li>
-									<li class="no-bullets"><a href="#explorer" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="explorer" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="explorerLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="explorerLabel">Explorer</h3>
-											</div>
-											<div class="modal-body">
-												<p>The explorer of the EMF Client Platform provides an
-													hierarchical overview of all entities existing in an
-													application. It also allows to create projects, grouping
-													the data of your application. Within projects, the explorer
-													allows the creation of entities and sub-entities. These
-													entities can be moved via drag and drop and opened in the
-													editor with a double click.</p>
-												<p>All features of the explorer are just based on the
-													description of your application data, therefore no
-													additional efforts are required to use the explorer for
-													your application. However, the look of the displayed
-													elements and the hierarchy of displayed elements can be
-													highly customized to fit your needs.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Nice!</button>
-											</div>
-										</div></li>
+									<li>Ensures homogenity of the UI</li>
+									<li>Data validation</li>
+									<li>Rule-based visibility and enablement</li>
+									<li>Complex and hierachical forms</li>
+
+
 								</ul>
 							</div>
 						</div>
@@ -307,39 +181,11 @@
 						<!--/span-->
 						<div class="span6">
 							<div class="feature">
-								<h6>Persistence</h6>
+								<h6>Extensibility and flexibility</h6>
 								<ul>
-									<li>Pre-configured, extinsible persistence layer</li>
-									<li>Exchangeable backends</li>
-									<li>Server and Repository support</li>
-									<li>Built-In Support for files, EMFStore and CDO</li>
-									<li class="no-bullets"><a href="#persistence"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="persistence" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="persistenceLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="persistenceLabel">Persistence</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform provides a pre-configured
-													persistence layer to store the data of your application. It
-													allows the usage of different data providers to store your
-													data based on your requirements. The platform already ships
-													with different data provider implementations to store your
-													data in files or in server solutions (repositories) such as
-													EMFStore or CDO. Therefore a repository view is provided
-													allowing to configure and manage different servers.</p>
-												<p>Finally the EMF Client Platform is extensible by new
-													custom data providers to integrate an existing or custom
-													backend technology.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Awesome!</button>
-											</div>
-										</div></li>
+									<li>Exchangable renderers (SWT, JavaFX, Web, Mobile, ...)</li>
+									<li>No UI Toolkit specific code</li>
+									<li>Custom and domain-specific layouting</li>
 								</ul>
 							</div>
 						</div>
@@ -350,42 +196,13 @@
 					<div class="row-fluid">
 						<div class="span6">
 							<div class="feature">
-								<h6>Extensibility and Adaptability</h6>
+								<h6>Tooling</h6>
 								<ul>
-									<li>Many points for customization</li>
-									<li>Iterativ adaptations</li>
-									<li>Shippable application at any time</li>
+									<li>Preview</li>
+									<li>Highly efficient creation of complex forms</li>
+									<li>Short turn-around on changes</li>
 									<li class="no-bullets">&nbsp;</li>
-									<li class="no-bullets"><a href="#extensibility"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="extensibility" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="extensibilityLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="extensibilityLabel">Extensibility</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform creates a running application
-													just by providing an data model to it. This application
-													serves as a good starting point for development. However,
-													most scenarios require adaptation of this default
-													application in some places. Many adaptations just require
-													adaptation of the underlying data model itself. However,
-													some adaptations require custom implementations. Therefore
-													the EMF Client Platform offers various extension points.
-													This allows you to implement small pieces and iteratively
-													plug them into the running application. However, your
-													application always remains shippable as you can very
-													selectively replace components and iteratively embed your
-													custom components into the continuously runnable
-													application.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Great!</button>
-											</div>
-										</div></li>
+
 								</ul>
 							</div>
 						</div>
@@ -398,34 +215,7 @@
 									<li>Avoid unwanted dependencies</li>
 									<li>Re-Use single components</li>
 									<li class="no-bullets">&nbsp;</li>
-									<li class="no-bullets"><a href="#reusability"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="reusability" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="reusabilityLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="reusabilityLabel">Reusability</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform provides a fully functional
-													and integrated application. However, the architecture is
-													highly modular and consists of many small and re-usable
-													pieces. Therefore you can chose, which parts of the
-													platform you want to apply in your projects and which not.
-													As an example you can re-use the editor without the
-													navigator, you can only re-use the persistence layer
-													without any UI components or you can just rely on some of
-													the provided dialogs. In any case you avoid the
-													re-implementations of generic components saving the effort
-													for valuable components.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Sounds
-													good!</button>
-											</div>
-										</div></li>
+
 								</ul>
 							</div>
 
@@ -434,7 +224,7 @@
 				</div>
 
 				<div class="span4" style="padding: 1em">
-						<a class="twitter-timeline"
+					<a class="twitter-timeline"
 						href="https://twitter.com/search?q=%23emfforms"
 						data-widget-id="428513404446187521">Tweets über "#emfforms"</a>
 					<script>
@@ -450,7 +240,7 @@
 							}
 						}(document, "script", "twitter-wjs");
 					</script>
-				
+
 
 
 
