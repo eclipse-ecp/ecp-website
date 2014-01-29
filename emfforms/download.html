@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EMF Client Platform</title>
+<title>EMF Forms</title>
 <link rel="stylesheet" media="screen"
 	href="public/stylesheets/bootstrap.css">
 <link rel="stylesheet" media="screen"
@@ -20,12 +20,12 @@
 		<div class="banner">
 			<div class="row-fluid">
 				<div class="span2" style="padding: 0.5em;">
-					<a href="index.html"> <img src="public/images/ecp.png" />
+					<a href="index.html"> <img src="public/images/logo.png" />
 					</a>
 				</div>
 				<div class="span10 pull-left">
-					<h2>EMF Client Platform</h2>
-					<p>Build an EMF application with one click</p>
+					<h2>EMF Forms</h2>
+					<p>Are you still manually coding UIs?</p>
 				</div>
 			</div>
 		</div>
@@ -39,48 +39,29 @@
 					</button>
 					<div class="nav-collapse">
 						<ul class="nav">
-							<li>
-								<a href="index.html">
-									<img class="nav-image" src="public/images/home.png" />
-									<span>&nbsp;Home</span>
-								</a>
-								</li>
-							<li>
-								<a href="gettingstarted.html">
-									<img class="nav-image" src="public/images/getting-started.png" />
-									<span>&nbsp;Getting Started</span>
-								</a>
-							</li>
-							<li>
-								<a href="download.html">
-									<img class="nav-image" src="public/images/download.png"  />
-									<span>&nbsp;Download</span>
-								</a>
-							</li>
-							<li>
-								<a href="documentation.html">
-									<img class="nav-image" src="public/images/documentation.png"/>
-									<span>&nbsp;Documentation</span>
-								</a>
-							</li>
-							<li>
-								<a href="support.html">
-									<img class="nav-image" src="public/images/support.png"/>
-									<span>&nbsp;Support</span>
-								</a>
-							</li>
-							<li>
-								<a href="gettinginvolved.html">
-									<img class="nav-image" src="public/images/getting-involved.png"/>
-									<span>&nbsp;Getting Involved</span>
-								</a>
-							</li>
-							<li>
-								<a href="communication.html">
-									<img class="nav-image" src="public/images/communication.png"/>
-									<span>&nbsp;Contact</span>
-								</a>
-							</li>
+							<li><a href="index.html"> <img class="nav-image"
+									src="public/images/home.png" /> <span>&nbsp;Home</span>
+							</a></li>
+							<li><a href="gettingstarted.html"> <img
+									class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
+										Started</span>
+							</a></li>
+							<li><a href="download.html"> <img class="nav-image"
+									src="public/images/download.png" /> <span>&nbsp;Download</span>
+							</a></li>
+							<li><a href="documentation.html"> <img class="nav-image"
+									src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
+							</a></li>
+							<li><a href="support.html"> <img class="nav-image"
+									src="public/images/support.png" /> <span>&nbsp;Support</span>
+							</a></li>
+							<li><a href="gettinginvolved.html"> <img
+									class="nav-image" src="public/images/getting-involved.png" /> <span>&nbsp;Getting
+										Involved</span>
+							</a></li>
+							<li><a href="communication.html"> <img class="nav-image"
+									src="public/images/communication.png" /> <span>&nbsp;Contact</span>
+							</a></li>
 						</ul>
 					</div>
 				</div>
@@ -94,204 +75,123 @@
 					Agreement</a> unless otherwise specified.
 			</p>
 			<p>
-				To install the EMF Client Platform, you need a running version of Eclipse. 
-				The simplest way to get started is to use 
-				<a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr">the
-					latest modeling edition.</a>
+				EMF Forms is a sub component of EMF Client Platform (since 1.2.x)
+				and therefore hosted on the same update site. To install the EMF
+				Forms, you need a running version of Eclipse. The simplest way to
+				get started is to use <a
+					href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplerr">the
+					latest modeling edition.</a> To get started, please use the EMF Forms
+				SDK Feature.
 			</p>
+
+			<h4>1.2.x Service Releases</h4>
+
+			<div class="row-fluid">
+				<div class="span6 text-center">
+					<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copiedURL">Update
+						Site</button>
+					<div id="copiedURL" class="collapse out">
+						Please copy this URL:
+						<div class="well" style="padding: 0.5em; color: #333333">
+							http://download.eclipse.org/emfclient/releases_12</div>
+						<ol>
+							<li>Navigate to <em>Help &rarr; Install New Software</em>
+							<li>Paste the copied URL into the text field label with
+								"Work with" and press enter</li>
+							<li>Select all features and press next</li>
+							<li>Accept the license agreement and finish the installation</li>
+						</ol>
+					</div>
+				</div>
+				<div class="span6 text-center">
+					<a
+						href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
+						target="_blank" type="button" class="btn btn-primary"> Via
+						Marketplace </a>
+				</div>
+			</div>
+
 			
-			<h3>Releases</h3>
-			<h4>1.1</h4>
-            <a href="http://download.eclipse.org/emfclient/releases_11"> 
-                        1.1 Composite Update Site</a>
-            <h5>1.1.1</h5>
-            <ul>
-                <li>
-                    <a href="http://download.eclipse.org/emfclient/releases_11/111">
-                        1.1.1 (Update Site)</a>
-                </li>
-                <li>
-                    <a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases_11/111/111.zip">
-                        1.1.1 (Update Site as ZIP)
-                    </a>
-                </li>
-                <li>
-                     <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.1.1">Changelog</a>
-                </li>
-            </ul>
-            
-            <h5>1.1.0</h5>
-            <ul>
-                <li>
-                    <a href="http://download.eclipse.org/emfclient/releases_11/110">
-                        1.1.0 (Update Site)</a>
-                </li>
-                <li>
-                    <a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases_11/110/110.zip">
-                        1.1.0 (Update Site as ZIP)
-                    </a>
-                </li>
-                <li>
-                     <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.1.0&target_milestone=1.1.0.M1&&target_milestone=1.1.0.M2">Changelog</a>
-                </li>
-            </ul>
-			
-			<h4>1.0</h4>
-			<a href="http://download.eclipse.org/emfclient/releases">
-						1.0 Composite Update Site</a>
-			<h5>1.0.3</h5>
+
+			<h4>Single Releases</h4>
+			Below you'll find a list of older releases you may download as a ZIP
+			archive.
+
 			<ul>
-				<li>
-					<a href="http://download.eclipse.org/emfclient/releases/103">
-						1.0.3 (Update Site)</a>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases_12/120/120.zip">
+						1.2.0 Release</a> <a
+					href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.2.0">(Changelog)</a>
 				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases/103/103.zip">
-						1.0.3 (Update Site as ZIP)
-					</a>
-				</li>
-				<li>
-					 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.0.3">Changelog</a>
-				</li>
-			</ul>
-			
-			<h5>1.0.2</h5>
-			<ul>
-				<li>
-					<a href="http://download.eclipse.org/emfclient/releases/102">
-						1.0.2 (Update Site)</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases/102/102.zip">
-						1.0.2 (Update Site as ZIP)
-					</a>
-				</li>
-				<li>
-					 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&query_format=advanced&product=ecp&target_milestone=1.0.2">Changelog</a>
-				</li>
-			</ul>
-			<h5>1.0.1</h5>
-			<ul>
-				<li>
-					<a href="http://download.eclipse.org/emfclient/releases/101">
-						1.0.1 (Update Site)</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases/101/101.zip">
-						1.0.1 (Update Site as ZIP)
-					</a>
-				</li>
-				<li>
-					 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&query_format=advanced&product=ecp&target_milestone=1.0.1">Changelog</a>
-				</li>
-			</ul>
-			<h5>1.0.0</h5>
-			<ul>
-				<li>
-					<a href="http://download.eclipse.org/emfclient/releases/100">
-						1.0.0 (Update Site)</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/releases/100/100.zip">
-						1.0.0 (Update Site as ZIP)
-					</a>
-				</li>
-				<li>
-					 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&query_format=advanced&product=ecp&target_milestone=1.0.0">Changelog</a>
-				</li>
+				
 			</ul>
 			<h5>Demo Products</h5>
 			<ul>
-				<li>
-					<a
-						href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip"
-						target="_blank">
-						Windows 32bit
-					</a>
-				</li>
-				<li>
-					<a
-						href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip"
-						target="_blank">
-						Windows 64bit
-					</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86.zip"
-					   target="_blank">
-					   Mac OSX 32bit
-					</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip"
-					   target="_blank">
-					   Mac OSX 64bit
-					</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86.zip"
-					   target="_blank">
-					   Linux 32bit
-					</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip"
-					   target="_blank">
-					   Linux 64bit
-					</a>
-				</li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip"
+					target="_blank"> Windows 32bit </a></li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip"
+					target="_blank"> Windows 64bit </a></li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86.zip"
+					target="_blank"> Mac OSX 32bit </a></li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip"
+					target="_blank"> Mac OSX 64bit </a></li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86.zip"
+					target="_blank"> Linux 32bit </a></li>
+				<li><a
+					href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip"
+					target="_blank"> Linux 64bit </a></li>
 			</ul>
 			<p>
-				<a href="http://marketplace.eclipse.org/content/emf-client-platform-0" target="_blank">
-					<img src="public/images/star.png" border="0"/>
+				<a
+					href="http://marketplace.eclipse.org/content/emf-client-platform-0"
+					target="_blank"> <img src="public/images/star.png" border="0" />
 					Favorite us on Eclipse Marketplace!
-				</a>
-				<br/>
-				<br/>
-				<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=257404" 
-			   		title="Drag and drop into a running Eclipse Indigo workspace to install EMF Client Platform">
-  					<img src="http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png"/> via Drag and Drop
+				</a> <br /> <br /> <a
+					href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=257404"
+					title="Drag and drop into a running Eclipse Indigo workspace to install EMF Client Platform">
+					<img
+					src="http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png" />
+					via Drag and Drop
 				</a>
 			</p>
 		</div>
 		<div class="footer">
 			<div class="row-fluid">
 				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/privacy.php"
-					   target="_blank">
-					   Privacy Policy
-					</a>
+					<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+						Privacy Policy </a>
 				</div>
 				<div class="span2 text-center">
 					<a href="http://www.eclipse.org/legal/termsofuse.php"
-					   target="_blank">
-						Terms of Use
-					</a>
+						target="_blank"> Terms of Use </a>
 				</div>
 				<div class="span2 text-center">
 					<a href="http://www.eclipse.org/legal/copyright.php"
-					   target="_blank">
-						Copyright
+						target="_blank"> Copyright </a>
+				</div>
+				<div class="span2 text-center">
+					<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
 					</a>
 				</div>
 				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/"
-					   target="_blank">
-					   Legal
-				    </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
-					   target="_blank">
-					   About
-					</a>					
+					<a
+						href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+						target="_blank"> About </a>
 				</div>
 				<div class="span2 text-center">
 					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
 				</div>
 			</div>
 			<div class="text-center">
-				Icons are from <a href="http://www.icondeposit.com/theicondeposit:108" target="_blank">Icon Deposit</a>
+				Icons are from <a
+					href="http://www.icondeposit.com/theicondeposit:108"
+					target="_blank">Icon Deposit</a>
 			</div>
 		</div>
 	</div>
