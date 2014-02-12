@@ -93,7 +93,7 @@
 				Before you plan any kind of contribution, it is a good idea to
 				contact the <a
 					href="http://eclipse.org/emfclient/emfforms/communication.html">project
-					team</a>. The EMF Forms project is a sub component of the <a href="http://emfcp.org">EMF Client Platform project (ECP)</a>. It therefore shares the development resources such as the git repositories wit ECP.
+					team</a>. The EMF Forms project is a subcomponent of the <a href="http://emfcp.org">EMF Client Platform project (ECP)</a>. It therefore shares the development resources such as the git repositories wit ECP.
 			</p>
 			<ul class="no-bullets">
 				<li><em>Writing bug reports</em>
@@ -112,12 +112,12 @@
 						Please attach your patch to the bug report in question or create a new report using
 						<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
 						   target="_blank">
-						   Bugzilla. (Please select "EMF Forms" as a component)
-						</a>.
+						   Bugzilla</a>. (Please select "EMF Forms" as a component)
+						.
 					</p></li>
 				<li><em>Contribute documentation</em>
 					<p>
-						If you found something that is not documented yet, please share
+						If you find something that is not documented yet, please share
 						your knowledge with other users. Please <a
 							href="http://eclipse.org/emfclient/emfforms/communication.html">contact
 							us</a> to find the appropriate place to add your documentation.
@@ -135,28 +135,27 @@
 						(Help-&gt;Eclipse Marketplace...) or from the
 						<a href="http://eclipse-cs.sf.net/update/"
 						   target="_blank">
-						   Checkstyle Updatesite
-						</a>. All projects have a project specific checkstyle setting, so no need to set this.
+						   Checkstyle Updatesite</a>. All projects have a project-specific Checkstyle setting, so no need to set this.
 					</p>
-					<p>Set the API baseline to the latest release. For this you need to download the release as a zip file and create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
-					<p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one</p>
+					<p>Set the API baseline to the latest release. For this, you need to download the release as a zip file and create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
+					<p>All bundle contain bundle-specific settings for formater, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one.</p>
 					<p>Install the "API Tools Execution Environment Descriptions" from the Eclipse Project Updates site.	 
 					</p></li>
 				<li><b>Step 3: Check out the source via GIT</b>
 					<p>
-						If you want to use GIT as an anonymous user (read only) please use the following URL:
+						If you want to use GIT as an anonymous user (read only), please use the following URL:
 					</p>
 					<p>
 						<code>(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
 					</p>
 					<p>
-						If you want to use GIT as a committer please use the following URL:
+						If you want to use GIT as a committer, please use the following URL:
 					</p>
 					<p>
 						<code>(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
 					</p>
 					<p>
-						Select only the "master" branch. The repository will contain all bundles of ECP, not only EMF Forms. ECP will provide you with a good frame wo work on EMF Forms, for example an demo application embedding an EMF Forms editor. So we recommend to import the ECP bundles, too, please therefore select to import all bundles. 
+						Select only the "master" branch. The repository will contain all bundles of ECP, not just EMF Forms. ECP will provide you with a good frame to work on EMF Forms, such as a demo application embedding an EMF Forms editor. We recommend to import the ECP bundles, too, so please select to import all bundles. 
 						
 					</p>
 					<p>
@@ -164,7 +163,7 @@
 						<a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories"
 						   target="_blank">
 							this tutorial
-						</a> to clone GIT repositories. Now, you can import the
+						</a> to clone GIT repositories. Now you can import the
 						projects from the cloned GIT repository. See 
 						<a href="http://wiki.eclipse.org/ImportGitProjects"
 						   target="_blank">
@@ -208,13 +207,13 @@
 			<h4>Branching scheme</h4>
 			<ul class="no-bullets">
 				<li>
-					<p>In our GIT Repositories we are using the branching scheme described <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.</p>
+					<p>In our GIT Repositories, we are using the branching scheme described <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.</p>
 				</li>
 				<li>
 					<p>We have a master branch containing the last release. A development branch containing the current development state and (hopefully) some feature branches containing new feature developments.</p>
 				</li>
 				<li>
-					<p>So if you are a developer please commit on the develop branch in the future. If you develop a new feature please open a feature branch and merge it back to the develop branch when your feature is finished. Don't commit on the master branch as it should only contain stable release versions merged there by the release engineer.</p>
+					<p>So if you are a developer, please commit on the develop branch in the future. If you develop a new feature, please open a feature branch and merge it back to the develop branch when your feature is finished. Don't commit on the master branch because it should only contain stable release versions merged there by the release engineer.</p>
 				</li>
 				<li>
 					<img alt="Branching Scheme" src="public/images/branchStrategy.png" height="452" width="355"/>
