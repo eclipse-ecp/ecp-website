@@ -168,7 +168,8 @@
             <p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set
                 them. If you create a new bundle, please copy the .settings folder from an existing one</p>
 
-            <p>Install the "API Tools Execution Environment Descriptions" from the Eclipse Project Updates site.
+            <p>Install the "API Tools Execution Environment Descriptions" from the "Eclipse Project Updates" site. The 
+                required update site for your Eclipse version is already available in the IDE.
             </p></li>
         <li><b>Step 3: Check out the source via GIT</b>
 
@@ -197,15 +198,11 @@
             </p>
 
             <p>
-                Select only the "master" branch. Press "Select all" and proceed with the import.
-            </p>
-
-            <p>
                 Please refer to
                 <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories"
                    target="_blank">
                     this tutorial
-                </a> to clone GIT repositories. Now, you can import the
+                </a> to clone GIT repositories. You only need to clone the "master" branch. Now, you can import the
                 projects from the cloned GIT repository. See
                 <a href="http://wiki.eclipse.org/ImportGitProjects"
                    target="_blank">
@@ -215,12 +212,15 @@
         <li><b>Step 4: Set the target</b>
 
             <p>
-                Locate and open the <em>ecp.target</em> file in the <em>_target</em> bundle imported from the
+                Locate and open the <em>ecp.target</em> file in the <em>org.eclipse.emf.ecp.target.rcp</em> bundle imported from the
                 repository.
                 When it is resolved, set this definition as the target platform.
                 Please note that the resolution of the target platform may take a while to load the first time you open
                 it.
-            </p></li>
+            </p>
+			<p>
+				<img src="public/images/target.png"/>
+			</p></li>
         <li><b>Step 5: Configure your workspace</b>
             <ul>
                 <li>
@@ -247,31 +247,19 @@
             </ul>
         </li>
         <li><b>Step 6: Start ECP</b>
-
+        
             <p>
-                For testing purposes, you can use <a
-                    href="http://download.eclipse.org/emfclient/example/examplemodel.zip">this
-                example model</a>, which you can import into your EMFCP workspace.
+                You can start the EMF Client platform by using the existing <em>ECP.launch</em> launch configuration located 
+                in the <em>org.eclipse.emf.ecp.releng</em> bundle. Right click this file and select <em>Run As > ECP</em>. 
+                This will present you with an empty EMFCP workbench. 
             </p>
-
+            
             <p>
-                Now you can start the model with EMF Client platform by creating a run configuration.
-                This run configuration will automatically also contain the example model from your developer workspace.
-                To create a run configuration, select <em>Run &rarr; Run Configurations</em> from the Eclipse menu.
-            </p>
-
-            <p>
-                Create a new run configuration and run the application <em>org.eclipse.emf.ecp.application.e3.application</em>,
-                as shown in the following screenshot.
-            </p>
-
-            <p>
-                <img src="public/images/runningconfig.png"/>
-            </p>
-
-            <p>
-                Now you can start your application; it should present you with an empty EMFCP workbench containing the
-                example model.
+                Please also refer to
+                <a href="http://eclipsesource.com/blogs/tutorials/getting-started-with-the-emf-client-platform/#custommodel"
+                   target="_blank">
+                    this tutorial
+                </a> to learn about how to set up launch configurations for EMFCP.
             </p>
         </li>
     </ul>
