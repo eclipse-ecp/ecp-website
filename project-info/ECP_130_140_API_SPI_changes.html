@@ -1,0 +1,1539 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>API/SPI Changes</title>
+</head>
+<body>
+<h1>Changes Since ECP 1.3.0</h1>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">Added and removed bundles</th>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.common.ui</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.makeithappen.view.email.renderer</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.ui.view.swt.di</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.compoundcontrol.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.compoundcontrol.model.edit</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.compoundcontrol.swt</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.control.multireference</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.custom.ui.swt.di</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.group.swt.collapsable</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.group.swt.collapsible.pgroup</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.mappingdmr.databinding</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.mappingdmr.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.mappingdmr.model.edit</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.mappingdmr.tooling</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.di</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.section.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.section.model.edit</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.section.ui.swt</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.stack.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.stack.model.edit</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.stack.ui.swt</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.stack.viewmodel</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.tooling</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.validation.bean</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.validation.bean.default</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.viewproxy.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.viewproxy.model.edit</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.application.e3(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.application.e4(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.cdo.core(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.cdo.ui(1.4.0)</th>
+  </tr> 
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.common(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core(1.4.0)</th>
+  </tr> 
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core.emffilter(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.context(1.4.0)</th>
+  </tr> 
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.model(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.model.edit(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.renderer.swt(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.swt(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit.ecore.swt(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit.swt(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.editor.e3(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.core(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.e3(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.e4(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.search(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.explorereditorbridge(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.view(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.view.control(1.4.0)</th>
+  </tr>  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.viewmodel(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.util(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.view.service(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.view.group.renderer(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.wizards(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.rap(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.rap.util(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.ui.util.ECPHandlerHelper</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.e3(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.e4(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.rap(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.rcp(1.4.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.validation(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.validation.e4(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#int canRender(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#int canRender(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#VView generate(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#VView generate(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.ViewProviderHelper#VView getView(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.ViewProviderHelper#VView getView(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view.editor.controls(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.ui.view.swt.DefaultReferenceService</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.ui.view.swt.ECPSWTViewRenderer#ECPSWTView render(Composite, EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation.connector(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation.diagnostician(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validationvieweditorbridge(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.categorization.swt.Activator</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.context(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.context.ViewModelContext#Object getContextValue(String)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.context.ViewModelContext#void putContextValue(String, Object)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.context.locale(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.core.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.custom.swt.CustomControlSWTRenderer#ECPAbstractCustomControlSWT loadCustomControl(VCustomControl)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.GroupType</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#GroupType getGroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#boolean isCollapsed()</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#boolean isContainerLayoutEmbedding()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#void setCollapsed(boolean)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#void setContainerLayoutEmbedding(boolean)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroup#void setGroupType(GroupType)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#GROUP_TYPE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#GROUP__COLLAPSED</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#GROUP__CONTAINER_LAYOUT_EMBEDDING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#GROUP__GROUP_TYPE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#EEnum getGroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#EAttribute getGroup_Collapsed()</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#EAttribute getGroup_ContainerLayoutEmbedding()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage#EAttribute getGroup_GroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage$Literals#GROUP_TYPE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage$Literals#GROUP__COLLAPSED</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage$Literals#GROUP__CONTAINER_LAYOUT_EMBEDDING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.VGroupPackage$Literals#GROUP__GROUP_TYPE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupFactoryImpl#String convertGroupTypeToString(EDataType, Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupFactoryImpl#GroupType createGroupTypeFromString(EDataType, String)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#COLLAPSED_EDEFAULT</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#CONTAINER_LAYOUT_EMBEDDING_EDEFAULT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#GROUP_TYPE_EDEFAULT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#collapsed</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#containerLayoutEmbedding</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#GroupType getGroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#groupType</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#boolean isCollapsed()</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#boolean isContainerLayoutEmbedding()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#void setCollapsed(boolean)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#void setContainerLayoutEmbedding(boolean)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupImpl#void setGroupType(GroupType)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupPackageImpl#EEnum getGroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupPackageImpl#EAttribute getGroup_Collapsed()</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupPackageImpl#EAttribute getGroup_ContainerLayoutEmbedding()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.impl.VGroupPackageImpl#EAttribute getGroup_GroupType()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.util.GroupAdapterFactory#Adapter createContainedContainerAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.util.GroupSwitch#T caseContainedContainer(VContainedContainer)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.provider.GroupItemProvider#void addCollapsedPropertyDescriptor(Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.provider.GroupItemProvider#void addContainerLayoutEmbeddingPropertyDescriptor(Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.model.provider.GroupItemProvider#void addGroupTypePropertyDescriptor(Object)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.swt.embedded(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.horizontal.model.util.HorizontalAdapterFactory#Adapter createContainedContainerAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.horizontal.model.util.HorizontalSwitch#T caseContainedContainer(VContainedContainer)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.VLabel#VDomainModelReference getDomainModelReference()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.VLabel#void setDomainModelReference(VDomainModelReference)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.VLabelPackage#LABEL__DOMAIN_MODEL_REFERENCE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.VLabelPackage#EReference getLabel_DomainModelReference()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.VLabelPackage$Literals#LABEL__DOMAIN_MODEL_REFERENCE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelImpl#NotificationChain basicSetDomainModelReference(VDomainModelReference, NotificationChain)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelImpl#domainModelReference</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelImpl#NotificationChain eInverseRemove(InternalEObject, int, NotificationChain)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelImpl#VDomainModelReference getDomainModelReference()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelImpl#void setDomainModelReference(VDomainModelReference)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.impl.VLabelPackageImpl#EReference getLabel_DomainModelReference()</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.label.model.provider.LabelItemProvider#void addDomainModelReferencePropertyDescriptor(Object)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.rap(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VContainedContainer</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER_FEATURE_COUNT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__ATTACHMENTS</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__CHILDREN</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__DIAGNOSTIC</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__ENABLED</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__NAME</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__READONLY</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#CONTAINED_CONTAINER__VISIBLE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EClass getContainedContainer()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#CONTAINED_CONTAINER</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VContainedContainerImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EClass getContainedContainer()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewAdapterFactory#Adapter createContainedContainerAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewSwitch#T caseContainedContainer(VContainedContainer)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.common(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.AbstractGridCell</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.AbstractGridDescription</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.AbstractRenderer</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.BooleanControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.DateTimeControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.ECPRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.ECPStaticRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.EnumComboViewerRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.NumberControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.SimpleControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.SingleReferenceRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.TextControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.XMLDateControlRendererTester</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.model.common.spi.databinding.DatabindingProviderService</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ContainedContainerItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ControlItemProvider#void addDomainModelReferencePropertyDescriptor(Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ControlItemProvider#EStructuralFeature getChildFeature(Object, Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ControlItemProvider#Collection&lt;? extends EStructuralFeature&gt; getChildrenFeatures(Object)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.editor(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.preview.common(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.preview.e3(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.project.installer(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.provider.generator(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.provider.xmi(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.swt.layout(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.columnservice(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.editor(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.migrate(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.DetailEditing</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTableControl#DetailEditing getDetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTableControl#VView getDetailView()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTableControl#void setDetailEditing(DetailEditing)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTableControl#void setDetailView(VView)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#DETAIL_EDITING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#TABLE_CONTROL__DETAIL_EDITING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#TABLE_CONTROL__DETAIL_VIEW</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#EEnum getDetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#EAttribute getTableControl_DetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage#EReference getTableControl_DetailView()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage$Literals#DETAIL_EDITING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage$Literals#TABLE_CONTROL__DETAIL_EDITING</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.VTablePackage$Literals#TABLE_CONTROL__DETAIL_VIEW</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#DETAIL_EDITING_EDEFAULT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#NotificationChain basicSetDetailView(VView, NotificationChain)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#detailEditing</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#detailView</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#DetailEditing getDetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#VView getDetailView()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#void setDetailEditing(DetailEditing)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableControlImpl#void setDetailView(VView)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableFactoryImpl#String convertDetailEditingToString(EDataType, Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableFactoryImpl#String convertToString(EDataType, Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableFactoryImpl#DetailEditing createDetailEditingFromString(EDataType, String)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTableFactoryImpl#Object createFromString(EDataType, String)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTablePackageImpl#EEnum getDetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTablePackageImpl#EAttribute getTableControl_DetailEditing()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.impl.VTablePackageImpl#EReference getTableControl_DetailView()</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.provider.TableControlItemProvider#void addDetailEditingPropertyDescriptor(Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.provider.TableControlItemProvider#void addDetailViewPropertyDescriptor(Object)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.model.provider.TableDomainModelReferenceItemProvider#void addColumnDomainModelReferencesPropertyDescriptor(Object)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.Activator</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlDetailDialogSWTRenderer</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlDetailPanelRenderer</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#int addButtonsToButtonBar(Composite)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#Composite createControlComposite(Composite)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#int getTableHeightHint()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#TableViewer getTableViewer()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#void setTableViewer(TableViewer)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer#void viewerSelectionChanged(SelectionChangedEvent)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer$ECPCellLabelProvider#ECPCellLabelProvider(TableControlSWTRenderer, EStructuralFeature, CellEditor, IObservableMap, VTableControl)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.table.swt.TableControlSWTRenderer$ECPCellLabelProvider#ECPCellLabelProvider(TableControlSWTRenderer, EStructuralFeature, CellEditor, IObservableMap, VTableControl, VDomainModelReference)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.controls.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.model.VTTemplatePackage#VIEW_TEMPLATE__REFERENCED_ECORES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.model.VTTemplatePackage#EAttribute getViewTemplate_ReferencedEcores()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.model.VTTemplatePackage$Literals#VIEW_TEMPLATE__REFERENCED_ECORES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.model.VTViewTemplate#EList&lt;String&gt; getReferencedEcores()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.mandatory.model.VTMandatoryFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.mandatory.model.VTMandatoryPackage</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.mandatory.model.VTMandatoryStyleProperty</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.VTTableValidationFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.VTTableValidationPackage</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.VTTableValidationStyleProperty</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.impl.VTTableValidationFactoryImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.impl.VTTableValidationPackageImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.impl.VTTableValidationStylePropertyImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.util.TableValidationAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.tableValidation.model.util.TableValidationSwitch</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainModelReferenceSelectorEditPlugin.org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainModelReferenceSelectorEditPlugin</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainModelReferenceSelectorItemProvider.org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainModelReferenceSelectorItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainmodelreferenceItemProviderAdapterFactory.org.eclipse.emf.ecp.view.template.selector.domainmodelreference.model.provider.DomainmodelreferenceItemProviderAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementItemProviderAdapterFactory.org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementItemProviderAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementSelectorEditPlugin.org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementSelectorEditPlugin</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementSelectorItemProvider.org.eclipse.emf.ecp.view.template.selector.viewModelElement.model.provider.ViewModelElementSelectorItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentItemProviderAdapterFactory.org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentItemProviderAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentStyleEditPlugin.org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentStyleEditPlugin</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentStylePropertyItemProvider.org.eclipse.emf.ecp.view.template.style.alignment.model.provider.AlignmentStylePropertyItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesItemProviderAdapterFactory.org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesItemProviderAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesStyleEditPlugin.org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesStyleEditPlugin</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesStylePropertyItemProvider.org.eclipse.emf.ecp.view.template.style.fontProperties.model.provider.FontPropertiesStylePropertyItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationItemProviderAdapterFactory.org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationItemProviderAdapterFactory</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationStyleEditPlugin.org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationStyleEditPlugin</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationStylePropertyItemProvider.org.eclipse.emf.ecp.view.template.style.validation.model.provider.ValidationStylePropertyItemProvider</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.service(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.unset(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.util.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.util.swt.ImageRegistryService#Image getImage(URL)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.util.swt.rap(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.validation(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.model(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.vertical.model.util.VerticalAdapterFactory#Adapter createContainedContainerAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.vertical.model.util.VerticalSwitch#T caseContainedContainer(VContainedContainer)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.model.edit(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.ui.swt(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.workspace.core(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.workspace.ui(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.rap.edit.ui.minimal(1.4.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.3.0 to 1.4.0)</td>
+  </tr>
+</table>
+<p>
+  <a href="http://validator.w3.org/check?uri=referer"><img 
+    src="http://www.w3.org/Icons/valid-html401-blue"
+    alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
+</body>
+</html>
