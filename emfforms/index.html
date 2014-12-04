@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EMF Forms</title>
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap-responsive.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/theme.css">
-<link rel='stylesheet'
-	href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
-<link rel="icon" href="public/images/favicon.ico" />
-<script src="public/javascripts/jquery-1.9.0.min.js"
-	type="text/javascript"></script>
-<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+	<title>EMF Forms</title>
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/bootstrap.css">
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/bootstrap-responsive.css">
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/theme.css">
+
+	<link rel='stylesheet'
+		  href='http://fonts.googleapis.com/css?family=Noto+Sans' type='text/css'>
+	<link rel="icon" href="public/images/favicon.ico" />
+	<script src="public/javascripts/jquery-1.9.0.min.js"
+			type="text/javascript"></script>
+	<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container-fluid fill">
+<div class="wrap">
+	<div class="container-fluid">
 		<div class="banner">
 			<div class="row-fluid">
 				<div class="span2" style="padding: 0.5em;">
@@ -33,34 +35,34 @@
 			<div class="navbar span12">
 				<div class="navbar-inner" id="topbar">
 					<button id="topbtn" type="button" class="btn btn-navbar"
-						data-toggle="collapse" data-target=".nav-collapse">
+							data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span><span class="icon-bar"></span><span
 							class="icon-bar"></span>
 					</button>
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li><a href="index.html"> <img class="nav-image"
-									src="public/images/home.png" /> <span>&nbsp;Home</span>
+														   src="public/images/home.png" /> <span>&nbsp;Home</span>
 							</a></li>
 							<li><a href="gettingstarted.html"> <img
 									class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
 										Started</span>
 							</a></li>
 							<li><a href="download.html"> <img class="nav-image"
-									src="public/images/download.png" /> <span>&nbsp;Download</span>
+															  src="public/images/download.png" /> <span>&nbsp;Download</span>
 							</a></li>
 							<li><a href="documentation.html"> <img class="nav-image"
-									src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
+																   src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
 							</a></li>
 							<li><a href="support.html"> <img class="nav-image"
-									src="public/images/support.png" /> <span>&nbsp;Support</span>
+															 src="public/images/support.png" /> <span>&nbsp;Support</span>
 							</a></li>
 							<li><a href="gettinginvolved.html"> <img
 									class="nav-image" src="public/images/getting-involved.png" />
-									<span>&nbsp;Getting Involved</span>
+								<span>&nbsp;Getting Involved</span>
 							</a></li>
 							<li><a href="communication.html"> <img class="nav-image"
-									src="public/images/communication.png" /> <span>&nbsp;Contact</span>
+																   src="public/images/contact.png" /> <span>&nbsp;Contact</span>
 							</a></li>
 						</ul>
 					</div>
@@ -91,22 +93,34 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="active item">
-								<img src="public/images/editor.png" />
+								<img src="public/images/crud-uis_carousel.png" /> <!-- old pic: editor.png -->
 								<div class="carousel-caption">
 									<p class="lead">Form-Based CRUD UIs</p>
 								</div>
 							</div>
-                            <div class="item">
-                                <img src="public/images/ui-forms.png" />
-                                <div class="carousel-caption">
-                                    <p class="lead">Support for multiple UI technologies</p>
-                                </div>
-                            </div>
+							<div class="item">
+								<img src="public/images/ui-forms.png" />
+								<div class="carousel-caption">
+									<p class="lead">Support for multiple UI technologies</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="public/images/professional-uis_carousel.png" />
+								<div class="carousel-caption">
+									<p class="lead">Professional UIs</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="public/images/ide-tooling_carousel.png" />
+								<div class="carousel-caption">
+									<p class="lead">IDE Tooling</p>
+								</div>
+							</div>
 						</div>
 						<!-- Carousel nav -->
 						<a class="carousel-control left" href="#carousel"
-							data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
-							href="#carousel" data-slide="next">&rsaquo;</a>
+						   data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+															 href="#carousel" data-slide="next">&rsaquo;</a>
 					</div>
 				</div>
 			</div>
@@ -118,12 +132,43 @@
 								<h6>Form-Based CRUD UIs</h6>
 								<ul>
 									<li>Forms to edit your data</li>
-									<li>Ready-to-use widgets (controls)</li>
-									<li>Based on your data model</li>
+									<li>Ready-to-use widgets (Controls)</li>
+									<li>Based on your Data Model</li>
 									<li>Embeddable anywhere</li>
-
-
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#crud-uis" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="crud-uis" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Form-Based CRUD UIs</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											Many applications require to display and modify entities in a form-based UI.
+											EMF Forms supports rendering a form-based UI for a single entity and its
+											children objects. The framework ships with widgets (controls) for most
+											common data types including text fields (String), check boxes (Boolean),
+											drop down boxes (Enumerations) and many more. The rendered form-based UI is
+											fully functional and bound to the domain data model instances. The
+											resulting UI therefore allows the modification of all attributes and
+											references of real data objects. While most tutorials and screenshots show
+											the integration of EMF Forms as an RCP editor, the form-based UI is
+											definitely not limited to this context. The rendered result is just a
+											regular UI component, e.g. a SWT composite, and can therefore be embedded
+											into any part of the UI. Furthermore, EMF Forms is compatible with different
+											UI technologies based on its multi-platform support.
+										</p>
+										<p>
+											<img src="public/images/crud-uis.png" />
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="span6">
@@ -134,12 +179,37 @@
 									<li>No layout coding required</li>
 									<li>Integrate custom controls</li>
 									<li>Design your styling</li>
-
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#design-your-uis" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="design-your-uis" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Design your UIs</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											EMF Forms allows the design of completely customized forms, including the
+											layout, static elements, such as labels or separators, and the controls
+											used to display and modify data. The UI is expressed in a simple model
+											rather than manually coded. This “view model” is specialized on the
+											description of form-based UIs and therefore more focused and efficient than
+											full-blown UI toolkits such as SWT or JavaFX. The resulting model is
+											interpreted by a rendering component, which allows to define the style
+											of the resulting UI.
+											Finally, it is possible to add custom components (widgets) for certain
+											attributes or references. This also allows to re-use existing UI components.
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!--/span6-->
-
 					</div>
 					<!--/row-->
 					<div class="row-fluid">
@@ -148,12 +218,40 @@
 								<h6>Features for professional UIs</h6>
 								<ul>
 									<li>Ensures homogeneous UI</li>
-									<li>Input validation</li>
-									<li>Rule-based visibility and enabling</li>
-									<li>Powerful form elements (e.g. master-detail)</li>
-
-
+									<li>Input Validation</li>
+									<li>Rule-based Visibility and Enablement</li>
+									<li>Powerful Form Elements (e.g. Master-Detail)</li>
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#professional-uis" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="professional-uis" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Features for professional UIs</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											Although EMF Forms can be used efficiently for small UIs such as wizards,
+											it plays it key strengths when applied for complex UIs in business
+											applications. The model-based approach allows to define the concepts to
+											be used in the UI and therefore ensures a homogenous look-and-feel of all
+											forms. Adaptations on how elements are rendered can be done at one central
+											place, the renderer. Additionally, EMF Forms supports input validation
+											based on definable constraints. Parts of the form-based UI can be disabled
+											or hidden based on previous selection of a user. And finally, EMF Forms
+											provides powerful form elements, such as Master Detail Views or Multi-Paged
+											or Tabbed forms.
+										</p>
+										<p>
+											<img src="public/images/professional-uis.png" />
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -162,10 +260,41 @@
 							<div class="feature">
 								<h6>Customizable and Extensible</h6>
 								<ul>
-									<li>Adapt existing UI renderers</li>
-									<li>Domain-specific form elements</li>
-									<li>Exchangeable UI renderers  (SWT, JavaFX, Web, Mobile, ...)</li>
+									<li>Adapt existing UI Renderers</li>
+									<li>Domain-specific Form Elements</li>
+									<li>UI Renderers  for multiple platforms (RCP, RAP, JavaFX, HTML5, Mobile)</li>
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#extensibility" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="extensibility" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Features for professional UIs</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											EMF Forms is highly customizable. It is possible to add custom components
+											(widgets) for certain attributes or references. Additionally, EMF Forms
+											allows to customize the layout of the UI and include specific UI
+											customizations, such as rule-based visibility of controls.
+											Customizations can be expressed in a simple model and are interpreted by a
+											rendering component. Therefore, you do not have to manually write UI code.
+											The approach is even independent from a UI toolkit, you can migrate your UI
+											to JavaFX or to the Web just by replacing the renderer. EMF Forms allows to
+											customize and optimize form-based UIs for your application. As the
+											reflective default UI still works for all elements, you perform
+											customization in small iterative steps.
+										</p>
+										<p>
+											<img src="public/images/extensibility.png" />
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!--/span-->
@@ -180,9 +309,38 @@
 									<li>Declarative form editor</li>
 									<li>Form preview</li>
 									<li>Fast turn-around on changes</li>
-									<li class="no-bullets">&nbsp;</li>
-
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#tooling" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="tooling" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Tooling</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											Most adaptations of the form-based UI are defined with the view model. This
+											model can be edited using a tool provided by EMF Forms. This way of
+											designing a UI is much simpler and less tedious than writing UI code. By
+											providing more complex layout elements, such as Vertical/Horizontal
+											Layouts or a TreeMaster Detail and by allowing to nest these hierarchically,
+											even complex UIs can be expressed with the EMFForms view model. EMF Forms
+											Tooling allows you to efficiently create and modify a form-based UI. For
+											every change on the UI, it provides a preview of the UI under development.
+											Additionally, the tooling offers a couple of useful wizards. As an example,
+											a default view model can be automatically generated. Potential issues in
+											the resulting UI can be detected by validation rules.
+										</p>
+										<p>
+											<img src="public/images/ide-tooling.png" />
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!--/span-->
@@ -191,21 +349,42 @@
 								<h6>Convention over Configuration</h6>
 								<ul>
 									<li>Works out-of-the-box</li>
-									<li>No initial coding</li>
-									<li>No code generation</li>
-									<li class="no-bullets">&nbsp;</li>
-
+									<li>No initial Coding</li>
+									<li>No Code Generation</li>
 								</ul>
+								<!-- Details button & content -->
+								<div class="text-center">
+									<a href="#conventions" class="btn-link" role="button" data-toggle="modal">Learn more &raquo;</a>
+								</div>
+								<div id="conventions" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+										<h3>Convention over Configuration</h3>
+									</div>
+									<div class="modal-body">
+										<p>
+											By default, the UI is rendered reflectively, even without explicitly
+											defining the UI layout. This means you can open any entity of your
+											application without any additional adaptations or code generation. If you
+											add new entity types to your model, EMF Forms will still work out-of-the-box.
+											EMF Forms is therefore a perfect match for agile or iterative development.
+											EMF Forms will render a default UI for all new elements. Once the underlying
+											data model has stabilized, you can start to adapt and customize the UI.
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
 							</div>
 
 						</div>
 					</div>
 				</div>
-
 				<div class="span4" style="padding: 1em">
 					<a class="twitter-timeline"
-						href="https://twitter.com/search?q=%23emfforms"
-						data-widget-id="428513404446187521">Tweets �ber "#emfforms"</a>
+					   href="https://twitter.com/search?q=%23emfforms"
+					   data-widget-id="540187881671634945">Tweets about "#emfforms"</a>
 					<script>
 						!function(d, s, id) {
 							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
@@ -214,52 +393,49 @@
 								js = d.createElement(s);
 								js.id = id;
 								js.src = p
-										+ "://platform.twitter.com/widgets.js";
+								+ "://platform.twitter.com/widgets.js";
 								fjs.parentNode.insertBefore(js, fjs);
 							}
 						}(document, "script", "twitter-wjs");
 					</script>
-
-
-
-
 				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="row-fluid">
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
-						Privacy Policy </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/termsofuse.php"
-						target="_blank"> Terms of Use </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/copyright.php"
-						target="_blank"> Copyright </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
-					</a>
-				</div>
-				<div class="span2 text-center">
-					<a
-						href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
-						target="_blank"> About </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
-				</div>
-			</div>
-			<div class="text-center">
-				Icons are from <a
-					href="http://www.icondeposit.com/theicondeposit:108"
-					target="_blank">Icon Deposit</a>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="footer">
+	<div class="row-fluid">
+		<div class="span2 text-center">
+			<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+				Privacy Policy </a>
+		</div>
+		<div class="span2 text-center">
+			<a href="http://www.eclipse.org/legal/termsofuse.php"
+			   target="_blank"> Terms of Use </a>
+		</div>
+		<div class="span2 text-center">
+			<a href="http://www.eclipse.org/legal/copyright.php"
+			   target="_blank"> Copyright </a>
+		</div>
+		<div class="span2 text-center">
+			<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
+			</a>
+		</div>
+		<div class="span2 text-center">
+			<a
+					href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+					target="_blank"> About </a>
+		</div>
+		<div class="span2 text-center">
+			<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
+		</div>
+	</div>
+	<div class="text-center">
+		Crisp icon set &copy;  <a
+			href="http://www.icondeposit.com/theicondeposit:108"
+			target="_blank">Icon Deposit</a>
+	</div>
+</div>
 </body>
 <script type="text/javascript">
 	var _gaq = _gaq || [];
@@ -272,7 +448,7 @@
 		ga.async = true;
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
 				: 'http://www')
-				+ '.google-analytics.com/ga.js';
+		+ '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(ga, s);
 	})();

@@ -8,7 +8,8 @@ margin:0px 0px 10px 0px;
 
 .navbar-inner{
 border-radius:0px;
-background: #3e3e3d !important; 
+background: #3e3e3d !important;
+background-color: #0D6688;
 background-image: none;
 background-repeat: no-repeat;
 filter: none !important;
@@ -86,7 +87,8 @@ border-right:1px solid #8f49d7;
 
 .navbar .nav > li > a{
 padding:12px 15px 12px;
-color:#fff !important;
+   color:#fff !important;
+   background-color: #0D6688;
 text-shadow:none !important;
 border-right: 1px solid #a55cf0;
 border-left:1px solid #8f49d7;
