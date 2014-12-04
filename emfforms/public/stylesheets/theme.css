@@ -8,30 +8,17 @@ body {
     padding-top:0;
     padding-bottom:0;
     margin-bottom:0;
-    /*background-image: url('../images/test-background.jpg');*/
     background-image:url('../images/footer_lodyas.png');
-    background-image:-moz-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 100%),url('../images/footer_lodyas.png');
-    background-image:-o-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 100%),url('../images/footer_lodyas.png');
-    background-image:-ms-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 100%),url('../images/footer_lodyas.png');
-    /*background-image:-moz-radial-gradient(top center, ellipse cover, rgba(200,00,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');*/
-    /*background-image:-o-radial-gradient(top center, ellipse cover, rgba(200,00,22,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');*/
-    /*background-image:-ms-radial-gradient(top center, ellipse cover, rgba(200,00,128,0.2) 0%,rgba(0,0,0,0.5) 100%), url('../images/grey.png');*/
     min-height:100%;
 }
 h3 {
     color: #f9690e;
-    /*background-image: url('../images/footer_lodyas.png'), -webkit-linear-gradient(#654A8D 75%, #654A8D 50%);*/
-    /*background-color: #8d558c;*/
     padding-left: 0.5em;
-    /*border-radius: 0.25em;*/
 }
 
 h4 {
     color: #f9690e;
-    /*background-image: url('../images/footer_lodyas.png'), -webkit-linear-gradient(#654A8D 75%, #654A8D 50%);*/
-    /*background-color: #8d558c;*/
     padding-left: 0.5em;
-    /*border-radius: 0.25em;*/
 }
 
 .fill {
@@ -45,23 +32,15 @@ p {
 .container-fluid {
     border-top-left-radius: 0.35em;
     border-top-right-radius: 0.35em;
-    /*box-shadow:0 0 0.3em gray;*/
     max-width:1000px;
     margin:0 auto;
-    /*background:-webkit-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);*/
-    /*background:-moz-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);*/
-    /*background:-ms-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);*/
-    /*background:-o-radial-gradient(bottom, ellipse cover, rgba(00,100,200,0.5) 0%,rgba(50,50,50,0.8) 100%);*/
     background-color: #34495E;
-    /*border: medium solid #34495E;*/
     color: #ffffff;
     padding-left:0;
     padding-right:0;
 }
 
 .content {
-    /*padding-left:2em;*/
-    /*padding-right:2em;*/
     padding-bottom:2em;
 }
 
