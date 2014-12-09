@@ -40,9 +40,9 @@ p {
     padding-right:0;
 }
 
-.content {
-    padding-bottom:2em;
-}
+/*.content {*/
+    /*padding-bottom:2em;*/
+/*}*/
 
 .brand h4 {
     padding-left:9px;
@@ -114,7 +114,7 @@ p {
     bottom:0;
     font-size:0.7em;
     max-width:1000px;
-    margin:0 auto;
+    margin: 0 auto;
     height: 60px;
     /*padding-top:0.3em;*/
     background-color: #ffffff;
@@ -129,6 +129,7 @@ p {
     height: auto !important;
     margin: 0 auto -60px;
     max-width: 1000px;
+    padding-bottom: 4em;
     /*border-radius: 0.6em;*/
     /*padding: 1em;*/
 }
