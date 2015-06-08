@@ -159,13 +159,10 @@
                 <a href="http://eclipse-cs.sf.net/update/"
                    target="_blank">
                     Checkstyle Updatesite
-                </a>. All projects have a project specific checkstyle setting, so no need to set this.
+                </a>. All projects have a project specific Checkstyle setting, so no need to set this.
             </p>
 
-            <p>Set the API baseline to the latest release. For this you need to download the release as a zip file and
-                create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
-
-            <p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set
+            <p>All bundle contain bundle specific settings for formatter, warnings and so on, so you don't need to set
                 them. If you create a new bundle, please copy the .settings folder from an existing one</p>
 
             <p>Install the "API Tools Execution Environment Descriptions" from the "Eclipse Project Updates" site. The 
@@ -208,7 +205,12 @@
                    target="_blank">
                     here
                 </a> for information on how to import projects from a GIT repository.
-            </p></li>
+            </p>
+            
+            <p>
+            	We recommend to not import or at least close all rap specific bundles (rap) and all javafx specific bundles (fx).
+            </p>
+		</li>
         <li><b>Step 4: Set the target</b>
 
             <p>
@@ -230,7 +232,7 @@
                         Therefore you'll need to set up an API baseline which Eclipse will compare your current workspace against.
                     </p>
                     <p>
-                        To set up an API baseline, download the latest ECP release and open up your Preferences. Navigate to
+                        To set up an API baseline, download the latest <a href="https://www.eclipse.org/ecp/download.html">Release for Target Platforms</a> from the list of single releases and open up your Preferences. Navigate to
                         <em>Plug-in Development > API Baselines</em>. Select "<strong>Add Baseline</strong>", name your baseline meaningful
                         and click "<strong>Browse</strong>"  to select the root folder of your downloaded ECP SDK. Click <strong>OK</strong> and once the
                         baseline is initialized, click <strong>Finish</strong>.
