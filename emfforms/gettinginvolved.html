@@ -138,109 +138,41 @@
 					</p></li>
 			</ul>
 			<h4>Developer Resources for EMF Forms</h4>
+			Using Oomph we want to ease the setup pain for new contributors and committers of EMFForms.
+			Here are the necessary steps:
 			<ul class="no-bullets">
-				<li><b>Step 1: Download and install Eclipse</b>
-					<p>
-						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads" target="_blank">Eclipse downloads</a> section.
-					</p></li>
-				<li><b>Step 2: Additional Plug-Ins and Settings</b>
-					<p>
-						Install Checkstyle Plug-In from either the Marketplace
-						(Help-&gt;Eclipse Marketplace...) or from the
-						<a href="http://eclipse-cs.sf.net/update/"
-						   target="_blank">
-							Checkstyle Updatesite</a>. All projects have a project-specific Checkstyle setting, so no need to set this.
-					</p>
-					<p>All bundle contain bundle-specific settings for formatter, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one.</p>
-					<p>Install the "API Tools Execution Environment Descriptions" from the "Eclipse Project Updates" site. The required update site for your Eclipse version is already available in the IDE.
-					</p></li>
-				<li><b>Step 3: Check out the source via GIT</b>
-					<p>
-						If you want to use GIT as an anonymous user (read only), please use the following URL:
-					</p>
-					<p>
-						<code>(git://git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
-					</p>
-					<p>
-						If you want to use Gerrit please use the following URL:
-					</p>
-					<p>
-						<code>(ssh://eclipse-id@git.eclipse.org:29418/emfclient/org.eclipse.emf.ecp.core)</code>
-					</p>
-					<p>
-						If you want to use GIT as a committer without Gerrit please use the following URL:
-					</p>
-					<p>
-						<code>(ssh://committer_id@git.eclipse.org/gitroot/emfclient/org.eclipse.emf.ecp.core.git)</code>
-					</p>
-					<p>
-						Please refer to
-						<a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories"
-						   target="_blank">
-							this tutorial
-						</a> to clone GIT repositories. You only need to clone the "master" branch. Now you can import the
-						projects from the cloned GIT repository. See
-						<a href="http://wiki.eclipse.org/ImportGitProjects"
-						   target="_blank">
-							here
-						</a> for information on how to import projects from a GIT repository.
-					</p>
-					<p>
-						In order to easily provide patches please also configure <a href="https://wiki.eclipse.org/Gerrit#Using_Gerrit_with_EGit">Gerrit for EGit</a>.
-					</p>
-					<p>
-		            	We recommend to not import or at least close all rap specific bundles (rap) and all javafx specific bundles (fx).
-		            </p>
+				<li><b>Step 1: Download <a href="https://wiki.eclipse.org/Eclipse_Installer">Oomph</a> for your Platform</b></li>
+				<li><b>Step 2: Start Oomph</b>
+					<ul class="no-bullets">
+						<li>Update Oomph to the latest version if required (Simple Mode: Upper right corner or Advance Mode: left bottom)</li>
+						<li>Switch to Advanced Mode (Upper Right corner, Advanced Mode)</li>
+						<li>Drag and Drop / add ("+" in the upper right corner) this profile <a href="https://raw.githubusercontent.com/eclipsesource/IDE/master/external/EclipseSourceIDE.setup">EclipseSource Profile</a>
+							</br>
+							<img src="public/images/image_profile.png"/>
+						</li>
+						<li>Drag and Drop / add ("+" in the upper right corner) this setup file: <a href="http://git.eclipse.org/c/emfclient/org.eclipse.emf.ecp.core.git/plain/releng/org.eclipse.emf.ecp.releng/EMFForms.setup?h=develop">EMFForms.setup</a> into the top list. You should now see a new Entry at the top: 
+							</br>
+							<img src="public/images/image_emfforms.png"/>
+							</br>
+							Select the EMFForms entry and <b>double click</b> it, it should be <b>BOLD</b> now:
+							</br>
+							<img src="public/images/image_emfforms_selected.png"/>
+						</li>
+						<li>Press next and select the way you want Oomph to install your Eclipse and Workspace</li>
+						<li>Press Finish and let Oomph do the magic</li>
+					</ul>
 				</li>
-				<li><b>Step 4: Set the target</b>
-					<p>
-						Locate and open the <em>ecp.target</em> file in the <em>org.eclipse.emf.ecp.target.rcp</em> bundle imported from the repository.
-						When it is resolved, set this definition as the target platform.
-						Please note that the resolution of the target platform may take a while to load the first time you open it.
-					</p>
-					<p>
-						<img src="public/images/target.png"/>
-					</p></li>
-				<li><b>Step 5: Configure your workspace</b>
-		            <ul>
-		                <li>
-		                    <b>Set the API baseline</b>
-		                    <p>
-		                        To help detecting source changes that would break the API of ECP, we use the API tools provided by Eclipse.
-		                        Therefore you'll need to set up an API baseline which Eclipse will compare your current workspace against.
-		                    </p>
-		                    <p>
-		                        To set up an API baseline, download the latest <a href="https://www.eclipse.org/ecp/emfforms/download.html">Release for Target Platforms</a> from the list of single releases and open up your Preferences. Navigate to
-		                        <em>Plug-in Development > API Baselines</em>. Select "<strong>Add Baseline</strong>", name your baseline meaningful
-		                        and click "<strong>Browse</strong>"  to select the root folder of your downloaded ECP SDK. Click <strong>OK</strong> and once the
-		                        baseline is initialized, click <strong>Finish</strong>.
-		                    </p>
-		                </li>
-		                <li>
-		                    <b>Set encoding and line delimiter</b>
-		                    <p>
-		                        Navigate to <em>General > Workspace</em> and and set the <em>Text file encoding</em> to <strong>UTF-8</strong> and the
-		                        <em>New text file line delimiter</em> to <strong>Unix</strong>.
-		                        <img src="public/images/ws-preferences.png"/>
-		                    </p>
-		                </li>
-		            </ul>
-		        </li>
-				<li><b>Step 6: Start the ECP demo application embedding EMF Forms</b>
-					<p>
-						You can start the EMF Client platform by using the existing <em>ECP.launch</em> launch configuration located
-						in the <em>org.eclipse.emf.ecp.releng</em> bundle. Right click this file and select <em>Run As > ECP</em>.
-						This will present you with an empty EMFCP workbench.
-					</p>
-
-					<p>
-						Please also refer to
-						<a href="http://eclipsesource.com/blogs/tutorials/getting-started-with-the-emf-client-platform/#custommodel"
-						   target="_blank">
-							this tutorial
-						</a> to learn about how to set up launch configurations for EMFCP.
-					</p>
+				<li><b>Step 3: When Oomph finishes you still have to do some manual steps</b>
+					<ul class="no-bullets">
+						<li>
+							Locate and open the ecp.target file in the org.eclipse.emf.ecp.target.rcp bundle imported from the repository. When it is resolved, set this definition as the target platform. This may take quite some time at first.
+						</li>
+						<li>
+							To set up an API baseline, download the latest <a href="https://www.eclipse.org/ecp/emfforms/download.html">Release for Target Platforms</a> from the list of single releases and open up your Preferences. Navigate to Plug-in Development > API Baselines. Select "Add Baseline", name your baseline meaningful and click "Browse" to select the root folder of your downloaded ECP SDK. Click OK and once the baseline is initialized, click Finish.
+						</li>
+					</ul>
 				</li>
+				<li><b>Step 4: Start developing using ECP</b></li>
 			</ul>
 			<h4>Framework Developer Documentation</h4>
 			<ul class="no-bullets">
