@@ -94,7 +94,7 @@
 			</p>
 			
 			<h4>General settings</h4>
-			These settings can be modified in the "New Plug-in Project/New Feature" wizards.
+			<p>These settings can be modified in the "New Plug-in Project/New Feature" wizards.</p>
 			<ul class="bullets">
 				<li><b>Namespace: </b>The plugin-name should begin with "org.eclipse.emfforms". Therefore the name of our example plugin and the prefix for the packages would be "org.eclipse.emfforms.example". The name of a feature would be e.g. "org.eclipse.emfforms.example.feature".</li>
 				<li><b>Execution Environment: </b>As JRE version the plugin should use 1.6, so please select "J2SE-1.6". (Note that a feature does not have this setting.)</li>
@@ -104,18 +104,18 @@
 			</ul>
 			
 			<h4>Plugin runtime</h4>
-			When defining the export packages on the runtime tab, please note the following: <br>
-			Plugins should export all defined packages. The exported packages should not be visible usally.
+			<p>When defining the export packages on the runtime tab, please note the following: <br>
+			Plugins should export all defined packages. The exported packages should not be visible usally.</p>
 			<ul class="bullets">
 				<li>Internal packages (not visible) should follow the "org.eclipse.emfforms.internal" naming convention</li>
 				<li>SPI packages (visible, breaking changes allowed) should follow the "org.eclipse.emfforms.spi" naming convention</li>
 				<li>API packages (visible, no breaking changes allowed) should follow the "org.eclipse.emfforms" naming convention</li>
 			</ul>
-			If you don't want to make a potential API package visible yet, please follow the "org.eclipse.emfforms" naming convention but mark the package as not visible. 
+			<p>If you don't want to make a potential API package visible yet, please follow the "org.eclipse.emfforms" naming convention but mark the package as not visible. </p>
 			
 			<h4>Plugin dependencies</h4>
-			When adding dependencies to your project please note the following giudelines:<br>
-			Usually we use "Required Plug-ins" to add dependencies that we need. There is one exceptions: If you add dependencies to SWT/JFace you have to use "Imported Packages".
+			<p>When adding dependencies to your project please note the following giudelines:<br>
+			Usually we use "Required Plug-ins" to add dependencies that we need. There is one exceptions: If you add dependencies to SWT/JFace you have to use "Imported Packages".</p>
 			<ul class="bullets">
 				<li><b>Plugins  </b>should have the needed minimum version and the next major version as maximum version, e.g. "[4.8.1, 5.0.0)".</li>
 				<li><b>Reexport dependencies </b>when you use classes from the other plugins in your API.</li>
@@ -123,16 +123,16 @@
 			</ul>
 			
 			<h4>Required legal files</h4>
-			When creating a new plugin make sure to copy the "about.html" from an existing plugin to your project. Then open the build.properties and add the about.html to the Binary as well as to the Source Build.
+			<p>When creating a new plugin make sure to copy the "about.html" from an existing plugin to your project. Then open the build.properties and add the about.html to the Binary as well as to the Source Build.</p>
 			
-			<h4>Formatting & co</h4>
+			<h4>Formatting and co</h4>
 			<ul class="bullets">
 				<li>We set all setting in a project specific way. Therefore no action is required for existing projects. If you want to create a new bundle, please follow these instructions:</li>
 				<li>The lazy and best way is to copy all files from the .settings (<b>but</b> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
 			</ul>
 			
 			<h4>Generating new models</h4>
-			If you have to create a new EMF Model follow these steps before generating:
+			<p>If you have to create a new EMF Model follow these steps before generating:</p>
 			<ul class="bullets">
 				<li>Set the formatting of the project according the formatting rules</li>
 				<li>Set the Code Formatting and the Comment Formatting to true in the genmodel</li>
