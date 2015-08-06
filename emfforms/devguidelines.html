@@ -108,7 +108,7 @@
 			Plugins should export all defined packages. The exported packages should not be visible usally.</p>
 			<ul class="bullets">
 				<li>Internal packages (not visible) should follow the "org.eclipse.emfforms.internal" naming convention</li>
-				<li>SPI packages (visible, breaking changes allowed) should follow the "org.eclipse.emfforms.spi" naming convention</li>
+				<li>SPI packages (visible, breaking changes allowed) must follow the "org.eclipse.emfforms.spi" naming convention</li>
 				<li>API packages (visible, no breaking changes allowed) should follow the "org.eclipse.emfforms" naming convention</li>
 			</ul>
 			<p>If you don't want to make a potential API package visible yet, please follow the "org.eclipse.emfforms" naming convention but mark the package as not visible. </p>
@@ -125,7 +125,7 @@
 			<h4>Required legal files</h4>
 			<p>When creating a new plugin make sure to copy the "about.html" from an existing plugin to your project. Then open the build.properties and add the about.html to the Binary as well as to the Source Build.</p>
 			
-			<h4>Formatting and co</h4>
+			<h4>Formatting &#38 co</h4>
 			<ul class="bullets">
 				<li>We set all setting in a project specific way. Therefore no action is required for existing projects. If you want to create a new bundle, please follow these instructions:</li>
 				<li>The lazy and best way is to copy all files from the .settings (<b>but</b> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
@@ -150,6 +150,35 @@
 					<p>
 				</li>
 			</ul>
+			
+			<h4>Extension Point Guidelines</h4>
+			<p>When adding a new extension point please mind the following guidelines:</p>
+			<ul class="bullets">
+				<li>The plug-in ID must be the same as the ID of the project defining the extension point</li>
+				<li>The point ID must not be fully qualified. The name must be camel cased</li>
+				<li>The point name must be understandable and give a good hint at what the extension point is doing</li>
+				<li>
+					The Description tab must contain a description for the extension point. If the point is experimental (API not fixed) add the following line:<br>
+					<code>This extension point is experimental and is likely to change in the future releases as the activity support evolves.</code>
+				</li>
+				<li>The Since tab must contain the Version of the plugin since which it is part of the API. (Even if it is experimental). The Version format is maj.min, e.g. 1.1 .</li>
+				<li>The Examples tab should contain an example of an usage of this extension point. Use the &#60pre&#62&#60/pre&#62 tags to display markup.</li>
+				<li>The API Information tab should contain a description of classes being used for defining this extension point.</li>
+				<li>The Supplied Implementation tab should contain a description of a supplied implementation of this extension point, if one implementation is supplied.</li>
+				<li>
+					The Copyright tab must contain the copyright agreement, it looks like this:<br>
+					<p>
+						Copyright (c) 2011-2015 EclipseSource Muenchen GmbH and others.<br>
+						All rights reserved. This program and the accompanying materials<br>
+						are made available under the terms of the Eclipse Public License v1.0<br>
+						which accompanies this distribution, and is available at<br>
+						http://www.eclipse.org/legal/epl-v10.html<br>
+					</p>
+					The company name must be adjusted if necessary.
+				</li>
+				<li>You can use HTML tags in all tabs. Use this possibility to improve the readability of your texts.</li>
+			</ul>
+			
 		</div>
 	</div>
 </div>
