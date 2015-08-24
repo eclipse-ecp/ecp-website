@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMF Client Platform</title>
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/bootstrap.css">
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/bootstrap-responsive.css">
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/theme.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato'
+          rel='stylesheet' type='text/css'>
+    <link rel="icon" href="public/images/favicon.ico"/>
+    <script src="public/javascripts/jquery-1.9.0.min.js"
+            type="text/javascript"></script>
+    <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container-fluid fill">
+<div class="banner">
+    <div class="row-fluid">
+        <div class="span2" style="padding: 0.5em;">
+            <a href="index.html"> <img src="public/images/ecp.png"/>
+            </a>
+        </div>
+        <div class="span10 pull-left">
+            <h2>EMF Client Platform</h2>
+
+            <p>Build an EMF application with one click</p>
+        </div>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="navbar span12">
+        <div class="navbar-inner" id="topbar">
+            <button id="topbtn" type="button" class="btn btn-navbar"
+                    data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span
+                    class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">
+                            <img class="nav-image" src="public/images/home.png"/>
+                            <span>&nbsp;Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gettingstarted.html">
+                            <img class="nav-image" src="public/images/getting-started.png"/>
+                            <span>&nbsp;Getting Started</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="download.html">
+                            <img class="nav-image" src="public/images/download.png"/>
+                            <span>&nbsp;Download</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documentation.html">
+                            <img class="nav-image" src="public/images/documentation.png"/>
+                            <span>&nbsp;Documentation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html">
+                            <img class="nav-image" src="public/images/support.png"/>
+                            <span>&nbsp;Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gettinginvolved.html">
+                            <img class="nav-image" src="public/images/getting-involved.png"/>
+                            <span>&nbsp;Getting Involved</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="communication.html">
+                            <img class="nav-image" src="public/images/communication.png"/>
+                            <span>&nbsp;Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+			<h3>DEVELOPER GUIDELINES</h3>
+			<p>
+				This page describes the guidelines for creating new plugins and features for ECP.
+			</p>
+			
+			<h4>General settings</h4>
+			<p>These settings can be modified in the "New Plug-in Project/New Feature" wizards.</p>
+			<ul class="bullets">
+				<li><b>Namespace: </b>The plugin-name should begin with "org.eclipse.emf.ecp". Therefore the name of our example plugin and the prefix for the packages would be "org.eclipse.emf.ecp.example". The name of a feature would be e.g. "org.eclipse.emf.ecp.example.feature".</li>
+				<li><b>Execution Environment: </b>As JRE version the plugin should use 1.6, so please select "J2SE-1.6". (Note that a feature does not have this setting.)</li>
+				<li><b>Version: </b>As version please use the current version (see in other plugin) plus the qualifier, e.g. "1.0.0.qualifier".</li>
+				<li><b>Name: </b>Enter a describing name for your plugin, e.g. "Cool Example Plugin".</li>
+				<li><b>Provider: </b>For the provider please enter "Eclipse Modeling Project".</li>
+			</ul>
+			
+			<h4>Plugin runtime</h4>
+			<p>When defining the export packages on the runtime tab, please note the following: <br>
+			Plugins should export all defined packages. The exported packages should not be visible by default.</p>
+			<ul class="bullets">
+				<li>Internal packages (not visible) should follow the "org.eclipse.emf.ecp.internal" naming convention</li>
+				<li>SPI packages (visible, breaking changes allowed in minor releases) must follow the "org.eclipse.emf.ecp.spi" naming convention</li>
+				<li>API packages (visible, no breaking changes allowed in minor releases) should follow the "org.eclipse.emf.ecp" naming convention</li>
+			</ul>
+			<p>If you don't want to make a potential API package visible yet, please follow the "org.eclipse.emf.ecp" naming convention but mark the package as not visible. </p>
+			
+			<h4>Plugin dependencies</h4>
+			<p>When adding dependencies to your project please note the following giudelines:<br>
+			Usually we use "Required Plug-ins" to add dependencies that we need. There is one exceptions: If you add dependencies to SWT/JFace you have to use "Imported Packages".</p>
+			<ul class="bullets">
+				<li><b>Plugins  </b>should have the needed minimum version and the next major version as maximum version, e.g. "[4.8.1, 5.0.0)".</li>
+				<li><b>Reexport dependencies </b>when you use classes from the other plugins in your API.</li>
+				<li><b>Imported Packages </b>should have the needed minimum version and the next major version as maximum version, e.g. "[4.8.1, 5.0.0)".</li>
+			</ul>
+			
+			<h4>Required legal files</h4>
+			<p>When creating a new plugin make sure to copy the "about.html" from an existing plugin to your project. Then open the build.properties and add the about.html to the Binary as well as to the Source Build.</p>
+			
+			<h4>Formatting &#38 co</h4>
+			<ul class="bullets">
+				<li>We set all setting in a project specific way. Therefore no action is required for existing projects. If you want to create a new bundle, please follow these instructions:</li>
+				<li>The lazy and best way is to copy all files from the .settings (<b>except</b> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
+			</ul>
+			
+			<h4>Generating new models</h4>
+			<p>If you have to create a new EMF Model follow these steps before generating:</p>
+			<ul class="bullets">
+				<li>Set the formatting of the project according the formatting rules</li>
+				<li>Set the Code Formatting and the Comment Formatting to true in the genmodel</li>
+				<li>In the genmodel file Set the Copyright Text to: <br>
+					<p>
+						Copyright (c) 2011-2015 EclipseSource Muenchen GmbH and others.<br>
+						<br>
+						All rights reserved. This program and the accompanying materials<br>
+						are made available under the terms of the Eclipse Public License v1.0<br>
+						which accompanies this distribution, and is available at<br>
+						http://www.eclipse.org/legal/epl-v10.html<br>
+						<br>
+						Contributors:<br>
+						{userId} - initial API and implementation<br>
+					<p>
+				</li>
+			</ul>
+			
+			<h4>Extension Point Guidelines</h4>
+			<p>When adding a new extension point please mind the following guidelines:</p>
+			<ul class="bullets">
+				<li>The plug-in ID must be the same as the ID of the project defining the extension point</li>
+				<li>The point ID must not be fully qualified. The name must be camel cased</li>
+				<li>The point name must be understandable and give a good hint at what the extension point is doing</li>
+				<li>
+					The Description tab must contain a description for the extension point. If the point is experimental (API not fixed) add the following line:<br>
+					<code>This extension point is experimental and is likely to change in the future releases as the activity support evolves.</code>
+				</li>
+				<li>The Since tab must contain the Version of the plugin since which it is part of the API. (Even if it is experimental). The Version format is maj.min, e.g. 1.1 .</li>
+				<li>The Examples tab should contain an example of an usage of this extension point. Use the &#60pre&#62&#60/pre&#62 tags to display markup.</li>
+				<li>The API Information tab should contain a description of classes being used for defining this extension point.</li>
+				<li>The Supplied Implementation tab should contain a description of a supplied implementation of this extension point, if one implementation is supplied.</li>
+				<li>
+					The Copyright tab must contain the copyright agreement, it looks like this:<br>
+					<p>
+						Copyright (c) 2011-2015 EclipseSource Muenchen GmbH and others.<br>
+						All rights reserved. This program and the accompanying materials<br>
+						are made available under the terms of the Eclipse Public License v1.0<br>
+						which accompanies this distribution, and is available at<br>
+						http://www.eclipse.org/legal/epl-v10.html<br>
+					</p>
+					The company name must be adjusted if necessary.
+				</li>
+				<li>You can use HTML tags in all tabs. Use this possibility to improve the readability of your texts.</li>
+			</ul>
+			
+		</div>
+	</div>
+
+<div class="footer">
+    <div class="row-fluid">
+        <div class="span2 text-center">
+            <a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+                Privacy Policy </a>
+        </div>
+        <div class="span2 text-center">
+            <a href="http://www.eclipse.org/legal/termsofuse.php"
+               target="_blank"> Terms of Use </a>
+        </div>
+        <div class="span2 text-center">
+            <a href="http://www.eclipse.org/legal/copyright.php"
+               target="_blank"> Copyright </a>
+        </div>
+        <div class="span2 text-center">
+            <a href="http://www.eclipse.org/legal/" target="_blank"> Legal
+            </a>
+        </div>
+        <div class="span2 text-center">
+            <a
+                    href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+                    target="_blank"> About </a>
+        </div>
+        <div class="span2 text-center">
+            <a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
+        </div>
+    </div>
+    <div class="text-center">
+        Icons are from <a
+            href="http://www.icondeposit.com/theicondeposit:108"
+            target="_blank">Icon Deposit</a>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push([ '_setAccount', 'UA-31075157-1' ]);
+    _gaq.push([ '_trackPageview' ]);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                : 'http://www')
+                + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</html>

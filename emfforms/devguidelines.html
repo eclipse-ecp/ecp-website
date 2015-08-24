@@ -105,11 +105,11 @@
 			
 			<h4>Plugin runtime</h4>
 			<p>When defining the export packages on the runtime tab, please note the following: <br>
-			Plugins should export all defined packages. The exported packages should not be visible usally.</p>
+			Plugins should export all defined packages. The exported packages should not be visible by default.</p>
 			<ul class="bullets">
 				<li>Internal packages (not visible) should follow the "org.eclipse.emfforms.internal" naming convention</li>
-				<li>SPI packages (visible, breaking changes allowed) must follow the "org.eclipse.emfforms.spi" naming convention</li>
-				<li>API packages (visible, no breaking changes allowed) should follow the "org.eclipse.emfforms" naming convention</li>
+				<li>SPI packages (visible, breaking changes allowed in minor releases) must follow the "org.eclipse.emfforms.spi" naming convention</li>
+				<li>API packages (visible, no breaking changes allowed in minor releases) should follow the "org.eclipse.emfforms" naming convention</li>
 			</ul>
 			<p>If you don't want to make a potential API package visible yet, please follow the "org.eclipse.emfforms" naming convention but mark the package as not visible. </p>
 			
@@ -128,7 +128,7 @@
 			<h4>Formatting &#38 co</h4>
 			<ul class="bullets">
 				<li>We set all setting in a project specific way. Therefore no action is required for existing projects. If you want to create a new bundle, please follow these instructions:</li>
-				<li>The lazy and best way is to copy all files from the .settings (<b>but</b> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
+				<li>The lazy and best way is to copy all files from the .settings (<b>except</b> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
 			</ul>
 			
 			<h4>Generating new models</h4>
