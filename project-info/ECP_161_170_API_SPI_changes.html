@@ -1,0 +1,1769 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>API/SPI Changes</title>
+</head>
+<body>
+<h1>Changes Since ECP 1.6.1</h1>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">Added and removed bundles</th>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.provider</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.ui.view.linewrapper</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.swt.control.multiattribute</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.swt.controlgrid</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.swt.treemasterdetail</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.view.controlgrid.model</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.view.controlgrid.model.edit</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.application.e3(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.application.e4(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.cdo.core(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.cdo.ui(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.changebroker(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.AbstractNotificationProvider#boolean notifyCanDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.AbstractNotificationProvider#void notifyPostDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.AbstractNotificationProvider#void notifyPreDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToEClass(ChangeObserver, EClass)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToEClass(EMFObserver, EClass)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToFeature(ChangeObserver, EStructuralFeature)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToFeature(EMFObserver, EStructuralFeature)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToTree(ChangeObserver, EClass)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeBroker#void subscribeToTree(EMFObserver, EClass)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ChangeObserver</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.EMFObserver#void handleNotification(Notification)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.NotificationReceiver#boolean canDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.NotificationReceiver#void notifyPostDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.NotificationReceiver#void notifyPreDelete(EObject)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.PostDeleteObserver</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.PreDeleteObserver</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ReadOnlyChangeObserver</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.ReadOnlyEMFObserver</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.changebroker.spi.VetoableDeleteObserver</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.common(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.common.ui(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.DefaultProvider#void delete(InternalProject, Collection&lt;Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.DefaultProvider#void doDelete(InternalProject, Collection&lt;Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.DefaultProvider#void notifyProviderChangeListeners(Notification)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.DefaultProvider#void registerChangeListener(ProviderChangeListener)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.DefaultProvider#void unregisterChangeListener(ProviderChangeListener)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.InternalProvider#void registerChangeListener(ProviderChangeListener)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.InternalProvider#void unregisterChangeListener(ProviderChangeListener)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.spi.core.ProviderChangeListener</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core.emffilter(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core.rap(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.core.rap.sessionprovider.rwt(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.context(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.model(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.model.edit(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.renderer.swt(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.diffmerge.swt(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit.ecore.swt(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.edit.swt(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.editor.e3(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.core(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.core.rap(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.e3(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.e4(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.emfstore.ui.search(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.explorereditorbridge(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.view(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.view.control(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.editor.viewmodel(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.util(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ide.view.service(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.model(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.model.edit(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.view.email.renderer(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.view.group.renderer(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.makeithappen.wizards(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.rap(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.rap.util(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.e3(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.e4(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.rap(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.rcp(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.validation(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.validation.e4(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.ECPStringModifier#double getPriority()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#double canProvideViewModel(EObject, VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#int canRender(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#VView generate(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.IViewProvider#VView provideViewModel(EObject, VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">REMOVED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.ViewProviderHelper#VView getView(EObject, Map&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.provider.ViewProviderHelper#VView getView(EObject, VViewModelProperties)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view.editor.controls(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.ui.view.swt.ECPSWTViewRenderer#ECPSWTView render(Composite, EObject, VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.swt.layout.AbstractLayoutProvider#Layout getColumnLayout(int, boolean, Point)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.swt.layout.LayoutProviderHelper#Layout getColumnLayout(int, boolean, Point)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.ui.view.swt.di(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation.connector(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validation.diagnostician(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.validationvieweditorbridge(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.model(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.categorization.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.compoundcontrol.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.compoundcontrol.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.compoundcontrol.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.context(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.context.locale(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.control.multireference(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.core.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.core.swt.AbstractControlSWTRenderer#boolean hasLeftLabelAlignment()</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.custom.swt.ECPAbstractCustomControlSWT#boolean hasLeftLabelAlignment()</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.custom.ui.swt.di(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.edapt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.swt.collapsable(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.swt.collapsible.pgroup(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.swt.embedded(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.group.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.group.swt.GroupSWTRenderer#Layout getLayout(int, boolean)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.horizontal.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.indexdmr.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.indexdmr.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.indexdmr.tooling(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.keyattributedmr.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.keyattributedmr.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.keyattributedmr.tooling(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.rap(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.label.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.mappingdmr.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.mappingdmr.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.mappingdmr.tooling(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.migrator(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.LabelAlignment#DEFAULT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.LabelAlignment#DEFAULT_VALUE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.LabelAlignment#TOP</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.LabelAlignment#TOP_VALUE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VView#VViewModelProperties getLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VView#void setLoadingProperties(VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewFactory#VViewModelLoadingProperties createViewModelLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewModelLoadingProperties</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewModelProperties</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#STRING_TO_OBJECT_MAP_ENTRY</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#STRING_TO_OBJECT_MAP_ENTRY_FEATURE_COUNT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#STRING_TO_OBJECT_MAP_ENTRY__KEY</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#STRING_TO_OBJECT_MAP_ENTRY__VALUE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_LOADING_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_LOADING_PROPERTIES_FEATURE_COUNT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_LOADING_PROPERTIES__INHERITABLE_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_LOADING_PROPERTIES__NON_INHERITABLE_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW_MODEL_PROPERTIES_FEATURE_COUNT</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#VIEW__LOADING_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EClass getStringToObjectMapEntry()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EAttribute getStringToObjectMapEntry_Key()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EAttribute getStringToObjectMapEntry_Value()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EClass getViewModelLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EReference getViewModelLoadingProperties_InheritableProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EReference getViewModelLoadingProperties_NonInheritableProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EClass getViewModelProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage#EReference getView_LoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#STRING_TO_OBJECT_MAP_ENTRY</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#STRING_TO_OBJECT_MAP_ENTRY__KEY</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#STRING_TO_OBJECT_MAP_ENTRY__VALUE</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#VIEW_MODEL_LOADING_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#VIEW_MODEL_LOADING_PROPERTIES__INHERITABLE_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#VIEW_MODEL_LOADING_PROPERTIES__NON_INHERITABLE_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#VIEW_MODEL_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.VViewPackage$Literals#VIEW__LOADING_PROPERTIES</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VStringToObjectMapEntryImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewFactoryImpl#Map.Entry&lt;String,Object&gt; createStringToObjectMapEntry()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewFactoryImpl#VViewModelLoadingProperties createViewModelLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewImpl#NotificationChain basicSetLoadingProperties(VViewModelProperties, NotificationChain)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewImpl#VViewModelProperties getLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewImpl#loadingProperties</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewImpl#void setLoadingProperties(VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewModelLoadingPropertiesImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EClass getStringToObjectMapEntry()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EAttribute getStringToObjectMapEntry_Key()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EAttribute getStringToObjectMapEntry_Value()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EClass getViewModelLoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EReference getViewModelLoadingProperties_InheritableProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EReference getViewModelLoadingProperties_NonInheritableProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EClass getViewModelProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.impl.VViewPackageImpl#EReference getView_LoadingProperties()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.VViewResourceFactoryImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.VViewResourceImpl</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewAdapterFactory#Adapter createStringToObjectMapEntryAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewAdapterFactory#Adapter createViewModelLoadingPropertiesAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewAdapterFactory#Adapter createViewModelPropertiesAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewModelPropertiesHelper</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewSwitch#T caseStringToObjectMapEntry(Map.Entry&lt;String,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewSwitch#T caseViewModelLoadingProperties(VViewModelLoadingProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewSwitch#T caseViewModelProperties(VViewModelProperties)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewValidator#boolean validateStringToObjectMapEntry(Map.Entry&lt;?,?&gt;, DiagnosticChain, Map&lt;Object,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewValidator#boolean validateViewModelLoadingProperties(VViewModelLoadingProperties, DiagnosticChain, Map&lt;Object,Object&gt;)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.util.ViewValidator#boolean validateViewModelProperties(VViewModelProperties, DiagnosticChain, Map&lt;Object,Object&gt;)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.common(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.common.di(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.StringToObjectMapEntryItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ViewItemProviderAdapterFactory#Adapter createStringToObjectMapEntryAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ViewItemProviderAdapterFactory#Adapter createViewModelLoadingPropertiesAdapter()</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ViewItemProviderAdapterFactory#stringToObjectMapEntryItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ViewItemProviderAdapterFactory#viewModelLoadingPropertiesItemProvider</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.model.provider.ViewModelLoadingPropertiesItemProvider</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.editor(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.preview.common(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.preview.e3(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.project.installer(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.provider.generator(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.model.provider.xmi(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.rule.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.section.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.section.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.section.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emf.ecp.view.spi.section.swt.SectionNodeSWTRenderer#void applyReadOnly()</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.stack.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.stack.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.stack.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.stack.viewmodel(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.swt.layout(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.celleditor.rcp(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.columnservice(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.edapt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.table.validation(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.service(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.template.tooling(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.treemasterdetail.validation(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.unset(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.util.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.util.swt.rap(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.validation(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.validation.bean(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.validation.bean.default(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.vertical.ui.swt(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.viewproxy.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.view.viewproxy.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.workspace.core(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.ecp.workspace.ui(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emf.rap.edit.ui.minimal(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.common(1.7.0)</th>
+  </tr>
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.spi.core.services.domainexpander.EMFFormsDMRExpander</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.spi.core.services.domainexpander.EMFFormsDomainExpander</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.spi.core.services.domainexpander.EMFFormsExpandingFailedException</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.databinding.featurepath(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.databinding.index(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.databinding.mapping(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.editsupport(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.emf(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.emfspecificservice(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.core.services.locale.default(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.localization(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.swt.control.text.autocomplete(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.swt.core(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+  <tr>
+    <td width="7%">ADDED</td><td width="73%">org.eclipse.emfforms.spi.swt.core.layout.LayoutProvider#Layout getColumnLayout(int, boolean, Point)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.swt.core.di(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.swt.core.di.extension(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.swt.core.plugin(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.view.annotation.model(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.view.annotation.model.edit(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<br/><table border="1" width="80%">
+  <tr>
+    <th colspan="2" align="center" bgcolor="#CC9933">org.eclipse.emfforms.view.model.localization(1.7.0)</th>
+  </tr>
+  
+  <tr>
+    <td width="7%">CHANGED</td><td width="73%">The minor version has been changed (from 1.6.1 to 1.7.0)</td>
+  </tr>
+</table>
+<p>
+  <a href="http://validator.w3.org/check?uri=referer"><img 
+    src="http://www.w3.org/Icons/valid-html401-blue"
+    alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
+</body>
+</html>
