@@ -1,1272 +1,1279 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EMF Client Platform</title>
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap-responsive.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/theme.css">
-<link href='https://fonts.googleapis.com/css?family=Lato'
-	rel='stylesheet' type='text/css'>
-<link rel="icon" type="image/png" href="public/images/ecp.png" />
-<script src="public/javascripts/jquery-1.9.0.min.js"
-	type="text/javascript"></script>
-<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+	<title>EMF Client Platform</title>
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/bootstrap.css">
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/bootstrap-responsive.css">
+	<link rel="stylesheet" media="screen"
+		  href="public/stylesheets/theme.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato'
+		  rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="public/images/ecp.png" />
+	<script src="public/javascripts/jquery-1.9.0.min.js"
+			type="text/javascript"></script>
+	<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+
+    <script src="public/javascripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+	<script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container-fluid fill">
-		<div class="banner">
-			<div class="row-fluid">
-				<div class="span2" style="padding: 0.5em;">
-					<a href="index.html"> <img src="public/images/ecp.png" />
-					</a>
-				</div>
-				<div class="span10 pull-left">
-					<h2>EMF Client Platform</h2>
+<div class="container-fluid fill">
+	<div class="banner">
+		<div class="row-fluid">
+			<div class="span2" style="padding: 0.5em;">
+				<a href="index.html"> <img src="public/images/ecp.png" />
+				</a>
+			</div>
+			<div class="span10 pull-left">
+				<h2>EMF Client Platform</h2>
 
-					<p>Are you still manually coding UIs?</p>
+				<p>Are you still manually coding UIs?</p>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="navbar span12">
+			<div class="navbar-inner" id="topbar">
+				<button id="topbtn" type="button" class="btn btn-navbar"
+						data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a href="index.html"> <img class="nav-image"
+													   src="public/images/home.png" /> <span>&nbsp;Home</span>
+						</a></li>
+						<li><a href="gettingstarted.html"> <img
+								class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
+										Started</span>
+						</a></li>
+						<li><a href="download.html"> <img class="nav-image"
+														  src="public/images/download.png" /> <span>&nbsp;Download</span>
+						</a></li>
+						<li><a href="documentation.html"> <img class="nav-image"
+															   src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
+						</a></li>
+						<li><a href="support.html"> <img class="nav-image"
+														 src="public/images/support.png" /> <span>&nbsp;Support</span>
+						</a></li>
+						<li><a href="gettinginvolved.html"> <img
+								class="nav-image" src="public/images/getting-involved.png" /> <span>&nbsp;Getting
+										Involved</span>
+						</a></li>
+						<li><a href="communication.html"> <img class="nav-image"
+															   src="public/images/communication.png" /> <span>&nbsp;Contact</span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h3>DOWNLOAD</h3>
+
+		<p>
+			All downloads are provided under the terms and conditions of the <a
+				href="/legal/epl/notice.php">Eclipse Foundation Software User
+			Agreement</a> unless otherwise specified.
+		</p>
+
+		<p>
+			To install the EMF Client Platform, you need a running version of
+			Eclipse. The simplest way to get started is to use <a
+				href="http://tiny.cc/Eclipse-Modeling-Tools">the
+			latest modeling edition.</a>
+			<br>
+			Otherwise install the <strong> EMF Forms SDK Feature</strong> from the <strong>Update Site (NOT the Target Platform Update Site)</strong>.
+		</p>
+
+
+		<p>
+			<script type="text/javascript" src="https://www.openhub.net/p/612690/widgets/project_users_logo.js"></script>
+		</p>
+
+		<h4>1.17.x Milestone Builds</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
+					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+				</b>
+			</div>
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1170URL">Update
+					Site</button>
+				<div id="copied1170URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_117/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+								href="documentation.html">documentation</a> for more information
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1170URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1170URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_116/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
+
+		<h4>1.16.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
+					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+				</b>
+			</div>
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1160URL">Update
+					Site</button>
+				<div id="copied1160URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_116/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+								href="documentation.html">documentation</a> for more information
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1160URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1160URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_116/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
 				</div>
 			</div>
 		</div>
 		<div class="row-fluid">
-			<div class="navbar span12">
-				<div class="navbar-inner" id="topbar">
-					<button id="topbtn" type="button" class="btn btn-navbar"
-						data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span><span class="icon-bar"></span><span
-							class="icon-bar"></span>
-					</button>
-					<div class="nav-collapse">
-						<ul class="nav">
-							<li><a href="index.html"> <img class="nav-image"
-									src="public/images/home.png" /> <span>&nbsp;Home</span>
-							</a></li>
-							<li><a href="gettingstarted.html"> <img
-									class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
-										Started</span>
-							</a></li>
-							<li><a href="download.html"> <img class="nav-image"
-									src="public/images/download.png" /> <span>&nbsp;Download</span>
-							</a></li>
-							<li><a href="documentation.html"> <img class="nav-image"
-									src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
-							</a></li>
-							<li><a href="support.html"> <img class="nav-image"
-									src="public/images/support.png" /> <span>&nbsp;Support</span>
-							</a></li>
-							<li><a href="gettinginvolved.html"> <img
-									class="nav-image" src="public/images/getting-involved.png" /> <span>&nbsp;Getting
-										Involved</span>
-							</a></li>
-							<li><a href="communication.html"> <img class="nav-image"
-									src="public/images/communication.png" /> <span>&nbsp;Contact</span>
-							</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<div class="span12 text-left"></div>
 		</div>
-		<div class="content">
-			<h3>DOWNLOAD</h3>
-
-			<p>
-				All downloads are provided under the terms and conditions of the <a
-					href="/legal/epl/notice.php">Eclipse Foundation Software User
-					Agreement</a> unless otherwise specified.
-			</p>
-
-			<p>
-				To install the EMF Client Platform, you need a running version of
-				Eclipse. The simplest way to get started is to use <a
-					href="http://tiny.cc/Eclipse-Modeling-Tools">the
-					latest modeling edition.</a>
-					<br>
-				Otherwise install the <strong> EMF Forms SDK Feature</strong> from the <strong>Update Site (NOT the Target Platform Update Site)</strong>.
-			</p>
-			
-			
-			<p>
-			<script type="text/javascript" src="https://www.openhub.net/p/612690/widgets/project_users_logo.js"></script>
-			</p>
-			
-			<h4>1.17.x Milestone Builds</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
-			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied1170URL">Update
-						Site</button>
-					<div id="copied1170URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_117/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
-								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1170URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1170URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_116/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
-				</div>
-			</div>
-			
-			<h4>1.16.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
-			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied1160URL">Update
-						Site</button>
-					<div id="copied1160URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_116/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
-								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1160URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1160URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_116/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12 text-left"></div>
-			</div>
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<a
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<a
 						href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
 						target="_blank" type="button" class="btn btn-primary"> Via Marketplace </a>
-				</div>
-				<div class="span1 text-left"></div>
-				<div class="span4 text-center">
-					You can also
-					<a
+			</div>
+			<div class="span1 text-left"></div>
+			<div class="span4 text-center">
+				You can also
+				<a
 						href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1767590"
 						title="Drag and drop into a running Eclipse workspace to install EMFForms">
 					<img
 							src="http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png" />
-						</a>
-					the latest version of EMF Forms via Drag and Drop onto your Eclipse instance.
-				</div>
-				<div class="span1 text-left"></div>
+				</a>
+				the latest version of EMF Forms via Drag and Drop onto your Eclipse instance.
 			</div>
-			
-			<h4>1.15.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+			<div class="span1 text-left"></div>
+		</div>
+
+		<h4>1.15.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1150URL">Update
-						Site</button>
-					<div id="copied1150URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_115/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1150URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_115/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1150URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1150URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_115/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
-			<h4>1.14.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1150URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1150URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_115/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
+
+		<h4>1.14.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1140URL">Update
-						Site</button>
-					<div id="copied1140URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_114/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1140URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_114/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1140URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1140URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_114/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
-			<h4>1.13.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1140URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1140URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_114/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
+
+		<h4>1.13.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1130URL">Update
-						Site</button>
-					<div id="copied1130URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_113/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1130URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_113/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1130URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1130URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_113/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
-			
-			<h4>1.12.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1130URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1130URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_113/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
+
+
+		<h4>1.12.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1120URL">Update
-						Site</button>
-					<div id="copied1120URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_112/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1120URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_112/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1120URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1120URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_112/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
 
-			<h4>1.11.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1120URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1120URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_112/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
 				</div>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+
+
+		<h4>1.11.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
+					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+				</b>
+			</div>
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1110URL">Update
-						Site</button>
-					<div id="copied1110URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_111/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1110URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_111/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1110URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1110URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_111/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
 
-			<h4>1.10.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1110URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1110URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_111/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
 				</div>
 			</div>
-			
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+
+
+		<h4>1.10.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
+					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+				</b>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied1100URL">Update
-						Site</button>
-					<div id="copied1100URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_110/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied1100URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_110/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div> 
-				 
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1100URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1100URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_110/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
-			<h4>1.9.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied1100URL_target">Target Platform Update
+					Site</button>
+				<div id="copied1100URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_110/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
+
+		<h4>1.9.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied190URL">Update
-						Site</button>
-					<div id="copied190URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_19/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied190URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_19/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div> 
-				 
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied190URL_target">Target Platform Update
-						Site</button>
-					<div id="copied190URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_19/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
 
-			<h4>1.8.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied190URL_target">Target Platform Update
+					Site</button>
+				<div id="copied190URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_19/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
 				</div>
 			</div>
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+
+
+		<h4>1.8.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
+					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+				</b>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied180URL">Update
-						Site</button>
-					<div id="copied180URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_18/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied180URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_18/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied180URL_target">Target Platform Update
-						Site</button>
-					<div id="copied180URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_18/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied180URL_target">Target Platform Update
+					Site</button>
+				<div id="copied180URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_18/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
 
-			<h4>1.7.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+		<h4>1.7.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied170URL">Update
-						Site</button>
-					<div id="copied170URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_17/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied170URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_17/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied170URL_target">Target Platform Update
-						Site</button>
-					<div id="copied170URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_17/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied170URL_target">Target Platform Update
+					Site</button>
+				<div id="copied170URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_17/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
 
-			<h4>1.6.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+		<h4>1.6.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied160URL">Update
-						Site</button>
-					<div id="copied160URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_16/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied160URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_16/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied160URL_target">Target Platform Update
-						Site</button>
-					<div id="copied160URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_16/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied160URL_target">Target Platform Update
+					Site</button>
+				<div id="copied160URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_16/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
 
-			<h4>1.5.x Service Releases</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
+
+		<h4>1.5.x Service Releases</h4>
+		<div class="row-fluid">
+			<div class="span12 text-center">
+				<b>
 					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
+				</b>
 			</div>
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		</div>
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied150URL">Update
-						Site</button>
-					<div id="copied150URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_15/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied150URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_15/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied150URL_target">Target Platform Update
-						Site</button>
-					<div id="copied150URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_15/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied150URL_target">Target Platform Update
+					Site</button>
+				<div id="copied150URL_target" class="collapse out" style="padding-left: 1em;">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_target_15/</div>
+					<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+				</div>
+			</div>
+		</div>
 
-			<h4>1.4.x Service Releases</h4>
+		<h4>1.4.x Service Releases</h4>
 
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied140URL">Update
-						Site</button>
-					<div id="copied140URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_14/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+					Site</button>
+				<div id="copied140URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_14/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (<b>if you
+							are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
 								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
 			</div>
-			<h4>1.3.x Service Releases</h4>
+		</div>
+		<h4>1.3.x Service Releases</h4>
 
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
 						data-toggle="collapse" data-target="#copied130URL">Update
-						Site</button>
-					<div id="copied130URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_13/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (if you are
-								unsure: the "ECP SDK"). Please also visit our <a
-								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
+					Site</button>
+				<div id="copied130URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_13/</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (if you are
+							unsure: the "ECP SDK"). Please also visit our <a
+									href="documentation.html">documentation</a> for more information
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
 				</div>
-				<!-- 
-        <div class="span6 text-center">
-            <a
-                    href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
-                    target="_blank" type="button" class="btn btn-primary">
-                Via Marketplace </a>
-        </div>
-         -->
-			</div>
-
-			<h4>1.2.x Service Releases</h4>
-
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied120URL">Update
-						Site</button>
-					<div id="copied120URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_12</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (if you are
-								unsure: the "ECP SDK"). Please also visit our <a
-								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				<!-- 
-        <div class="span6 text-center">
-            <a
-                    href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
-                    target="_blank" type="button" class="btn btn-primary">
-                Via Marketplace </a>
-        </div>
-         -->
-			</div>
-
-			<h4>1.1.x Service Releases</h4>
-
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied110URL">Update
-						Site</button>
-					<div id="copied110URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_11</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select all features and press next</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-
-			<h4>1.0.x Service Releases</h4>
-
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied100URL">Update
-						Site</button>
-					<div id="copied100URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_10</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select all features and press next</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-
-			<!-- Nightly -->
-			<h4>Nightly Development Build</h4>
-
-			<div class="row-fluid">
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copiedNightlyURL">Target Platform Update
-						Site</button>
-					<div id="copiedNightlyURL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/nightly/p2/</div>
-						<p><b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b></p>
-					<p>This repository is aggregated from the current development stream on a daily basis. Only stable builds will be promoted. This repository is meant for projects which depend on ECP and want to run their integration tests against the latest changes.</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Nighlty End -->
-			<!-- 
-			<h4>1.17.x Milestone Builds</h4>
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<b>
-					When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
-					</b>
-				</div>
-			</div>
-			<div class="row-fluid">
-			
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-						data-toggle="collapse" data-target="#copied1170URL">Update
-						Site</button>
-					<div id="copied1170URL" class="collapse out">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_117/</div>
-						<ol>
-							<li>Navigate to <em>Help &rarr; Install New Software</em>
-							<li>Paste the copied URL into the text field label with
-								"Work with" and press enter</li>
-							<li>Select the features, you want to install (<b>if you
-									are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
-								href="documentation.html">documentation</a> for more information
-							</li>
-							<li>Accept the license agreement and finish the installation</li>
-						</ol>
-					</div>
-				</div>
-				
-				<div class="span6 text-center">
-					<button type="button" class="btn btn-primary"
-							data-toggle="collapse" data-target="#copied1170URL_target">Target Platform Update
-						Site</button>
-					<div id="copied1170URL_target" class="collapse out" style="padding-left: 1em;">
-						Please copy this URL:
-						<div class="well" style="padding: 0.5em; color: #333333">
-							http://download.eclipse.org/ecp/releases/releases_target_116/</div>
-						<b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
-					</div>
-				</div>
-			</div>
-			-->
-			<h4>Single Releases</h4>
-			Below you find a list of older releases you may download as a ZIP
-			archive.
-
-			<div class="row-fluid">
-				<div class="span3 text-center"><b>Release</b></div>
-				<div class="span3 text-center"><b>Release for Target Platforms</b></div>
-				<div class="span3 text-center"><b>Changelog</b></div>
-				<div class="span3 text-center"><b>API/SPI Changes</b></div>
-			</div>
-			<div class="row-fluid">
-				<!--
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_117/1170_M2/1170_M2.zip">1.17.0 M2</a>
-				</div>
-				-->
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_117/1170_M3/1170_M3.zip">Target Platform 1.17.0 M3</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.17.0">Changelog 1.17.0</a>
-				</div>
-				<!-- 
-				<div class="span3 text-center">
-					<a href="../project-info/ECP_1160_1170_API_SPI_changes.html">API/SPI Changes 1.17.0</a>
-				</div>
-				-->
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_116/1160/1160.zip">1.16.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_116/1160/1160.zip">Target Platform 1.16.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.16.0">Changelog 1.16.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_1150_1160_API_SPI_changes.html">API/SPI Changes 1.16.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_115/1150/1150.zip">1.15.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_115/1150/1150.zip">Target Platform 1.15.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.15.0">Changelog 1.15.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_1140_1150_API_SPI_changes.html">API/SPI Changes 1.15.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_114/1141/1141.zip">1.14.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_114/1141/1141.zip">Target Platform 1.14.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.14.0">Changelog 1.14.x</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_1130_1140_API_SPI_changes.html">API/SPI Changes 1.14.x</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_113/1131/1131.zip">1.13.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_113/1131/1131.zip">Target Platform 1.13.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.13.0">Changelog 1.13.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="../project-info/ECP_1120_1130_API_SPI_changes.html">API/SPI Changes 1.13.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_112/1120/1120.zip">1.12.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_112/1120/1120.zip">Target Platform 1.12.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.12.0">Changelog 1.12.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_1110_1120_API_SPI_changes.html">API/SPI Changes 1.12.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_111/1110/1110.zip">1.11.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_111/1110/1110.zip">Target Platform 1.11.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.11.0">Changelog 1.11.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_1100_1110_API_SPI_changes.html">API/SPI Changes 1.11.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_110/1100/1100.zip">1.10.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_110/1100/1100.zip">Target Platform 1.10.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.10.0">Changelog 1.10.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_190_1100_API_SPI_changes.html">API/SPI Changes 1.10.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_19/190/190.zip">1.9.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_19/190/190.zip">Target Platform 1.9.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.9.0">Changelog 1.9.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_180_190_API_SPI_changes.html">API/SPI Changes 1.9.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_18/180/180.zip">1.8.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_18/180/180.zip">Target Platform 1.8.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.8.0">Changelog 1.8.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_172_180_API_SPI_changes.html">API/SPI Changes 1.8.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/172/172.zip">1.7.2</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/172/172.zip">Target Platform 1.7.2</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.2">Changelog 1.7.2</a>
-				</div>
-				<div class="span3 text-center">
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/171/171.zip">1.7.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/171/171.zip">Target Platform 1.7.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.1">Changelog 1.7.1</a>
-				</div>
-				<div class="span3 text-center">
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/170/170.zip">1.7.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/170/170.zip">Target Platform 1.7.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.0">Changelog 1.7.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_161_170_API_SPI_changes.html">API/SPI Changes 1.7.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_16/161/161.zip">1.6.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_16/161/161.zip">Target Platform 1.6.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.6.1">Changelog 1.6.1</a>
-				</div>
-				<div class="span3 text-center">
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_16/160/160.zip">1.6.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_16/160/160.zip">Target Platform 1.6.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.6.0">Changelog 1.6.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_151_160_API_SPI_changes.html">API/SPI Changes 1.6.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_15/151/151.zip">1.5.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_15/151/151.zip">Target Platform 1.5.1</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.5.1">Changelog 1.5.1</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_15/150/150.zip">1.5.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_15/150/150.zip">Target Platform 1.5.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.5.0">Changelog 1.5.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_141_150_API_SPI_changes.html">API/SPI Changes 1.5.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_14/141/141.zip">1.4.1</a>
-				</div>
-				<div class="span3 text-center"></div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.4.1">Changelog 1.4.1</a>
-				</div>
-				<div class="span3 text-center"></div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_14/140/140.zip">1.4.0</a>
-				</div>
-				<div class="span3 text-center"></div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.4.0">Changelog 1.4.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_130_140_API_SPI_changes.html">API/SPI Changes 1.4.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_13/130/130.zip">1.3.0</a>
-				</div>
-				<div class="span3 text-center"></div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.3.0">Changelog 1.3.0</a>
-				</div>
-				<div class="span3 text-center">
-					<a href="./project-info/ECP_121_130_API_SPI_changes.html">API/SPI Changes 1.3.0</a>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_12/121/121.zip">1.2.1</a>
-				</div>
-				<div class="span3 text-center"></div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.2.1">Changelog 1.2.1</a>
-				</div>
-				<div class="span3 text-center"></div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3 text-center">
-					<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_12/120/120.zip">1.2.0</a>
-				</div>
-				<div class="span3 text-center"></div>
-				<div class="span3 text-center">
-					<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.2.0">Changelog 1.2.0</a>
-				</div>
-				<div class="span3 text-center"></div>
 			</div>
 			<!--
-    <h4>Demo Products</h4>
-    <ul>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip"
-            target="_blank"> Windows 32bit </a></li>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip"
-            target="_blank"> Windows 64bit </a></li>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86.zip"
-            target="_blank"> Mac OSX 32bit </a></li>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip"
-            target="_blank"> Mac OSX 64bit </a></li>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86.zip"
-            target="_blank"> Linux 32bit </a></li>
-        <li><a
-            href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip"
-            target="_blank"> Linux 64bit </a></li>
-    </ul>-->
-			<p>
-				<a
+    <div class="span6 text-center">
+        <a
+                href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
+                target="_blank" type="button" class="btn btn-primary">
+            Via Marketplace </a>
+    </div>
+     -->
+		</div>
+
+		<h4>1.2.x Service Releases</h4>
+
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied120URL">Update
+					Site</button>
+				<div id="copied120URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_12</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select the features, you want to install (if you are
+							unsure: the "ECP SDK"). Please also visit our <a
+									href="documentation.html">documentation</a> for more information
+						</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
+				</div>
+			</div>
+			<!--
+    <div class="span6 text-center">
+        <a
+                href="http://marketplace.eclipse.org/content/emf-client-platform-0#.UtkKN7Tm6MM"
+                target="_blank" type="button" class="btn btn-primary">
+            Via Marketplace </a>
+    </div>
+     -->
+		</div>
+
+		<h4>1.1.x Service Releases</h4>
+
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied110URL">Update
+					Site</button>
+				<div id="copied110URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_11</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select all features and press next</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<h4>1.0.x Service Releases</h4>
+
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copied100URL">Update
+					Site</button>
+				<div id="copied100URL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/releases/releases_10</div>
+					<ol>
+						<li>Navigate to <em>Help &rarr; Install New Software</em>
+						<li>Paste the copied URL into the text field label with
+							"Work with" and press enter</li>
+						<li>Select all features and press next</li>
+						<li>Accept the license agreement and finish the installation</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<!-- Nightly -->
+		<h4>Nightly Development Build</h4>
+
+		<div class="row-fluid">
+			<div class="span6 text-center">
+				<button type="button" class="btn btn-primary"
+						data-toggle="collapse" data-target="#copiedNightlyURL">Target Platform Update
+					Site</button>
+				<div id="copiedNightlyURL" class="collapse out">
+					Please copy this URL:
+					<div class="well" style="padding: 0.5em; color: #333333">
+						http://download.eclipse.org/ecp/nightly/p2/</div>
+					<p><b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b></p>
+					<p>This repository is aggregated from the current development stream on a daily basis. Only stable builds will be promoted. This repository is meant for projects which depend on ECP and want to run their integration tests against the latest changes.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Nighlty End -->
+		<!--
+        <h4>1.17.x Milestone Builds</h4>
+        <div class="row-fluid">
+            <div class="span12 text-center">
+                <b>
+                When updating to this version, please have a look at our migration guide:  <a href="http://eclipsesource.com/blogs/tutorials/emf-forms-migration-guide/">EMFForms Migration Guide</a>.
+                </b>
+            </div>
+        </div>
+        <div class="row-fluid">
+
+            <div class="span6 text-center">
+                <button type="button" class="btn btn-primary"
+                    data-toggle="collapse" data-target="#copied1170URL">Update
+                    Site</button>
+                <div id="copied1170URL" class="collapse out">
+                    Please copy this URL:
+                    <div class="well" style="padding: 0.5em; color: #333333">
+                        http://download.eclipse.org/ecp/releases/releases_117/</div>
+                    <ol>
+                        <li>Navigate to <em>Help &rarr; Install New Software</em>
+                        <li>Paste the copied URL into the text field label with
+                            "Work with" and press enter</li>
+                        <li>Select the features, you want to install (<b>if you
+                                are unsure: the "EMF Forms SDK"</b>). Please also visit our <a
+                            href="documentation.html">documentation</a> for more information
+                        </li>
+                        <li>Accept the license agreement and finish the installation</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="span6 text-center">
+                <button type="button" class="btn btn-primary"
+                        data-toggle="collapse" data-target="#copied1170URL_target">Target Platform Update
+                    Site</button>
+                <div id="copied1170URL_target" class="collapse out" style="padding-left: 1em;">
+                    Please copy this URL:
+                    <div class="well" style="padding: 0.5em; color: #333333">
+                        http://download.eclipse.org/ecp/releases/releases_target_116/</div>
+                    <b>DO NOT INSTALL THIS INTO YOUR IDE. THIS IS MEANT ONLY FOR YOUR TARGET PLATFORM!</b>
+                </div>
+            </div>
+        </div>
+        -->
+		<h4>Single Releases</h4>
+		Below you find a list of older releases you may download as a ZIP
+		archive.
+
+		<div class="row-fluid">
+			<div class="span3 text-center"><b>Release</b></div>
+			<div class="span3 text-center"><b>Release for Target Platforms</b></div>
+			<div class="span3 text-center"><b>Changelog</b></div>
+			<div class="span3 text-center"><b>API/SPI Changes</b></div>
+		</div>
+		<div class="row-fluid">
+			<!--
+            <div class="span3 text-center">
+                <a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_117/1170_M2/1170_M2.zip">1.17.0 M2</a>
+            </div>
+            -->
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_117/1170_M3/1170_M3.zip">Target Platform 1.17.0 M3</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.17.0">Changelog 1.17.0</a>
+			</div>
+			<!--
+            <div class="span3 text-center">
+                <a href="../project-info/ECP_1160_1170_API_SPI_changes.html">API/SPI Changes 1.17.0</a>
+            </div>
+            -->
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_116/1160/1160.zip">1.16.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_116/1160/1160.zip">Target Platform 1.16.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.16.0">Changelog 1.16.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_1150_1160_API_SPI_changes.html">API/SPI Changes 1.16.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_115/1150/1150.zip">1.15.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_115/1150/1150.zip">Target Platform 1.15.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.15.0">Changelog 1.15.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_1140_1150_API_SPI_changes.html">API/SPI Changes 1.15.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_114/1141/1141.zip">1.14.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_114/1141/1141.zip">Target Platform 1.14.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.14.0">Changelog 1.14.x</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_1130_1140_API_SPI_changes.html">API/SPI Changes 1.14.x</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_113/1131/1131.zip">1.13.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_113/1131/1131.zip">Target Platform 1.13.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.13.0">Changelog 1.13.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="../project-info/ECP_1120_1130_API_SPI_changes.html">API/SPI Changes 1.13.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_112/1120/1120.zip">1.12.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_112/1120/1120.zip">Target Platform 1.12.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.12.0">Changelog 1.12.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_1110_1120_API_SPI_changes.html">API/SPI Changes 1.12.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_111/1110/1110.zip">1.11.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_111/1110/1110.zip">Target Platform 1.11.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.11.0">Changelog 1.11.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_1100_1110_API_SPI_changes.html">API/SPI Changes 1.11.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_110/1100/1100.zip">1.10.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_110/1100/1100.zip">Target Platform 1.10.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.10.0">Changelog 1.10.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_190_1100_API_SPI_changes.html">API/SPI Changes 1.10.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_19/190/190.zip">1.9.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_19/190/190.zip">Target Platform 1.9.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.9.0">Changelog 1.9.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_180_190_API_SPI_changes.html">API/SPI Changes 1.9.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_18/180/180.zip">1.8.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_18/180/180.zip">Target Platform 1.8.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.8.0">Changelog 1.8.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_172_180_API_SPI_changes.html">API/SPI Changes 1.8.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/172/172.zip">1.7.2</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/172/172.zip">Target Platform 1.7.2</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.2">Changelog 1.7.2</a>
+			</div>
+			<div class="span3 text-center">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/171/171.zip">1.7.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/171/171.zip">Target Platform 1.7.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.1">Changelog 1.7.1</a>
+			</div>
+			<div class="span3 text-center">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_17/170/170.zip">1.7.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_17/170/170.zip">Target Platform 1.7.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.7.0">Changelog 1.7.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_161_170_API_SPI_changes.html">API/SPI Changes 1.7.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_16/161/161.zip">1.6.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_16/161/161.zip">Target Platform 1.6.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.6.1">Changelog 1.6.1</a>
+			</div>
+			<div class="span3 text-center">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_16/160/160.zip">1.6.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_16/160/160.zip">Target Platform 1.6.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.6.0">Changelog 1.6.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_151_160_API_SPI_changes.html">API/SPI Changes 1.6.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_15/151/151.zip">1.5.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_15/151/151.zip">Target Platform 1.5.1</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.5.1">Changelog 1.5.1</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_15/150/150.zip">1.5.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_target_15/150/150.zip">Target Platform 1.5.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.5.0">Changelog 1.5.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_141_150_API_SPI_changes.html">API/SPI Changes 1.5.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_14/141/141.zip">1.4.1</a>
+			</div>
+			<div class="span3 text-center"></div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.4.1">Changelog 1.4.1</a>
+			</div>
+			<div class="span3 text-center"></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_14/140/140.zip">1.4.0</a>
+			</div>
+			<div class="span3 text-center"></div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.4.0">Changelog 1.4.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_130_140_API_SPI_changes.html">API/SPI Changes 1.4.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_13/130/130.zip">1.3.0</a>
+			</div>
+			<div class="span3 text-center"></div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.3.0">Changelog 1.3.0</a>
+			</div>
+			<div class="span3 text-center">
+				<a href="./project-info/ECP_121_130_API_SPI_changes.html">API/SPI Changes 1.3.0</a>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_12/121/121.zip">1.2.1</a>
+			</div>
+			<div class="span3 text-center"></div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.2.1">Changelog 1.2.1</a>
+			</div>
+			<div class="span3 text-center"></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3 text-center">
+				<a href="http://www.eclipse.org/downloads/download.php?file=/ecp/releases/releases_12/120/120.zip">1.2.0</a>
+			</div>
+			<div class="span3 text-center"></div>
+			<div class="span3 text-center">
+				<a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECP&target_milestone=1.2.0">Changelog 1.2.0</a>
+			</div>
+			<div class="span3 text-center"></div>
+		</div>
+		<!--
+<h4>Demo Products</h4>
+<ul>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86.zip"
+        target="_blank"> Windows 32bit </a></li>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-win32.win32.x86_64.zip"
+        target="_blank"> Windows 64bit </a></li>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86.zip"
+        target="_blank"> Mac OSX 32bit </a></li>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-macosx.cocoa.x86_64.zip"
+        target="_blank"> Mac OSX 64bit </a></li>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86.zip"
+        target="_blank"> Linux 32bit </a></li>
+    <li><a
+        href="http://www.eclipse.org/downloads/download.php?file=/emfclient/products/org.eclipse.emf.ecp.3x-linux.gtk.x86_64.zip"
+        target="_blank"> Linux 64bit </a></li>
+</ul>-->
+		<p>
+			<a
 					href="http://marketplace.eclipse.org/content/emf-client-platform-0"
 					target="_blank"> <img src="public/images/star.png" border="0" />
-					Favorite us on Eclipse Marketplace!
-				</a> <br /> <br /> <a
-					href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=257404"
-					title="Drag and drop into a running Eclipse workspace to install EMF Client Platform">
-					<img
+				Favorite us on Eclipse Marketplace!
+			</a> <br /> <br /> <a
+				href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=257404"
+				title="Drag and drop into a running Eclipse workspace to install EMF Client Platform">
+			<img
 					src="http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png" />
-					via Drag and Drop
+			via Drag and Drop
+		</a>
+		</p>
+	</div>
+	<div class="footer">
+		<div class="row-fluid">
+			<div class="span2 text-center">
+				<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+					Privacy Policy </a>
+			</div>
+			<div class="span2 text-center">
+				<a href="http://www.eclipse.org/legal/termsofuse.php"
+				   target="_blank"> Terms of Use </a>
+			</div>
+			<div class="span2 text-center">
+				<a href="http://www.eclipse.org/legal/copyright.php"
+				   target="_blank"> Copyright </a>
+			</div>
+			<div class="span2 text-center">
+				<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
 				</a>
-			</p>
-		</div>
-		<div class="footer">
-			<div class="row-fluid">
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
-						Privacy Policy </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/termsofuse.php"
-						target="_blank"> Terms of Use </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/copyright.php"
-						target="_blank"> Copyright </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
-					</a>
-				</div>
-				<div class="span2 text-center">
-					<a
+			</div>
+			<div class="span2 text-center">
+				<a
 						href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
 						target="_blank"> About </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
-				</div>
 			</div>
-			<div class="text-center">
-				Icons are from <a
-					href="http://www.icondeposit.com/theicondeposit:108"
-					target="_blank">Icon Deposit</a>
+			<div class="span2 text-center">
+				<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
 			</div>
 		</div>
+		<div class="text-center">
+			Icons are from <a
+				href="http://www.icondeposit.com/theicondeposit:108"
+				target="_blank">Icon Deposit</a>
+		</div>
 	</div>
-</body>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push([ '_setAccount', 'UA-31075157-1' ]);
-	_gaq.push([ '_trackPageview' ]);
-
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-				: 'http://www')
-				+ '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+<!-- End Google Tag Manager -->
+<script>
+  (function(w) {
+    w.cookieconsent.init(function() {
+      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+        createTimeline();
+      }
+    });
+    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      createTimeline();
+    }
+  })(window)
 </script>
+</body>
 </html>

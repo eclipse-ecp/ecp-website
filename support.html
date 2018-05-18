@@ -11,9 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lato'
           rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="public/images/ecp.png" />
-    <script src="public/javascripts/jquery-1.9.0.min.js"
-            type="text/javascript"></script>
+    <script src="public/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
     <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+
+    <script src="public/javascripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+    <script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="container-fluid fill">
@@ -88,10 +91,10 @@
         </div>
     </div>
     <div class="content">
-        
+
         <h3>SUPPORT</h3>
         <ul>
-        
+
             <li><a
                     href="http://eclipsesource.com/blogs/tutorials/getting-started-with-the-emf-client-platform/"
                     target="_blank"> Getting started </a> - first
@@ -136,20 +139,20 @@
         </p>
         <h3>LEVEL OF ACTIVITY</h3>
         <p>
-				The following stats provided by OpenHub give a sense of the level of activity of EMF Client Platform:
-			</p>
+            The following stats provided by OpenHub give a sense of the level of activity of EMF Client Platform:
+        </p>
 
-			<p style="padding-top: 2em">
-				<script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_users_logo.js"></script>
-			</p>
-			<p>
-				<script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_factoids_stats.js"></script> <script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_cocomo.js"></script>
-			</p>
-			<p>
-				
-			</p>
-        
-        
+        <p style="padding-top: 2em">
+            <script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_users_logo.js"></script>
+        </p>
+        <p>
+            <script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_factoids_stats.js"></script> <script type="text/javascript" src="http://www.openhub.net/p/612690/widgets/project_cocomo.js"></script>
+        </p>
+        <p>
+
+        </p>
+
+
         <!-- CONTENT -->
     </div>
     <div class="footer">
@@ -193,21 +196,24 @@
         </div>
     </div>
 </div>
-</body>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push([ '_setAccount', 'UA-31075157-1' ]);
-    _gaq.push([ '_trackPageview' ]);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-                : 'http://www')
-                + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+<!-- End Google Tag Manager -->
+<script>
+  (function(w) {
+    w.cookieconsent.init(function() {
+      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+        createTimeline();
+      }
+    });
+    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      createTimeline();
+    }
+  })(window)
 </script>
+</body>
 </html>

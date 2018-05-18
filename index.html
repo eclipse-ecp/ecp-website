@@ -1,523 +1,552 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EMF Client Platform</title>
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/bootstrap-responsive.css">
-<link rel="stylesheet" media="screen"
-	href="public/stylesheets/theme.css">
-<link href='https://fonts.googleapis.com/css?family=Lato'
-	rel='stylesheet' type='text/css'>
-<link rel="icon" type="image/png" href="public/images/ecp.png" />
-<script src="public/javascripts/jquery-1.9.0.min.js"
-	type="text/javascript"></script>
-<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+    <meta name="twitter:dnt" content="on">
+    <title>EMF Client Platform</title>
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/bootstrap.css">
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/bootstrap-responsive.css">
+    <link rel="stylesheet" media="screen"
+          href="public/stylesheets/theme.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato'
+          rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="public/images/ecp.png" />
+    <script src="public/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+
+    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="public/javascripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+    <script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container-fluid fill">
-		<div class="banner">
-			<div class="row-fluid">
-				<div class="span2" style="padding: 0.5em;">
-					<a href="index.html"> <img src="public/images/ecp.png" />
-					</a>
-				</div>
-				<div class="span10 pull-left">
-					<h2>EMF Client Platform</h2>
+<div class="container-fluid fill">
+    <div class="banner">
+        <div class="row-fluid">
+            <div class="span2" style="padding: 0.5em;">
+                <a href="index.html"> <img src="public/images/ecp.png" />
+                </a>
+            </div>
+            <div class="span10 pull-left">
+                <h2>EMF Client Platform</h2>
 
-					<p>Are you still manually coding UIs?</p>
-				</div>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="navbar span12">
-				<div class="navbar-inner" id="topbar">
-					<button id="topbtn" type="button" class="btn btn-navbar"
-						data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span><span class="icon-bar"></span><span
-							class="icon-bar"></span>
-					</button>
-					<div class="nav-collapse">
-						<ul class="nav">
-							<li><a href="index.html"> <img class="nav-image"
-									src="public/images/home.png" /> <span>&nbsp;Home</span>
-							</a></li>
-							<li><a href="gettingstarted.html"> <img
-									class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
+                <p>Are you still manually coding UIs?</p>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="navbar span12">
+            <div class="navbar-inner" id="topbar">
+                <button id="topbtn" type="button" class="btn btn-navbar"
+                        data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span
+                        class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="index.html"> <img class="nav-image"
+                                                       src="public/images/home.png" /> <span>&nbsp;Home</span>
+                        </a></li>
+                        <li><a href="gettingstarted.html"> <img
+                                class="nav-image" src="public/images/getting-started.png" /> <span>&nbsp;Getting
 										Started</span>
-							</a></li>
-							<li><a href="download.html"> <img class="nav-image"
-									src="public/images/download.png" /> <span>&nbsp;Download</span>
-							</a></li>
-							<li><a href="documentation.html"> <img class="nav-image"
-									src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
-							</a></li>
-							<li><a href="support.html"> <img class="nav-image"
-									src="public/images/support.png" /> <span>&nbsp;Support</span>
-							</a></li>
-							<li><a href="gettinginvolved.html"> <img
-									class="nav-image" src="public/images/getting-involved.png" /> <span>&nbsp;Getting
+                        </a></li>
+                        <li><a href="download.html"> <img class="nav-image"
+                                                          src="public/images/download.png" /> <span>&nbsp;Download</span>
+                        </a></li>
+                        <li><a href="documentation.html"> <img class="nav-image"
+                                                               src="public/images/documentation.png" /> <span>&nbsp;Documentation</span>
+                        </a></li>
+                        <li><a href="support.html"> <img class="nav-image"
+                                                         src="public/images/support.png" /> <span>&nbsp;Support</span>
+                        </a></li>
+                        <li><a href="gettinginvolved.html"> <img
+                                class="nav-image" src="public/images/getting-involved.png" /> <span>&nbsp;Getting
 										Involved</span>
-							</a></li>
-							<li><a href="communication.html"> <img class="nav-image"
-									src="public/images/communication.png" /> <span>&nbsp;Contact</span>
-							</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- CONTENT -->
-		<div class="content">
-			<div class="row-fluid">
-				<p class="span4">
-					The EMF Client Platform is a framework for building EMF-based
-					client applications. The goal is to provide reusable, adaptable and
-					extensible UI components to develop applications based on a given
-					EMF model. All components can be used stand-alone and be embedded
-					into your own application. To get started, ECP provides a demo
-					application, which integrates all provided components. This demo
-					application allows you to get started by only providing your EMF
-					model. </br>
-					<b style="color: #ff4036">Looking for EMF Forms please see <a
-						href="http://eclipse.org/ecp/emfforms">here</a>.
-					</b>
-				</p>
+                        </a></li>
+                        <li><a href="communication.html"> <img class="nav-image"
+                                                               src="public/images/communication.png" /> <span>&nbsp;Contact</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="row-fluid">
+            <p class="span4">
+                The EMF Client Platform is a framework for building EMF-based
+                client applications. The goal is to provide reusable, adaptable and
+                extensible UI components to develop applications based on a given
+                EMF model. All components can be used stand-alone and be embedded
+                into your own application. To get started, ECP provides a demo
+                application, which integrates all provided components. This demo
+                application allows you to get started by only providing your EMF
+                model. </br>
+                <b style="color: #ff4036">Looking for EMF Forms please see <a
+                        href="http://eclipse.org/ecp/emfforms">here</a>.
+                </b>
+            </p>
 
-				<div class="span8">
-					<div id="carousel" class="carousel slide">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel" data-slide-to="1"></li>
-							<li data-target="#carousel" data-slide-to="2"></li>
-							<li data-target="#carousel" data-slide-to="3"></li>
-							<li data-target="#carousel" data-slide-to="4"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="active item">
-								<img src="public/images/application.png" />
+            <div class="span8">
+                <div id="carousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                        <li data-target="#carousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img src="public/images/application.png" />
 
-								<div class="carousel-caption">
-									<p class="lead">One-Click Application</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="public/images/editor.png" />
+                            <div class="carousel-caption">
+                                <p class="lead">One-Click Application</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/images/editor.png" />
 
-								<div class="carousel-caption">
-									<p class="lead">Ready-to-use Editor</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="public/images/explorer.png" />
+                            <div class="carousel-caption">
+                                <p class="lead">Ready-to-use Editor</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/images/explorer.png" />
 
-								<div class="carousel-caption">
-									<p class="lead">Intuitive Explorer</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="public/images/repos.png" />
+                            <div class="carousel-caption">
+                                <p class="lead">Intuitive Explorer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/images/repos.png" />
 
-								<div class="carousel-caption">
-									<p class="lead">Simple Management of Repositories</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="public/images/validation.png" />
+                            <div class="carousel-caption">
+                                <p class="lead">Simple Management of Repositories</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/images/validation.png" />
 
-								<div class="carousel-caption">
-									<p class="lead">Live Validation</p>
-								</div>
-							</div>
-						</div>
-						<!-- Carousel nav -->
-						<a class="carousel-control left" href="#carousel"
-							data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
-							href="#carousel" data-slide="next">&rsaquo;</a>
-					</div>
-				</div>
+                            <div class="carousel-caption">
+                                <p class="lead">Live Validation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#carousel"
+                       data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+                                                         href="#carousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
 
-			</div>
-			<div class="row-fluid">
-				<div class="span8">
-					<div class="row-fluid">
-						<div class="span6">
-							<div class="feature">
-								<h6>Form-Based UI (<a
-            href="http://eclipse.org/ecp/emfforms">EMF Forms</a>)</h6>
-								<ul>
-									<li>Editing of all existing entities and their child
-										elements</li>
-									<li>Default Widgets for all existing data types</li>
-									<li>UI Validation</li>
-									<li>Extensible and adaptable</li>
-									<li>UI can be expressed model-based</li>
-									<li>Exchangable renderers (SWT, JavaFX, Web, ...)</li>
-									<li class="no-bullets"><a href="#editor" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="editor" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="editorLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="editorLabel">Editor</h3>
-											</div>
-											<div class="modal-body">
-												<p>
-													Many applications require to display and modify entities in
-													a form-based UI. "<a href="http://eclipse.org/ecp/emfforms">EMF
-														Forms</a>", a sub project of the EMF Client Platform provides
-													support for this. <a href="http://eclipse.org/ecp/emfforms">EMF
-														Forms</a> allows to render a form-based UI for a single entity
-													or several entities. The form-based UI allows the
-													modification of all attributes and references. By default,
-													the UI is rendered reflectively, meaning you can open any
-													entity of your application without any additional
-													adaptations or code generation. If you add new entity types
-													to your model, the <a
-														href="http://eclipse.org/ecp/emfforms">EMF Forms</a> will
-													still work out-of-the-box.
-												</p>
+        </div>
+        <div class="row-fluid">
+            <div class="span8">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>Form-Based UI (<a
+                                    href="http://eclipse.org/ecp/emfforms">EMF Forms</a>)</h6>
+                            <ul>
+                                <li>Editing of all existing entities and their child
+                                    elements</li>
+                                <li>Default Widgets for all existing data types</li>
+                                <li>UI Validation</li>
+                                <li>Extensible and adaptable</li>
+                                <li>UI can be expressed model-based</li>
+                                <li>Exchangable renderers (SWT, JavaFX, Web, ...)</li>
+                                <li class="no-bullets"><a href="#editor" role="button"
+                                                          data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="editor" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="editorLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="editorLabel">Editor</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Many applications require to display and modify entities in
+                                                a form-based UI. "<a href="http://eclipse.org/ecp/emfforms">EMF
+                                                Forms</a>", a sub project of the EMF Client Platform provides
+                                                support for this. <a href="http://eclipse.org/ecp/emfforms">EMF
+                                                Forms</a> allows to render a form-based UI for a single entity
+                                                or several entities. The form-based UI allows the
+                                                modification of all attributes and references. By default,
+                                                the UI is rendered reflectively, meaning you can open any
+                                                entity of your application without any additional
+                                                adaptations or code generation. If you add new entity types
+                                                to your model, the <a
+                                                    href="http://eclipse.org/ecp/emfforms">EMF Forms</a> will
+                                                still work out-of-the-box.
+                                            </p>
 
-												<p>
-													<a href="http://eclipse.org/ecp/emfforms">EMF Forms</a> can
-													be embedded into any kind of UI, even in dialogs. The demo
-													application shows the integration of EMF Forms as an RCP
-													editor.
-												</p>
+                                            <p>
+                                                <a href="http://eclipse.org/ecp/emfforms">EMF Forms</a> can
+                                                be embedded into any kind of UI, even in dialogs. The demo
+                                                application shows the integration of EMF Forms as an RCP
+                                                editor.
+                                            </p>
 
-												<p>
-													Additionally, the <a href="http://eclipse.org/ecp/emfforms">EMF
-														Forms</a> shows the result of validation constraints. This
-													way, users are informed about malformed data, e.g. a
-													missing attribute.
-												</p>
+                                            <p>
+                                                Additionally, the <a href="http://eclipse.org/ecp/emfforms">EMF
+                                                Forms</a> shows the result of validation constraints. This
+                                                way, users are informed about malformed data, e.g. a
+                                                missing attribute.
+                                            </p>
 
-												<p>
-													<a href="http://eclipse.org/ecp/emfforms">EMF Forms</a>
-													highly customizable, it is possible to add custom
-													components (widgets) for certain attributes or references.
-													Additionally EMF Forms allows to customize the layout of
-													the UI and include specific UI customizations, such as
-													rule-based visibility of controls. Customizations can be
-													expressed in a simple model and are interpreted by a
-													rendering component. Therefore you do not have to manually
-													write UI code. The approach is even independant from a UI
-													toolkit, you can migrate your UI to JavaFX or to the Web
-													just by replacing the renderer. <a
-														href="http://eclipse.org/ecp/emfforms">EMF Forms</a>
-													allows to customize and optimized form-based UIs for your
-													application. As the relfective default UI still works for
-													all elements you perform customization in small iterative
-													steps. Please see <a href="http://eclipse.org/ecp/emfforms">here</a>
-													for more information about EMF Forms.
-												</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Good
-													stuff!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
-						</div>
-						<div class="span6">
-							<div class="feature">
-								<h6>One-Click Application</h6>
-								<ul>
-									<li>Demo application including all components</li>
-									<li>Enables quick prototyping</li>
-									<li>No additional coding or code generation</li>
-									<li>Requires only an EMF Model</li>
-									<li>Launch your application in less than one minute</li>
-									<li>Robust against data/model evolution</li>
-									<li class="no-bullets"><a href="#oneClick" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="oneClick" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="oneClickLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="oneClickLabel">One Click Applications</h3>
-											</div>
-											<div class="modal-body">
-												<p>EMF enables the automatic generation of the entity
-													model for an application. Additionally, EMF provides
-													frameworks for a variety of tasks, e.g., to store and
-													collaboratively work on these entities. However, creating a
-													user interface for browsing and modifying entities based on
-													an EMF model still requires a lot of manual work. The same
-													is true for the integration of different storage
-													technologies.</p>
+                                            <p>
+                                                <a href="http://eclipse.org/ecp/emfforms">EMF Forms</a>
+                                                highly customizable, it is possible to add custom
+                                                components (widgets) for certain attributes or references.
+                                                Additionally EMF Forms allows to customize the layout of
+                                                the UI and include specific UI customizations, such as
+                                                rule-based visibility of controls. Customizations can be
+                                                expressed in a simple model and are interpreted by a
+                                                rendering component. Therefore you do not have to manually
+                                                write UI code. The approach is even independant from a UI
+                                                toolkit, you can migrate your UI to JavaFX or to the Web
+                                                just by replacing the renderer. <a
+                                                    href="http://eclipse.org/ecp/emfforms">EMF Forms</a>
+                                                allows to customize and optimized form-based UIs for your
+                                                application. As the relfective default UI still works for
+                                                all elements you perform customization in small iterative
+                                                steps. Please see <a href="http://eclipse.org/ecp/emfforms">here</a>
+                                                for more information about EMF Forms.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Good
+                                                stuff!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>One-Click Application</h6>
+                            <ul>
+                                <li>Demo application including all components</li>
+                                <li>Enables quick prototyping</li>
+                                <li>No additional coding or code generation</li>
+                                <li>Requires only an EMF Model</li>
+                                <li>Launch your application in less than one minute</li>
+                                <li>Robust against data/model evolution</li>
+                                <li class="no-bullets"><a href="#oneClick" role="button"
+                                                          data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="oneClick" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="oneClickLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="oneClickLabel">One Click Applications</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>EMF enables the automatic generation of the entity
+                                                model for an application. Additionally, EMF provides
+                                                frameworks for a variety of tasks, e.g., to store and
+                                                collaboratively work on these entities. However, creating a
+                                                user interface for browsing and modifying entities based on
+                                                an EMF model still requires a lot of manual work. The same
+                                                is true for the integration of different storage
+                                                technologies.</p>
 
-												<p>The EMF Client Platform enables you to set up the
-													first version of your own application in less than one
-													minute, just by providing your entity model in EMF. In
-													contrast to the generated editor of EMF, the EMF Client
-													Platform provides not only a generic UI but a highly
-													extensible and adaptable UI to create, modify and share EMF
-													model instances. No manual coding or code generation is
-													required. As a prerequisite, you only need to provide an
-													EMF model plugin describing the entity objects of your
-													application as well as the corresponding edit plugin - both
-													generated from your EMF Ecore model. The EMF Client
-													Platform is able to render its UI reflectively, based only
-													on the information contained in the model.</p>
-												Since the EMF Client Platform provides a reflective UI, the
-												resulting application is robust against a change in the data
-												model. That means you can evolve the underlying data model
-												without any manual adaptations of the UI. Based on the
-												provided application, the EMF Client Platform is highly
-												customizable. It allows to iteratively add custom pieces to
-												the already running application. Therefore it enables you to
-												develop an application in a very agile manner, maintain a
-												shippable application at any point in time and focus only on
-												the things you want to adapt.
-												</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Cool!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
-						</div>
-						<!--/span6-->
+                                            <p>The EMF Client Platform enables you to set up the
+                                                first version of your own application in less than one
+                                                minute, just by providing your entity model in EMF. In
+                                                contrast to the generated editor of EMF, the EMF Client
+                                                Platform provides not only a generic UI but a highly
+                                                extensible and adaptable UI to create, modify and share EMF
+                                                model instances. No manual coding or code generation is
+                                                required. As a prerequisite, you only need to provide an
+                                                EMF model plugin describing the entity objects of your
+                                                application as well as the corresponding edit plugin - both
+                                                generated from your EMF Ecore model. The EMF Client
+                                                Platform is able to render its UI reflectively, based only
+                                                on the information contained in the model.</p>
+                                            Since the EMF Client Platform provides a reflective UI, the
+                                            resulting application is robust against a change in the data
+                                            model. That means you can evolve the underlying data model
+                                            without any manual adaptations of the UI. Based on the
+                                            provided application, the EMF Client Platform is highly
+                                            customizable. It allows to iteratively add custom pieces to
+                                            the already running application. Therefore it enables you to
+                                            develop an application in a very agile manner, maintain a
+                                            shippable application at any point in time and focus only on
+                                            the things you want to adapt.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Cool!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/span6-->
 
-					</div>
-					<!--/row-->
-					<div class="row-fluid">
-						<div class="span6">
-							<div class="feature">
-								<h6>Explorer</h6>
-								<ul>
-									<li>Displays all entities in a hierarchy</li>
-									<li>Allows to create, group, move and delete entities</li>
-									<li>Works out-of-the-box</li>
-									<li>Iteratively Customizable</li>
-									<li class="no-bullets"><a href="#explorer" role="button"
-										data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="explorer" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="explorerLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="explorerLabel">Explorer</h3>
-											</div>
-											<div class="modal-body">
-												<p>The explorer of the EMF Client Platform provides an
-													hierarchical overview of all entities existing in an
-													application. It also allows to create projects, grouping
-													the data of your application. Within projects, the explorer
-													allows the creation of entities and sub-entities. These
-													entities can be moved via drag and drop and opened in the
-													editor with a double click.</p>
+                </div>
+                <!--/row-->
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>Explorer</h6>
+                            <ul>
+                                <li>Displays all entities in a hierarchy</li>
+                                <li>Allows to create, group, move and delete entities</li>
+                                <li>Works out-of-the-box</li>
+                                <li>Iteratively Customizable</li>
+                                <li class="no-bullets"><a href="#explorer" role="button"
+                                                          data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="explorer" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="explorerLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="explorerLabel">Explorer</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>The explorer of the EMF Client Platform provides an
+                                                hierarchical overview of all entities existing in an
+                                                application. It also allows to create projects, grouping
+                                                the data of your application. Within projects, the explorer
+                                                allows the creation of entities and sub-entities. These
+                                                entities can be moved via drag and drop and opened in the
+                                                editor with a double click.</p>
 
-												<p>All features of the explorer are just based on the
-													description of your application data, therefore no
-													additional efforts are required to use the explorer for
-													your application. However, the look of the displayed
-													elements and the hierarchy of displayed elements can be
-													highly customized to fit your needs.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Nice!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
-						</div>
+                                            <p>All features of the explorer are just based on the
+                                                description of your application data, therefore no
+                                                additional efforts are required to use the explorer for
+                                                your application. However, the look of the displayed
+                                                elements and the hierarchy of displayed elements can be
+                                                highly customized to fit your needs.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </div>
 
-						<!--/span-->
-						<div class="span6">
-							<div class="feature">
-								<h6>Persistence</h6>
-								<ul>
-									<li>Pre-configured, extensible persistence layer</li>
-									<li>Exchangeable backends</li>
-									<li>Server and Repository support</li>
-									<li>Built-In Support for files, EMFStore and CDO</li>
-									<li class="no-bullets"><a href="#persistence"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="persistence" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="persistenceLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="persistenceLabel">Persistence</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform provides a pre-configured
-													persistence layer to store the data of your application. It
-													allows the usage of different data providers to store your
-													data based on your requirements. The platform already ships
-													with different data provider implementations to store your
-													data in files or in server solutions (repositories) such as
-													EMFStore or CDO. Therefore a repository view is provided
-													allowing to configure and manage different servers.</p>
+                    <!--/span-->
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>Persistence</h6>
+                            <ul>
+                                <li>Pre-configured, extensible persistence layer</li>
+                                <li>Exchangeable backends</li>
+                                <li>Server and Repository support</li>
+                                <li>Built-In Support for files, EMFStore and CDO</li>
+                                <li class="no-bullets"><a href="#persistence"
+                                                          role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="persistence" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="persistenceLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="persistenceLabel">Persistence</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>The EMF Client Platform provides a pre-configured
+                                                persistence layer to store the data of your application. It
+                                                allows the usage of different data providers to store your
+                                                data based on your requirements. The platform already ships
+                                                with different data provider implementations to store your
+                                                data in files or in server solutions (repositories) such as
+                                                EMFStore or CDO. Therefore a repository view is provided
+                                                allowing to configure and manage different servers.</p>
 
-												<p>Finally the EMF Client Platform is extensible by new
-													custom data providers to integrate an existing or custom
-													backend technology.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Awesome!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
-						</div>
-						<!--/span-->
+                                            <p>Finally the EMF Client Platform is extensible by new
+                                                custom data providers to integrate an existing or custom
+                                                backend technology.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Awesome!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/span-->
 
-					</div>
-					<!--/row-->
-					<div class="row-fluid">
-						<div class="span6">
-							<div class="feature">
-								<h6>Extensibility and Adaptability</h6>
-								<ul>
-									<li>Many points for customization</li>
-									<li>Iterativ adaptations</li>
-									<li>Shippable application at any time</li>
-									<li class="no-bullets">&nbsp;</li>
-									<li class="no-bullets"><a href="#extensibility"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="extensibility" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="extensibilityLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="extensibilityLabel">Extensibility</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform creates a running application
-													just by providing an data model to it. This application
-													serves as a good starting point for development. However,
-													most scenarios require adaptation of this default
-													application in some places. Many adaptations just require
-													adaptation of the underlying data model itself. However,
-													some adaptations require custom implementations. Therefore
-													the EMF Client Platform offers various extension points.
-													This allows you to implement small pieces and iteratively
-													plug them into the running application. However, your
-													application always remains shippable as you can very
-													selectively replace components and iteratively embed your
-													custom components into the continuously runnable
-													application.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Great!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
-						</div>
-						<!--/span-->
-						<div class="span6">
-							<div class="feature">
-								<h6>Reusable Components</h6>
-								<ul>
-									<li>Highly modular architecture</li>
-									<li>Avoid unwanted dependencies</li>
-									<li>Re-Use single components</li>
-									<li class="no-bullets">&nbsp;</li>
-									<li class="no-bullets"><a href="#reusability"
-										role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-										<div id="reusability" class="modal hide fade" tabindex="-1"
-											role="dialog" aria-labelledby="reusabilityLabel"
-											aria-hidden="true">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-hidden="true">x</button>
-												<h3 id="reusabilityLabel">Reusability</h3>
-											</div>
-											<div class="modal-body">
-												<p>The EMF Client Platform provides a fully functional
-													and integrated application. However, the architecture is
-													highly modular and consists of many small and re-usable
-													pieces. Therefore you can chose, which parts of the
-													platform you want to apply in your projects and which not.
-													As an example you can re-use the editor without the
-													navigator, you can only re-use the persistence layer
-													without any UI components or you can just rely on some of
-													the provided dialogs. In any case you avoid the
-													re-implementations of generic components saving the effort
-													for valuable components.</p>
-											</div>
-											<div class="modal-footer">
-												<button class="btn" data-dismiss="modal" aria-hidden="true">Sounds
-													good!</button>
-											</div>
-										</div></li>
-								</ul>
-							</div>
+                </div>
+                <!--/row-->
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>Extensibility and Adaptability</h6>
+                            <ul>
+                                <li>Many points for customization</li>
+                                <li>Iterativ adaptations</li>
+                                <li>Shippable application at any time</li>
+                                <li class="no-bullets">&nbsp;</li>
+                                <li class="no-bullets"><a href="#extensibility"
+                                                          role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="extensibility" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="extensibilityLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="extensibilityLabel">Extensibility</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>The EMF Client Platform creates a running application
+                                                just by providing an data model to it. This application
+                                                serves as a good starting point for development. However,
+                                                most scenarios require adaptation of this default
+                                                application in some places. Many adaptations just require
+                                                adaptation of the underlying data model itself. However,
+                                                some adaptations require custom implementations. Therefore
+                                                the EMF Client Platform offers various extension points.
+                                                This allows you to implement small pieces and iteratively
+                                                plug them into the running application. However, your
+                                                application always remains shippable as you can very
+                                                selectively replace components and iteratively embed your
+                                                custom components into the continuously runnable
+                                                application.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Great!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="span6">
+                        <div class="feature">
+                            <h6>Reusable Components</h6>
+                            <ul>
+                                <li>Highly modular architecture</li>
+                                <li>Avoid unwanted dependencies</li>
+                                <li>Re-Use single components</li>
+                                <li class="no-bullets">&nbsp;</li>
+                                <li class="no-bullets"><a href="#reusability"
+                                                          role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
+                                    <div id="reusability" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="reusabilityLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">x</button>
+                                            <h3 id="reusabilityLabel">Reusability</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>The EMF Client Platform provides a fully functional
+                                                and integrated application. However, the architecture is
+                                                highly modular and consists of many small and re-usable
+                                                pieces. Therefore you can chose, which parts of the
+                                                platform you want to apply in your projects and which not.
+                                                As an example you can re-use the editor without the
+                                                navigator, you can only re-use the persistence layer
+                                                without any UI components or you can just rely on some of
+                                                the provided dialogs. In any case you avoid the
+                                                re-implementations of generic components saving the effort
+                                                for valuable components.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" data-dismiss="modal" aria-hidden="true">Sounds
+                                                good!</button>
+                                        </div>
+                                    </div></li>
+                            </ul>
+                        </div>
 
-						</div>
+                    </div>
 
-					</div>
-				</div>
+                </div>
+            </div>
 
-				<div class="span4" style="padding: 1em">
-					<a class="twitter-timeline"
-						href="https://twitter.com/search?q=%23emfcp" height="525"
-						data-widget-id="344734102089510912">Tweets about "#emfcp"</a>
-					<script>
-						!function(d, s, id) {
-							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
-									.test(d.location) ? 'http' : 'https';
-							if (!d.getElementById(id)) {
-								js = d.createElement(s);
-								js.id = id;
-								js.src = p
-										+ "://platform.twitter.com/widgets.js";
-								fjs.parentNode.insertBefore(js, fjs);
-							}
-						}(document, "script", "twitter-wjs");
-					</script>
+            <div class="span4" style="padding: 1em">
+                <a id="twitter-container"
+                   data-dnt="true"
+                   class="twitter-timeline"
+                   href="https://twitter.com/search?q=%23emfcp"
+                   height="525"
+                >
+                    Tweets about "#emfcp"
+                </a>
+                <script>
+                  !function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+                      .test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                      js = d.createElement(s);
+                      js.id = id;
+                      js.src = p
+                        + "://platform.twitter.com/widgets.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }
+                  }(document, "script", "twitter-wjs");
+                </script>
 
 
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="row-fluid">
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
-						Privacy Policy </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/termsofuse.php"
-						target="_blank"> Terms of Use </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/copyright.php"
-						target="_blank"> Copyright </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/legal/" target="_blank"> Legal
-					</a>
-				</div>
-				<div class="span2 text-center">
-					<a
-						href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
-						target="_blank"> About </a>
-				</div>
-				<div class="span2 text-center">
-					<a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
-				</div>
-			</div>
-			<div class="text-center">
-				Icons are from <a
-					href="http://www.icondeposit.com/theicondeposit:108"
-					target="_blank">Icon Deposit</a>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row-fluid">
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+                    Privacy Policy </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/termsofuse.php"
+                   target="_blank"> Terms of Use </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/copyright.php"
+                   target="_blank"> Copyright </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/" target="_blank"> Legal
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a
+                        href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+                        target="_blank"> About </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
+            </div>
+        </div>
+        <div class="text-center">
+            Icons are from <a
+                href="http://www.icondeposit.com/theicondeposit:108"
+                target="_blank">Icon Deposit</a>
+        </div>
+    </div>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+<!-- End Google Tag Manager -->
+<script>
+  (function(w) {
+    w.cookieconsent.init(function() {
+      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+        createTimeline();
+      }
+    });
+    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      createTimeline();
+    }
+  })(window)
+</script>
 </body>
 </html>

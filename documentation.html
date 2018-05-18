@@ -14,6 +14,10 @@
     <script src="public/javascripts/jquery-1.9.0.min.js"
             type="text/javascript"></script>
     <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+
+    <script src="public/javascripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+    <script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="container-fluid fill">
@@ -95,7 +99,7 @@
             to <a href="communication.html">contact us</a>.</p>
         <h4>Tutorials</h4>
         <div class="row-fluid">
-            <div class="span7">
+            <div class="span12">
                 <ul class="no-bullets">
                     <li><a
                             href="http://eclipsesource.com/blogs/tutorials/getting-started-with-the-emf-client-platform/"
@@ -184,715 +188,715 @@
                     </ul>
                 </ul>
             </div>
-            <div class="span5">
-                <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="64201/"></script> <!-- end feedwind code -->
+        </div>
+
+        <h4>Presentations</h4>
+
+        <p>
+            Here you will find a list a presentations related to ECP.
+        </p>
+        <ul class="no-bullets">
+            <li>
+                <h5>Are you still manually coding UIs?</h5>
+                <iframe width="420" height="315" src="//www.youtube.com/embed/LjF_ZWVyKXc" frameborder="0"
+                        allowfullscreen></iframe>
+            </li>
+            <li>
+                <h5>
+                    Building a Tool based on Eclipse Modeling Framework
+                </h5>
+                <iframe src="http://player.vimeo.com/video/75465334" width="640" height="480" frameborder="0"
+                        webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <p>
+                    Long Version available <a
+                        href="http://jaxenter.de/videos/JAX-TV-In-20-Minuten-zum-eigenen-Eclipse-Tool-171565">here</a>.
+                </p>
+            </li>
+        </ul>
+        <h4>JavaDoc</h4>
+
+        <p>
+            The latest JavaDoc can always be found
+            <a href="http://download.eclipse.org/ecp/releases/javadoc/index.html"
+               target="_blank">
+                here
+            </a>.
+        </p>
+
+        <h3>EMF Client Platform Bundle Overview</h3>
+        <h4 a="emfforms-bundle-overview">EMF Forms</h4>
+        <h5>EMF Forms Core</h5>
+        <strong>ecp.common</strong>
+
+        <p class="indent">
+            This plugin includes classes used in EMF Forms and ECP plugins like UniqueSetting. UniqueSetting implements the
+            equals method as well as the hashcode method and thus can be used in Collections other than Setting.
+        </p>
+        <strong>ecp.edit</strong>
+
+        <p class="indent">
+            This plugin defines interfaces and abstract classes for Controls as well as a factory for creating controls. The
+            factory defines an extension point that allows the user to contribute his own controls.
+        </p>
+
+        </p>
+        <strong>ecp.edit.swt</strong>
+
+        <p class="indent">
+            Uses the Controls Extension Point to contribute default controls for SWT such as TextControl or TableControl.
+        </p>
+
+        </p>
+        <strong>ecp.ui.view</strong>
+
+        <p class="indent">
+            This contains UI independent classes that are needed for rendering, e.g., ViewProviderHelper, which allows the user
+            to find a View for an EObject.
+        </p>
+
+        </p>
+        <strong>ecp.ui.view.swt</strong>
+
+        <p class="indent">
+            This contains SWT classes. It provides abstract implementations for renderers and an entry point for rendering a
+            View Model (ECPSWTViewRenderer).
+        </p>
+
+        </p>
+        <strong>ecp.view.context</strong>
+
+        <p class="indent">
+            The ViewModelContext contains the model information for an open editor. Its lifecycle is bound to the lifecycle of
+            an ECP editor, thus each instance of an editor has exactly one ViewModelContext. It provides access to the View
+            Model and to the domain model. It also allows the user to register and retrieve registered ViewServices.
+        </p>
+
+        </p>
+        <strong>ecp.view.core.swt</strong>
+
+        <p class="indent">
+            This defines renderers for core model elements (VView, VControl).
+        </p>
+
+        </p>
+        <strong>ecp.view.model</strong>
+
+        <p class="indent">
+            This provides core model elements (View and Control) as well as abstract classes.
+        </p>
+
+        </p>
+        <strong>ecp.view.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for core models.
+        </p>
+
+        </p>
+        <strong>ecp.view.model.provider.generator</strong>
+
+        <p class="indent">
+            This is a ViewModel provider that generates a View Model based on the provided EObject.
+        </p>
+
+        </p>
+        <strong>ecp.view.model.provider.xmi</strong>
+
+        <p class="indent">
+            This is a ViewModel provider that provides an extension point allowing the user to register serialized View Models.
+        </p>
+
+        <h5>EMF Forms Extension Models</h5>
+
+        <!-------------------- CUSTOM -------------------->
+        <h5>Categorization</h5>
+
+        <strong>ecp.view.categorization.model</strong>
+
+        <p class="indent">
+            This defines a model for Categorizations, allowing the user to categorize the domain model.
+        </p>
+
+        </p>
+        <strong>ecp.view.categorization.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for Categorizations.
+        </p>
+
+        </p>
+        <strong>ecp.view.categorization.swt</strong>
+
+        <p class="indent">
+            This provides the SWT Renderer for the Categorization model.
+        </p>
+
+        <!-------------------- CUSTOM -------------------->
+        <h5>Custom controls</h5>
+
+        </p>
+        <strong>ecp.view.custom.model</strong>
+
+        <p class="indent">
+            This model provides the HardcodedDomainModelReference, which allows the user to reference a specific control
+            directly. In this way, custom controls (controls that reference an arbitrary number of features) can be added to the
+            view model.
+        </p>
+
+        <strong>ecp.view.custom.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for custom models.
+        </p>
+
+        <strong>ecp.view.custom.ui.swt</strong>
+
+        <p class="indent">
+            This defines an abstract SWT implementation of custom controls by providing helper methods, e.g., by creating the
+            validation icon.
+        </p>
+
+        <!-------------------- GROUP -------------------->
+        <h5>Group widget</h5>
+
+        </p>
+        <strong>ecp.view.group.model</strong>
+
+        <p class="indent">
+            This is a group that behaves like a vertical layout but also shows a border with the group name as the title.
+        </p>
+
+        </p>
+        <strong>ecp.view.group.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for group models.
+        </p>
+
+        </p>
+        <strong>ecp.view.group.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT renderer for group models that renders groups.
+        </p>
+
+
+        <!-------------------- HORIZONTAL -------------------->
+        <h5>Horizontal layout</h5>
+
+        <strong>ecp.view.horizontal.model</strong>
+
+        <p class="indent">
+            This defines a model for horizontal layouts wherein elements are ordered next to each other.
+        </p>
+
+        <strong>ecp.view.horizontal.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for a horizontal layout.
+        </p>
+
+        <strong>ecp.view.horizontal.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT Renderer for a horizontal layout.
+        </p>
+
+        <!-------------------- LABEL -------------------->
+        <h5>Label widget</h5>
+
+        <strong>ecp.view.label.model</strong>
+
+        <p class="indent">
+            This allows the user to define a label with a name (the displayed text) and a style.
+        </p>
+
+        <strong>ecp.view.label.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for labels.
+        </p>
+
+        <strong>ecp.view.label.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT renderer for label models.
+        </p>
+
+
+        <!-------------------- RULE SERVICE -------------------->
+        <h5>Rule service</h5>
+        <strong>ecp.view.rule</strong>
+
+        <p class="indent">
+            This is the rule service, which evaluates visibility and enablement rules.
+        </p>
+
+        <strong>ecp.view.rule.model</strong>
+
+        <p class="indent">
+            This is the rule model, which allows users to define dynamic behavior like enabling/disabling of elements or
+            showing/hiding of elements based on value changes in the domain model. A ShowRule, an EnableRule and Conditions are
+            provided by this plugin.
+        </p>
+
+        <strong>ecp.view.rule.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for the rule model.
+        </p>
+
+        <!-------------------- STACK -------------------->
+        <h5>Stack layout</h5>
+
+        <strong>ecp.view.table.model</strong>
+        <p class="indent">
+            Contains the stack model.
+        </p>
+
+        <strong>ecp.view.stack.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for the stack model.
+        </p>
+
+        <strong>ecp.view.stack.ui.swt</strong>
+
+        <p class="indent">
+            SWT renderer for stacks.
+        </p>
+
+        <strong>ecp.view.stack.viewmodel</strong>
+
+        <p class="indent">
+            Stack Layout Viewmodel.
+        </p>
+
+        <!-------------------- TABLE -------------------->
+        <h5>Table control</h5>
+
+        <strong>ecp.view.table.model</strong>
+
+        <p class="indent">
+            This provides classes like a table and columns for defining and configuring tables.
+        </p>
+
+        <strong>ecp.view.table.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for the table model.
+        </p>
+
+        <strong>ecp.view.table.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT renderer for table elements.
+        </p>
+
+        <strong>ecp.view.table.columnservice</strong>
+
+        <p class="indent">
+            This is a context service that adds all columns to tables that do not have any columns defined.
+        </p>
+
+        <strong>ecp.view.table.editor</strong>
+        <p>
+            ECP View Table Additional Features for Editor.
+        </p>
+
+        <strong>ecp.view.table.migrate</strong>
+        <p>
+            Handles table mirgration, if necessary.
+        </p>
+
+        <!-------------------- TEMPLATE -------------------->
+        <h5>Template model</h5>
+
+        <strong>ecp.view.template.model</strong>
+
+        <p class="indent">
+            This is a model for configuring icons and colors of validation errors.
+        </p>
+
+        <strong>ecp.view.template.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for the template model.
+        </p>
+
+        <strong>ecp.view.template.service</strong>
+
+        <p class="indent">
+            This is the template service that provides the Current Template model.
+        </p>
+
+        <!-------------------- TREE MASTER DETAIL -------------------->
+        <h5>Treemaster detail</h5>
+
+        <strong>ecp.view.treemasterdetail.model</strong>
+
+        <p class="indent">
+            This is a tree master detail, which provides an element that displays the domain model on the left-hand side as a
+            tree and allows users to edit it on the right-hand side.
+        </p>
+
+        <strong>ecp.view.treemasterdetail.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for the TreeMasterDetail model.
+        </p>
+
+        <strong>ecp.view.treemasterdetail.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT renderer for the tree master detail element.
+        </p>
+
+        <!-------------------- UNSET SERVICE -------------------->
+        <h5>Unset service</h5>
+
+        <strong>ecp.view.unset</strong>
+
+        <p class="indent">
+            This is the unset service, which monitors the View Model instance and sets all values of the domain model to default
+            if they are not displayed anywhere in the View Model.
+        </p>
+
+        <!-------------------- VALIDATION SERVICE -------------------->
+        <h5>Validation Service</h5>
+
+        <strong>ecp.view.validation</strong>
+
+        <p class="indent">
+            This is the validation service, which monitors the domain model and calculates validation errors.
+        </p>
+
+        <strong>ecp.view.validation.bean</strong>
+
+        <p class="indent">
+            Performs validation using JSR 303.
+        </p>
+
+        <!-------------------- VALIDATION VIEW  -------------------->
+        <h5>Validation View</h5>
+        <strong>ecp.ui.validation</strong>
+        <p class="indent">
+            Contains the validation view.
+        </p>
+
+        <strong>ecp.ui.validation.e4</strong>
+        <p class="indent">
+            Contains the e4 validation view.
+        </p>
+
+        <strong>ecp.validation.diagnostician</strong>
+        <p class="indent">
+            ECP Diagnostician used during validation.
+        </p>
+
+        <strong>ecp.validation.validationvieweditorbridge</strong>
+        <p class="indent">
+            ECP Validation View to Editor Bridge
+        </p>
+
+        <!-------------------- MAPPING DMR -------------------->
+        <h5>Mapping Domain Model References</h5>
+
+        <strong>ecp.view.mappingdmr.databinding</strong>
+        <p class="indent">
+            Provides the databinding for domain model references that need to be resolved via a map key entry.
+        </p>
+
+        <strong>ecp.view.mappingdmr.model</strong>
+        <p class="indent">
+            Contains the model for mapped domain model references.
+        </p>
+
+        <strong>ecp.view.mappingdmr.model.edit</strong>
+        <p class="indent">
+            Contains the model edit functionality for domain model references.
+        </p>
+
+        <strong>ecp.view.mappingdmr.model.tooling</strong>
+        <p class="indent">
+            Provides tooling for mapped domain model references.
+        </p>
+
+        <h5>Dependency Injection Feature</h5>
+
+        <strong>ecp.ui.view.swt.di</strong>
+        <p class="indent">
+            Contains the Dependency Injection SWT Renderer.
+        </p>
+
+        <strong>ecp.view.custom.ui.swt.di</strong>
+        <p class="indent">
+            Custom View SWT Dependency Injection.
+        </p>
+
+        <strong>ecp.view.model.common.di</strong>
+        <p class="indent">
+            Contains Common View Model Classes for Dependency Injection.
+        </p>
+
+        <!-------------------- VERTICAL LAYOUT -------------------->
+        <h5>Vertical model</h5>
+
+        <strong>ecp.view.vertical.model</strong>
+
+        <p class="indent">
+            This defines a vertical layout model wherein children are positioned under each other.
+        </p>
+
+        <strong>ecp.view.vertical.model.edit</strong>
+
+        <p class="indent">
+            This is the generated edit plugin for a vertical layout.
+        </p>
+
+        <strong>ecp.view.vertical.ui.swt</strong>
+
+        <p class="indent">
+            This is the SWT renderer for a vertical layout.
+        </p>
+
+        <!-------------------- DIFFMERGE -------------------->
+        <h5>EMF Diffmerge</h5>
+
+        <strong>ecp.diffmerge.context</strong>
+
+        <p class="indent">
+            This provides a specific ViewModelContext that can calculate a diff between two elements.
+        </p>
+
+        <strong>ecp.diffmerge.renderer.swt</strong>
+
+        <p class="indent">
+            This provides a specific renderer for the diff merge case.
+        </p>
+
+        <strong>ecp.diffmerge.swt</strong>
+
+        <p class="indent">
+            This bundle provides the Diff Dialog that allows users to see and merge diffs.
+        </p>
+
+        <!-------------------- MODEL EDIT CONTROLS -------------------->
+        <h5>EMF Forms Model Edit Controls</h5>
+
+        <strong>ecp.ui.view.editor.controls</strong>
+
+        <p class="indent">
+            These are specific controls to edit the view model (e.g., in the IDE).
+        </p>
+
+        <strong>ecp.view.template.controls.swt</strong>
+
+        <p class="indent">
+            These are specific controls to edit the template model.
+        </p>
+
+        <h4>ECP</h4>
+        <h5>ECP Core</h5>
+
+        <strong>ecp.core</strong>
+
+        <p class="indent">
+            This defines core classes like ECPProject.
+        </p>
+
+        <strong>ecp.core.emffilter</strong>
+
+        <p class="indent">
+            This provides a filter for default EPackages.
+        </p>
+
+        <strong>ecp.explorerbridge</strong>
+
+        <p class="indent">
+            This provides classes for connecting an ECPProject with a model element editor.
+        </p>
+
+        <strong>ecp.ui</strong>
+
+        <p class="indent">
+            These are SWT classes for ECP, e.g., ModelExplorer.
+        </p>
+
+
+        <strong>ecp.validation</strong>
+
+        <p class="indent">
+            This provides ECP validation used to calculate errors for ECPProjects.
+        </p>
+
+        <!-------------------- e3 -------------------->
+        <h5>ECP e3</h5>
+        <strong>ecp.application.e3</strong>
+
+        <p class="indent">
+            This is the e3 demo application for ECP.
+        </p>
+
+        <strong>ecp.editor.e3</strong>
+
+        <p class="indent">
+            This is the e3 editor used in ECP.
+        </p>
+
+        <strong>ecp.ui.e3</strong>
+
+        <p class="indent">
+            These are necessary e3 classes for ECP like handlers and views.
+        </p>
+
+        <strong>ecp.validation.connector</strong>
+
+        <p class="indent">
+            These are specific classes to display the validation errors in the model explorer tree.
+        </p>
+
+        <strong>ecp.emfstore.ui.e3</strong>
+
+        <p class="indent">
+            These are Eclipse 3.x specific UI parts for the EMFStore like share, commit and update commands.
+        </p>
+
+        <!-------------------- e4 -------------------->
+        <h5>ECP e4</h5>
+
+        <strong>ecp.application.e4</strong>
+
+        <p class="indent">
+            This is the e4 demo application for ECP.
+        </p>
+
+        <strong>ecp.ui.e4</strong>
+
+        <p class="indent">
+            These are necessary e4 classes for ECP like handlers and views.
+        </p>
+
+        <strong>ecp.emfstore.ui.e4</strong>
+
+        <p class="indent">
+            These are e4-specific UI parts for EMFStore like share, commit and update commands defined in a fragment.xml.
+        </p>
+
+        <!-------------------- WORKSPACE PROVIDER -------------------->
+        <h5>ECP Workspace Provider</h5>
+
+        <strong>ecp.workspace.core</strong>
+
+        <p class="indent">
+            A dataprovider for editing models from XMI files directly in the IDE.
+        </p>
+
+        <strong>ecp.workspace.ui</strong>
+
+        <p class="indent">
+            These are UI parts for the workspace provider like wizards for creating and loading xmi files.
+        </p>
+
+        <!-------------------- CDO PROVIDER -------------------->
+        <h5>CDO Provider</h5>
+
+        </p>
+        <strong>ecp.cdo.core</strong>
+
+        <p class="indent">
+            This is a data provider for the CDO model repository.
+        </p>
+
+        </p>
+        <strong>ecp.cdo.ui</strong>
+
+        <p class="indent">
+            These are UI parts for the CDO provider like check-in and update commands.
+        </p>
+
+        <!-------------------- EMFSTORE PROVIDER -------------------->
+        <h5>EMFStore Provider</h5>
+
+        <strong>ecp.emfstore.core</strong>
+
+        <p class="indent">
+            This is a data provider for EMFStore.
+        </p>
+
+        <strong>ecp.emfstore.ui</strong>
+
+        <p class="indent">
+            These are UI parts for the EMFStore like share, commit and update handler.
+
+        </p>
+
+        <h4>RAP</h4>
+        <strong>ecp.rap</strong>
+
+        <p class="indent">
+            This is the RAP demo application for ECP.
+        </p>
+
+        </p>
+        <strong>ecp.rap.util</strong>
+
+        <p class="indent">
+            This provides utility classes for RAP, e.g., a JFace Dialog wrapper.
+        </p>
+    </div>
+    <div class="footer">
+        <div class="row-fluid">
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
+                    Privacy Policy </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/termsofuse.php"
+                   target="_blank"> Terms of Use </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/copyright.php"
+                   target="_blank"> Copyright </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/legal/" target="_blank"> Legal
+                </a>
+            </div>
+            <div class="span2 text-center">
+                <a
+                        href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
+                        target="_blank"> About </a>
+            </div>
+            <div class="span2 text-center">
+                <a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
             </div>
         </div>
-
-    <h4>Presentations</h4>
-
-    <p>
-        Here you will find a list a presentations related to ECP.
-    </p>
-    <ul class="no-bullets">
-        <li>
-            <h5>Are you still manually coding UIs?</h5>
-            <iframe width="420" height="315" src="//www.youtube.com/embed/LjF_ZWVyKXc" frameborder="0"
-                    allowfullscreen></iframe>
-        </li>
-        <li>
-            <h5>
-                Building a Tool based on Eclipse Modeling Framework
-            </h5>
-            <iframe src="http://player.vimeo.com/video/75465334" width="640" height="480" frameborder="0"
-                    webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            <p>
-                Long Version available <a
-                    href="http://jaxenter.de/videos/JAX-TV-In-20-Minuten-zum-eigenen-Eclipse-Tool-171565">here</a>.
-            </p>
-        </li>
-    </ul>
-    <h4>JavaDoc</h4>
-
-    <p>
-        The latest JavaDoc can always be found
-        <a href="http://download.eclipse.org/ecp/releases/javadoc/index.html"
-           target="_blank">
-            here
-        </a>.
-    </p>
-
-    <h3>EMF Client Platform Bundle Overview</h3>
-    <h4 a="emfforms-bundle-overview">EMF Forms</h4>
-    <h5>EMF Forms Core</h5>
-    <strong>ecp.common</strong>
-
-    <p class="indent">
-        This plugin includes classes used in EMF Forms and ECP plugins like UniqueSetting. UniqueSetting implements the
-        equals method as well as the hashcode method and thus can be used in Collections other than Setting.
-    </p>
-    <strong>ecp.edit</strong>
-
-    <p class="indent">
-        This plugin defines interfaces and abstract classes for Controls as well as a factory for creating controls. The
-        factory defines an extension point that allows the user to contribute his own controls.
-    </p>
-
-    </p>
-    <strong>ecp.edit.swt</strong>
-
-    <p class="indent">
-        Uses the Controls Extension Point to contribute default controls for SWT such as TextControl or TableControl.
-    </p>
-
-    </p>
-    <strong>ecp.ui.view</strong>
-
-    <p class="indent">
-        This contains UI independent classes that are needed for rendering, e.g., ViewProviderHelper, which allows the user
-        to find a View for an EObject.
-    </p>
-
-    </p>
-    <strong>ecp.ui.view.swt</strong>
-
-    <p class="indent">
-        This contains SWT classes. It provides abstract implementations for renderers and an entry point for rendering a
-        View Model (ECPSWTViewRenderer).
-    </p>
-
-    </p>
-    <strong>ecp.view.context</strong>
-
-    <p class="indent">
-        The ViewModelContext contains the model information for an open editor. Its lifecycle is bound to the lifecycle of
-        an ECP editor, thus each instance of an editor has exactly one ViewModelContext. It provides access to the View
-        Model and to the domain model. It also allows the user to register and retrieve registered ViewServices.
-    </p>
-
-    </p>
-    <strong>ecp.view.core.swt</strong>
-
-    <p class="indent">
-        This defines renderers for core model elements (VView, VControl).
-    </p>
-
-    </p>
-    <strong>ecp.view.model</strong>
-
-    <p class="indent">
-        This provides core model elements (View and Control) as well as abstract classes.
-    </p>
-
-    </p>
-    <strong>ecp.view.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for core models.
-    </p>
-
-    </p>
-    <strong>ecp.view.model.provider.generator</strong>
-
-    <p class="indent">
-        This is a ViewModel provider that generates a View Model based on the provided EObject.
-    </p>
-
-    </p>
-    <strong>ecp.view.model.provider.xmi</strong>
-
-    <p class="indent">
-        This is a ViewModel provider that provides an extension point allowing the user to register serialized View Models.
-    </p>
-
-    <h5>EMF Forms Extension Models</h5>
-
-    <!-------------------- CUSTOM -------------------->
-    <h5>Categorization</h5>
-
-    <strong>ecp.view.categorization.model</strong>
-
-    <p class="indent">
-        This defines a model for Categorizations, allowing the user to categorize the domain model.
-    </p>
-
-    </p>
-    <strong>ecp.view.categorization.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for Categorizations.
-    </p>
-
-    </p>
-    <strong>ecp.view.categorization.swt</strong>
-
-    <p class="indent">
-        This provides the SWT Renderer for the Categorization model.
-    </p>
-
-    <!-------------------- CUSTOM -------------------->
-    <h5>Custom controls</h5>
-
-    </p>
-    <strong>ecp.view.custom.model</strong>
-
-    <p class="indent">
-        This model provides the HardcodedDomainModelReference, which allows the user to reference a specific control
-        directly. In this way, custom controls (controls that reference an arbitrary number of features) can be added to the
-        view model.
-    </p>
-
-    <strong>ecp.view.custom.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for custom models.
-    </p>
-
-    <strong>ecp.view.custom.ui.swt</strong>
-
-    <p class="indent">
-        This defines an abstract SWT implementation of custom controls by providing helper methods, e.g., by creating the
-        validation icon.
-    </p>
-
-    <!-------------------- GROUP -------------------->
-    <h5>Group widget</h5>
-
-    </p>
-    <strong>ecp.view.group.model</strong>
-
-    <p class="indent">
-        This is a group that behaves like a vertical layout but also shows a border with the group name as the title.
-    </p>
-
-    </p>
-    <strong>ecp.view.group.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for group models.
-    </p>
-
-    </p>
-    <strong>ecp.view.group.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT renderer for group models that renders groups.
-    </p>
-
-
-    <!-------------------- HORIZONTAL -------------------->
-    <h5>Horizontal layout</h5>
-
-    <strong>ecp.view.horizontal.model</strong>
-
-    <p class="indent">
-        This defines a model for horizontal layouts wherein elements are ordered next to each other.
-    </p>
-
-    <strong>ecp.view.horizontal.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for a horizontal layout.
-    </p>
-
-    <strong>ecp.view.horizontal.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT Renderer for a horizontal layout.
-    </p>
-
-    <!-------------------- LABEL -------------------->
-    <h5>Label widget</h5>
-
-    <strong>ecp.view.label.model</strong>
-
-    <p class="indent">
-        This allows the user to define a label with a name (the displayed text) and a style.
-    </p>
-
-    <strong>ecp.view.label.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for labels.
-    </p>
-
-    <strong>ecp.view.label.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT renderer for label models.
-    </p>
-
-
-    <!-------------------- RULE SERVICE -------------------->
-    <h5>Rule service</h5>
-    <strong>ecp.view.rule</strong>
-
-    <p class="indent">
-        This is the rule service, which evaluates visibility and enablement rules.
-    </p>
-
-    <strong>ecp.view.rule.model</strong>
-
-    <p class="indent">
-        This is the rule model, which allows users to define dynamic behavior like enabling/disabling of elements or
-        showing/hiding of elements based on value changes in the domain model. A ShowRule, an EnableRule and Conditions are
-        provided by this plugin.
-    </p>
-
-    <strong>ecp.view.rule.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for the rule model.
-    </p>
-
-    <!-------------------- STACK -------------------->
-    <h5>Stack layout</h5>
-
-    <strong>ecp.view.table.model</strong>
-    <p class="indent">
-        Contains the stack model.
-    </p>
-
-    <strong>ecp.view.stack.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for the stack model.
-    </p>
-
-    <strong>ecp.view.stack.ui.swt</strong>
-
-    <p class="indent">
-        SWT renderer for stacks.
-    </p>
-
-    <strong>ecp.view.stack.viewmodel</strong>
-
-    <p class="indent">
-        Stack Layout Viewmodel.
-    </p>
-
-    <!-------------------- TABLE -------------------->
-    <h5>Table control</h5>
-
-    <strong>ecp.view.table.model</strong>
-
-    <p class="indent">
-        This provides classes like a table and columns for defining and configuring tables.
-    </p>
-
-    <strong>ecp.view.table.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for the table model.
-    </p>
-
-    <strong>ecp.view.table.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT renderer for table elements.
-    </p>
-
-    <strong>ecp.view.table.columnservice</strong>
-
-    <p class="indent">
-        This is a context service that adds all columns to tables that do not have any columns defined.
-    </p>
-
-    <strong>ecp.view.table.editor</strong>
-    <p>
-        ECP View Table Additional Features for Editor.
-    </p>
-
-    <strong>ecp.view.table.migrate</strong>
-    <p>
-        Handles table mirgration, if necessary.
-    </p>
-
-    <!-------------------- TEMPLATE -------------------->
-    <h5>Template model</h5>
-
-    <strong>ecp.view.template.model</strong>
-
-    <p class="indent">
-        This is a model for configuring icons and colors of validation errors.
-    </p>
-
-    <strong>ecp.view.template.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for the template model.
-    </p>
-
-    <strong>ecp.view.template.service</strong>
-
-    <p class="indent">
-        This is the template service that provides the Current Template model.
-    </p>
-
-    <!-------------------- TREE MASTER DETAIL -------------------->
-    <h5>Treemaster detail</h5>
-
-    <strong>ecp.view.treemasterdetail.model</strong>
-
-    <p class="indent">
-        This is a tree master detail, which provides an element that displays the domain model on the left-hand side as a
-        tree and allows users to edit it on the right-hand side.
-    </p>
-
-    <strong>ecp.view.treemasterdetail.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for the TreeMasterDetail model.
-    </p>
-
-    <strong>ecp.view.treemasterdetail.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT renderer for the tree master detail element.
-    </p>
-
-    <!-------------------- UNSET SERVICE -------------------->
-    <h5>Unset service</h5>
-
-    <strong>ecp.view.unset</strong>
-
-    <p class="indent">
-        This is the unset service, which monitors the View Model instance and sets all values of the domain model to default
-        if they are not displayed anywhere in the View Model.
-    </p>
-
-    <!-------------------- VALIDATION SERVICE -------------------->
-    <h5>Validation Service</h5>
-
-    <strong>ecp.view.validation</strong>
-
-    <p class="indent">
-        This is the validation service, which monitors the domain model and calculates validation errors.
-    </p>
-
-    <strong>ecp.view.validation.bean</strong>
-
-    <p class="indent">
-        Performs validation using JSR 303.
-    </p>
-
-    <!-------------------- VALIDATION VIEW  -------------------->
-    <h5>Validation View</h5>
-    <strong>ecp.ui.validation</strong>
-    <p class="indent">
-        Contains the validation view.
-    </p>
-
-    <strong>ecp.ui.validation.e4</strong>
-    <p class="indent">
-        Contains the e4 validation view.
-    </p>
-
-    <strong>ecp.validation.diagnostician</strong>
-    <p class="indent">
-        ECP Diagnostician used during validation.
-    </p>
-
-    <strong>ecp.validation.validationvieweditorbridge</strong>
-    <p class="indent">
-        ECP Validation View to Editor Bridge
-    </p>
-
-    <!-------------------- MAPPING DMR -------------------->
-    <h5>Mapping Domain Model References</h5>
-
-    <strong>ecp.view.mappingdmr.databinding</strong>
-    <p class="indent">
-        Provides the databinding for domain model references that need to be resolved via a map key entry.
-    </p>
-
-    <strong>ecp.view.mappingdmr.model</strong>
-    <p class="indent">
-        Contains the model for mapped domain model references.
-    </p>
-
-    <strong>ecp.view.mappingdmr.model.edit</strong>
-    <p class="indent">
-        Contains the model edit functionality for domain model references.
-    </p>
-
-    <strong>ecp.view.mappingdmr.model.tooling</strong>
-    <p class="indent">
-        Provides tooling for mapped domain model references.
-    </p>
-
-    <h5>Dependency Injection Feature</h5>
-
-    <strong>ecp.ui.view.swt.di</strong>
-    <p class="indent">
-        Contains the Dependency Injection SWT Renderer.
-    </p>
-
-    <strong>ecp.view.custom.ui.swt.di</strong>
-    <p class="indent">
-        Custom View SWT Dependency Injection.
-    </p>
-
-    <strong>ecp.view.model.common.di</strong>
-    <p class="indent">
-        Contains Common View Model Classes for Dependency Injection.
-    </p>
-
-    <!-------------------- VERTICAL LAYOUT -------------------->
-    <h5>Vertical model</h5>
-
-    <strong>ecp.view.vertical.model</strong>
-
-    <p class="indent">
-        This defines a vertical layout model wherein children are positioned under each other.
-    </p>
-
-    <strong>ecp.view.vertical.model.edit</strong>
-
-    <p class="indent">
-        This is the generated edit plugin for a vertical layout.
-    </p>
-
-    <strong>ecp.view.vertical.ui.swt</strong>
-
-    <p class="indent">
-        This is the SWT renderer for a vertical layout.
-    </p>
-
-    <!-------------------- DIFFMERGE -------------------->
-    <h5>EMF Diffmerge</h5>
-
-    <strong>ecp.diffmerge.context</strong>
-
-    <p class="indent">
-        This provides a specific ViewModelContext that can calculate a diff between two elements.
-    </p>
-
-    <strong>ecp.diffmerge.renderer.swt</strong>
-
-    <p class="indent">
-        This provides a specific renderer for the diff merge case.
-    </p>
-
-    <strong>ecp.diffmerge.swt</strong>
-
-    <p class="indent">
-        This bundle provides the Diff Dialog that allows users to see and merge diffs.
-    </p>
-
-    <!-------------------- MODEL EDIT CONTROLS -------------------->
-    <h5>EMF Forms Model Edit Controls</h5>
-
-    <strong>ecp.ui.view.editor.controls</strong>
-
-    <p class="indent">
-        These are specific controls to edit the view model (e.g., in the IDE).
-    </p>
-
-    <strong>ecp.view.template.controls.swt</strong>
-
-    <p class="indent">
-        These are specific controls to edit the template model.
-    </p>
-
-    <h4>ECP</h4>
-    <h5>ECP Core</h5>
-
-    <strong>ecp.core</strong>
-
-    <p class="indent">
-        This defines core classes like ECPProject.
-    </p>
-
-    <strong>ecp.core.emffilter</strong>
-
-    <p class="indent">
-        This provides a filter for default EPackages.
-    </p>
-
-    <strong>ecp.explorerbridge</strong>
-
-    <p class="indent">
-        This provides classes for connecting an ECPProject with a model element editor.
-    </p>
-
-    <strong>ecp.ui</strong>
-
-    <p class="indent">
-        These are SWT classes for ECP, e.g., ModelExplorer.
-    </p>
-
-
-    <strong>ecp.validation</strong>
-
-    <p class="indent">
-        This provides ECP validation used to calculate errors for ECPProjects.
-    </p>
-
-    <!-------------------- e3 -------------------->
-    <h5>ECP e3</h5>
-    <strong>ecp.application.e3</strong>
-
-    <p class="indent">
-        This is the e3 demo application for ECP.
-    </p>
-
-    <strong>ecp.editor.e3</strong>
-
-    <p class="indent">
-        This is the e3 editor used in ECP.
-    </p>
-
-    <strong>ecp.ui.e3</strong>
-
-    <p class="indent">
-        These are necessary e3 classes for ECP like handlers and views.
-    </p>
-
-    <strong>ecp.validation.connector</strong>
-
-    <p class="indent">
-        These are specific classes to display the validation errors in the model explorer tree.
-    </p>
-
-    <strong>ecp.emfstore.ui.e3</strong>
-
-    <p class="indent">
-        These are Eclipse 3.x specific UI parts for the EMFStore like share, commit and update commands.
-    </p>
-
-    <!-------------------- e4 -------------------->
-    <h5>ECP e4</h5>
-
-    <strong>ecp.application.e4</strong>
-
-    <p class="indent">
-        This is the e4 demo application for ECP.
-    </p>
-
-    <strong>ecp.ui.e4</strong>
-
-    <p class="indent">
-        These are necessary e4 classes for ECP like handlers and views.
-    </p>
-
-    <strong>ecp.emfstore.ui.e4</strong>
-
-    <p class="indent">
-        These are e4-specific UI parts for EMFStore like share, commit and update commands defined in a fragment.xml.
-    </p>
-
-    <!-------------------- WORKSPACE PROVIDER -------------------->
-    <h5>ECP Workspace Provider</h5>
-
-    <strong>ecp.workspace.core</strong>
-
-    <p class="indent">
-        A dataprovider for editing models from XMI files directly in the IDE.
-    </p>
-
-    <strong>ecp.workspace.ui</strong>
-
-    <p class="indent">
-        These are UI parts for the workspace provider like wizards for creating and loading xmi files.
-    </p>
-
-    <!-------------------- CDO PROVIDER -------------------->
-    <h5>CDO Provider</h5>
-
-    </p>
-    <strong>ecp.cdo.core</strong>
-
-    <p class="indent">
-        This is a data provider for the CDO model repository.
-    </p>
-
-    </p>
-    <strong>ecp.cdo.ui</strong>
-
-    <p class="indent">
-        These are UI parts for the CDO provider like check-in and update commands.
-    </p>
-
-    <!-------------------- EMFSTORE PROVIDER -------------------->
-    <h5>EMFStore Provider</h5>
-
-    <strong>ecp.emfstore.core</strong>
-
-    <p class="indent">
-        This is a data provider for EMFStore.
-    </p>
-
-    <strong>ecp.emfstore.ui</strong>
-
-    <p class="indent">
-        These are UI parts for the EMFStore like share, commit and update handler.
-
-    </p>
-
-    <h4>RAP</h4>
-    <strong>ecp.rap</strong>
-
-    <p class="indent">
-        This is the RAP demo application for ECP.
-    </p>
-
-    </p>
-    <strong>ecp.rap.util</strong>
-
-    <p class="indent">
-        This provides utility classes for RAP, e.g., a JFace Dialog wrapper.
-    </p>
-</div>
-<div class="footer">
-    <div class="row-fluid">
-        <div class="span2 text-center">
-            <a href="http://www.eclipse.org/legal/privacy.php" target="_blank">
-                Privacy Policy </a>
-        </div>
-        <div class="span2 text-center">
-            <a href="http://www.eclipse.org/legal/termsofuse.php"
-               target="_blank"> Terms of Use </a>
-        </div>
-        <div class="span2 text-center">
-            <a href="http://www.eclipse.org/legal/copyright.php"
-               target="_blank"> Copyright </a>
-        </div>
-        <div class="span2 text-center">
-            <a href="http://www.eclipse.org/legal/" target="_blank"> Legal
-            </a>
-        </div>
-        <div class="span2 text-center">
-            <a
-                    href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client"
-                    target="_blank"> About </a>
-        </div>
-        <div class="span2 text-center">
-            <a href="http://www.eclipse.org/" target="_blank">eclipse.org</a>
+        <div class="text-center">
+            Icons are from <a
+                href="http://www.icondeposit.com/theicondeposit:108"
+                target="_blank">Icon Deposit</a>
         </div>
     </div>
-    <div class="text-center">
-        Icons are from <a
-            href="http://www.icondeposit.com/theicondeposit:108"
-            target="_blank">Icon Deposit</a>
-    </div>
 </div>
-</div>
-</body>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push([ '_setAccount', 'UA-31075157-1' ]);
-    _gaq.push([ '_trackPageview' ]);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-                        : 'http://www')
-                + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+<!-- End Google Tag Manager -->
+<script>
+  (function(w) {
+    w.cookieconsent.init(function() {
+      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+        createTimeline();
+      }
+    });
+    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      createTimeline();
+    }
+  })(window)
 </script>
+</body>
 </html>

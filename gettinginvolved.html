@@ -14,241 +14,245 @@
     <script src="public/javascripts/jquery-1.9.0.min.js"
             type="text/javascript"></script>
     <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+
+    <script src="public/javascripts/common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+    <script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="container-fluid fill">
-<div class="banner">
-    <div class="row-fluid">
-        <div class="span2" style="padding: 0.5em;">
-            <a href="index.html"> <img src="public/images/ecp.png"/>
-            </a>
-        </div>
-        <div class="span10 pull-left">
-            <h2>EMF Client Platform</h2>
+    <div class="banner">
+        <div class="row-fluid">
+            <div class="span2" style="padding: 0.5em;">
+                <a href="index.html"> <img src="public/images/ecp.png"/>
+                </a>
+            </div>
+            <div class="span10 pull-left">
+                <h2>EMF Client Platform</h2>
 
-            <p>Are you still manually coding UIs?</p>
-        </div>
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="navbar span12">
-        <div class="navbar-inner" id="topbar">
-            <button id="topbtn" type="button" class="btn btn-navbar"
-                    data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span><span class="icon-bar"></span><span
-                    class="icon-bar"></span>
-            </button>
-            <div class="nav-collapse">
-                <ul class="nav">
-                    <li>
-                        <a href="index.html">
-                            <img class="nav-image" src="public/images/home.png"/>
-                            <span>&nbsp;Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gettingstarted.html">
-                            <img class="nav-image" src="public/images/getting-started.png"/>
-                            <span>&nbsp;Getting Started</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="download.html">
-                            <img class="nav-image" src="public/images/download.png"/>
-                            <span>&nbsp;Download</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="documentation.html">
-                            <img class="nav-image" src="public/images/documentation.png"/>
-                            <span>&nbsp;Documentation</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="support.html">
-                            <img class="nav-image" src="public/images/support.png"/>
-                            <span>&nbsp;Support</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gettinginvolved.html">
-                            <img class="nav-image" src="public/images/getting-involved.png"/>
-                            <span>&nbsp;Getting Involved</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="communication.html">
-                            <img class="nav-image" src="public/images/communication.png"/>
-                            <span>&nbsp;Contact</span>
-                        </a>
-                    </li>
-                </ul>
+                <p>Are you still manually coding UIs?</p>
             </div>
         </div>
     </div>
-</div>
-<div class="content">
-    <h3>GETTING INVOLVED</h3>
+    <div class="row-fluid">
+        <div class="navbar span12">
+            <div class="navbar-inner" id="topbar">
+                <button id="topbtn" type="button" class="btn btn-navbar"
+                        data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span
+                        class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">
+                                <img class="nav-image" src="public/images/home.png"/>
+                                <span>&nbsp;Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gettingstarted.html">
+                                <img class="nav-image" src="public/images/getting-started.png"/>
+                                <span>&nbsp;Getting Started</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="download.html">
+                                <img class="nav-image" src="public/images/download.png"/>
+                                <span>&nbsp;Download</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documentation.html">
+                                <img class="nav-image" src="public/images/documentation.png"/>
+                                <span>&nbsp;Documentation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="support.html">
+                                <img class="nav-image" src="public/images/support.png"/>
+                                <span>&nbsp;Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gettinginvolved.html">
+                                <img class="nav-image" src="public/images/getting-involved.png"/>
+                                <span>&nbsp;Getting Involved</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="communication.html">
+                                <img class="nav-image" src="public/images/communication.png"/>
+                                <span>&nbsp;Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h3>GETTING INVOLVED</h3>
 
-    <p>
-        Everyone is invited to get involved with the EMF Client project.
-        Before you plan any kind of contribution, it is a good idea to
-        contact the <a
-            href="http://eclipse.org/emfclient/communication.html">project
-        team</a>.
-    </p>
-    <ul class="no-bullets">
-        <li><em><strong>Writing bug reports</strong></em>
-
-            <p>
-                Please provide a short and concise explanation of the problem and a
-                snippet to reproduce the issue, ideally a JUnit test case that
-                outlines the expected behavior. You are also invited to enter feature requests.
-                Please use
-                <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
-                   target="_blank">
-                    Bugzilla
-                </a> to report bugs and feature requests.
-            </p>
-        </li>
-        <li id="commitGuidelines"><em><strong>Commit Message Guidelines</strong></em>
         <p>
-        	We have the following commit message template:
-			<pre>
+            Everyone is invited to get involved with the EMF Client project.
+            Before you plan any kind of contribution, it is a good idea to
+            contact the <a
+                href="http://eclipse.org/emfclient/communication.html">project
+            team</a>.
+        </p>
+        <ul class="no-bullets">
+            <li><em><strong>Writing bug reports</strong></em>
+
+                <p>
+                    Please provide a short and concise explanation of the problem and a
+                    snippet to reproduce the issue, ideally a JUnit test case that
+                    outlines the expected behavior. You are also invited to enter feature requests.
+                    Please use
+                    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
+                       target="_blank">
+                        Bugzilla
+                    </a> to report bugs and feature requests.
+                </p>
+            </li>
+            <li id="commitGuidelines"><em><strong>Commit Message Guidelines</strong></em>
+                <p>
+                    We have the following commit message template:
+                <pre>
 (Bug &lt;Bug ID&gt; - &lt;Bug Title&gt;) | (TCI - &lt;Fix&gt;)
 
 &lt;Commit Description&gt;?
 Change-Id: &lt;Generated Gerrit Change ID&gt;
 Signed-off-by: &lt;sign off name and email&gt;
 			</pre>
-			<strong>Instructions (Please continue READING):</strong>
-			<ul>
-			<li><em>TCI commits</em>: For trivial code changes please use a TCI commit message. See list below for examples. If in doubt please discuss with reviewer.</li>
-			<li><em>Normal Commits</em>: For all other commits use a commit message starting with 'Bug'. Bug reports with Proper Titles: Before using a Bug title for a commit, committer must update the Bug title to a reasonable and descriptive title for the task they have worked on</li>
-			<li><em>Commit Description</em>: Additionally to the title, the commit message can describe briefly (2-3 sentences) how this commit fixes the bug from a technical perspective</li>
-			<li><em>Multiple Commits for same bug</em>: Of course you may use the same bug and therefore bug title for multiple commits and their message, in this case please provide a unique description</li>
-			<li><em>Reviewers responsibility</em>: The reviewer is responsible also for checking that the bug title is descriptive and reflects the committed change and that the description if any reflects the technical change</li>
-			</ul>
-			<strong>TCI message examples: </strong>
-			<ul>
-			<li>JavaDoc</li>
-			<li>NPE</li>
-			<li>Version Update of manifest and pom</li>
-			<li>anonymous to inner class Conversion</li>
-			<li>Renaming local vars, e.g. because of typos</li>
-			<li>Externalizing strings</li>
-			</ul>
-        </p>
-        </li>
-        <li><em><strong>Use Gerrit to contribute to ECP</strong></em>
+                <strong>Instructions (Please continue READING):</strong>
+                <ul>
+                    <li><em>TCI commits</em>: For trivial code changes please use a TCI commit message. See list below for examples. If in doubt please discuss with reviewer.</li>
+                    <li><em>Normal Commits</em>: For all other commits use a commit message starting with 'Bug'. Bug reports with Proper Titles: Before using a Bug title for a commit, committer must update the Bug title to a reasonable and descriptive title for the task they have worked on</li>
+                    <li><em>Commit Description</em>: Additionally to the title, the commit message can describe briefly (2-3 sentences) how this commit fixes the bug from a technical perspective</li>
+                    <li><em>Multiple Commits for same bug</em>: Of course you may use the same bug and therefore bug title for multiple commits and their message, in this case please provide a unique description</li>
+                    <li><em>Reviewers responsibility</em>: The reviewer is responsible also for checking that the bug title is descriptive and reflects the committed change and that the description if any reflects the technical change</li>
+                </ul>
+                <strong>TCI message examples: </strong>
+                <ul>
+                    <li>JavaDoc</li>
+                    <li>NPE</li>
+                    <li>Version Update of manifest and pom</li>
+                    <li>anonymous to inner class Conversion</li>
+                    <li>Renaming local vars, e.g. because of typos</li>
+                    <li>Externalizing strings</li>
+                </ul>
+                </p>
+            </li>
+            <li><em><strong>Use Gerrit to contribute to ECP</strong></em>
 
-            <p>
-                We use 
-                <a href="http://wiki.eclipse.org/Gerrit"
-                   target="_blank">
-                    Gerrit
-                </a> code review so you can easily contribute to ECP and get a review for your
-                changes. Please make sure that all your commits refer to a 
-                <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
-                   target="_blank">
-                    Bugzilla
-                </a> Bug.
-            </p></li>
-        <li><em><strong>Providing a patch to fix a bug or add a feature</strong></em>
+                <p>
+                    We use
+                    <a href="http://wiki.eclipse.org/Gerrit"
+                       target="_blank">
+                        Gerrit
+                    </a> code review so you can easily contribute to ECP and get a review for your
+                    changes. Please make sure that all your commits refer to a
+                    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
+                       target="_blank">
+                        Bugzilla
+                    </a> Bug.
+                </p></li>
+            <li><em><strong>Providing a patch to fix a bug or add a feature</strong></em>
 
-            <p>
-                Please attach your patch to the bug report in question or create a new report using
-                <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
-                   target="_blank">
-                    Bugzilla
-                </a>.
-            </p>    
-        </li>
-        <li><em><strong>Contribute documentation</strong></em>
+                <p>
+                    Please attach your patch to the bug report in question or create a new report using
+                    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp"
+                       target="_blank">
+                        Bugzilla
+                    </a>.
+                </p>
+            </li>
+            <li><em><strong>Contribute documentation</strong></em>
 
-            <p>
-                If you found something that is not documented yet, please share
-                your knowledge with other users. Please <a
-                    href="http://eclipse.org/emfclient/communication.html">contact
-                us</a> to find the appropriate place to add your documentation.
-            </p></li>
-    </ul>
-    <h4>Developer Resources for EMF Forms</h4>
-			Using Oomph we want to ease the setup pain for new contributors and committers of EMFForms.
-			Here are the necessary steps:
-			<ul class="no-bullets">
-				<li><b>Step 1: Download <a href="https://wiki.eclipse.org/Eclipse_Installer">Oomph</a> for your Platform</b></li>
-				<li><b>Step 2: Start Oomph</b>
-					<ul class="no-bullets">
-						<li>Update Oomph to the latest version if required (Simple Mode: Upper right corner or Advance Mode: left bottom)</li>
-						<li>Switch to Advanced Mode (Upper Right corner, Advanced Mode)</li>
-						<li>Drag and Drop / add ("+" in the upper right corner) this profile <a href="https://raw.githubusercontent.com/eclipsesource/oomph/master/EclipseSource.setup">EclipseSource Profile</a>
-							</br>
-							<img src="public/images/image_profile.png"/>
-						</li>
-						<li>Select the 'EclipseSource IDE' entry and press next</li>
-						<li>Drag and Drop / add ("+" in the upper right corner) this setup file: <a href="http://git.eclipse.org/c/emfclient/org.eclipse.emf.ecp.core.git/plain/releng/org.eclipse.emf.ecp.releng/EMFForms.setup?h=develop">EMFForms.setup</a> into the top list. You should now see a new Entry at the top: 
-							</br>
-							<img src="public/images/image_emfforms.png"/>
-							</br>
-							Select the EMFForms entry and <b>double click</b> it, it should be <b>BOLD</b> now:
-							</br>
-							<img src="public/images/image_emfforms_selected.png"/>
-						</li>
-						<li>Press next and select the way you want Oomph to install your Eclipse and Workspace</li>
-						<li>Press Finish and let Oomph do the magic</li>
-					</ul>
-				</li>
-				<li><b>Step 3: When Oomph finishes you still have to do some manual steps</b>
-					<ul class="no-bullets">
-						<li>
-							Locate and open the ecp.target file in the org.eclipse.emf.ecp.target.rcp bundle imported from the repository. When it is resolved, set this definition as the target platform. This may take quite some time at first.
-						</li>
-						<!-- Should be done by OOmph
-						<li>
-							To set up an API baseline, download the latest <a href="https://www.eclipse.org/ecp/emfforms/download.html">Release for Target Platforms</a> from the list of single releases and open up your Preferences. Navigate to Plug-in Development > API Baselines. Select "Add Baseline", name your baseline meaningful and click "Browse" to select the root folder of your downloaded ECP SDK. Click OK and once the baseline is initialized, click Finish.
-						</li>
-						-->
-					</ul>
-				</li>
-				<li><b>Step 4: Start developing using ECP</b></li>
-			</ul>
-    <h4>Framework Developer Documentation</h4>
-    <ul class="no-bullets">
-        <li>
-            <p>See the <a href="devguidelines.html">developer documentation</a>.</p>
-        </li>
-    </ul>
-    <h4>Branching scheme</h4>
-    <ul class="no-bullets">
-        <li>
-            <p>In our GIT Repositories we are using the branching scheme described <a class="link"
-                                                                                      href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.
-            </p>
-        </li>
-        <li>
-            <p>We have a master branch containing the last release. A development branch containing the current
-                development state and (hopefully) some feature branches containing new feature developments.</p>
-        </li>
-        <li>
-            <p>So if you are a developer please commit on the develop branch in the future. If you develop a new feature
-                please open a feature branch and merge it back to the develop branch when your feature is finished.
-                Don't commit on the master branch as it should only contain stable release versions merged there by the
-                release engineer.</p>
-        </li>
-        <li>
-            <img alt="Branching Scheme" src="public/images/branchStrategy.png" height="452" width="355"/>
-        </li>
-    </ul>
-    <h4>Profiling and Performance Debugging</h4>
-    <ul class="no-bullets">
-        <li>
-            YourKit is kindly supporting the EMF Client Platform open source project with its full-featured
-            <a target="_blank" href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>, which
-            helped us to greatly improve EMFCP.
-        </li>
-    </ul>
-</div>
+                <p>
+                    If you found something that is not documented yet, please share
+                    your knowledge with other users. Please <a
+                        href="http://eclipse.org/emfclient/communication.html">contact
+                    us</a> to find the appropriate place to add your documentation.
+                </p></li>
+        </ul>
+        <h4>Developer Resources for EMF Forms</h4>
+        Using Oomph we want to ease the setup pain for new contributors and committers of EMFForms.
+        Here are the necessary steps:
+        <ul class="no-bullets">
+            <li><b>Step 1: Download <a href="https://wiki.eclipse.org/Eclipse_Installer">Oomph</a> for your Platform</b></li>
+            <li><b>Step 2: Start Oomph</b>
+                <ul class="no-bullets">
+                    <li>Update Oomph to the latest version if required (Simple Mode: Upper right corner or Advance Mode: left bottom)</li>
+                    <li>Switch to Advanced Mode (Upper Right corner, Advanced Mode)</li>
+                    <li>Drag and Drop / add ("+" in the upper right corner) this profile <a href="https://raw.githubusercontent.com/eclipsesource/oomph/master/EclipseSource.setup">EclipseSource Profile</a>
+                        </br>
+                        <img src="public/images/image_profile.png"/>
+                    </li>
+                    <li>Select the 'EclipseSource IDE' entry and press next</li>
+                    <li>Drag and Drop / add ("+" in the upper right corner) this setup file: <a href="http://git.eclipse.org/c/emfclient/org.eclipse.emf.ecp.core.git/plain/releng/org.eclipse.emf.ecp.releng/EMFForms.setup?h=develop">EMFForms.setup</a> into the top list. You should now see a new Entry at the top:
+                        </br>
+                        <img src="public/images/image_emfforms.png"/>
+                        </br>
+                        Select the EMFForms entry and <b>double click</b> it, it should be <b>BOLD</b> now:
+                        </br>
+                        <img src="public/images/image_emfforms_selected.png"/>
+                    </li>
+                    <li>Press next and select the way you want Oomph to install your Eclipse and Workspace</li>
+                    <li>Press Finish and let Oomph do the magic</li>
+                </ul>
+            </li>
+            <li><b>Step 3: When Oomph finishes you still have to do some manual steps</b>
+                <ul class="no-bullets">
+                    <li>
+                        Locate and open the ecp.target file in the org.eclipse.emf.ecp.target.rcp bundle imported from the repository. When it is resolved, set this definition as the target platform. This may take quite some time at first.
+                    </li>
+                    <!-- Should be done by OOmph
+                    <li>
+                        To set up an API baseline, download the latest <a href="https://www.eclipse.org/ecp/emfforms/download.html">Release for Target Platforms</a> from the list of single releases and open up your Preferences. Navigate to Plug-in Development > API Baselines. Select "Add Baseline", name your baseline meaningful and click "Browse" to select the root folder of your downloaded ECP SDK. Click OK and once the baseline is initialized, click Finish.
+                    </li>
+                    -->
+                </ul>
+            </li>
+            <li><b>Step 4: Start developing using ECP</b></li>
+        </ul>
+        <h4>Framework Developer Documentation</h4>
+        <ul class="no-bullets">
+            <li>
+                <p>See the <a href="devguidelines.html">developer documentation</a>.</p>
+            </li>
+        </ul>
+        <h4>Branching scheme</h4>
+        <ul class="no-bullets">
+            <li>
+                <p>In our GIT Repositories we are using the branching scheme described <a class="link"
+                                                                                          href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.
+                </p>
+            </li>
+            <li>
+                <p>We have a master branch containing the last release. A development branch containing the current
+                    development state and (hopefully) some feature branches containing new feature developments.</p>
+            </li>
+            <li>
+                <p>So if you are a developer please commit on the develop branch in the future. If you develop a new feature
+                    please open a feature branch and merge it back to the develop branch when your feature is finished.
+                    Don't commit on the master branch as it should only contain stable release versions merged there by the
+                    release engineer.</p>
+            </li>
+            <li>
+                <img alt="Branching Scheme" src="public/images/branchStrategy.png" height="452" width="355"/>
+            </li>
+        </ul>
+        <h4>Profiling and Performance Debugging</h4>
+        <ul class="no-bullets">
+            <li>
+                YourKit is kindly supporting the EMF Client Platform open source project with its full-featured
+                <a target="_blank" href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>, which
+                helped us to greatly improve EMFCP.
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="footer">
     <div class="row-fluid">
@@ -290,21 +294,24 @@ Signed-off-by: &lt;sign off name and email&gt;
         Icons are from <a href="http://www.icondeposit.com/theicondeposit:108" target="_blank">Icon Deposit</a>
     </div>
 </div>
-</body>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push([ '_setAccount', 'UA-31075157-1' ]);
-    _gaq.push([ '_trackPageview' ]);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-                : 'http://www')
-                + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+<!-- End Google Tag Manager -->
+<script>
+  (function(w) {
+    w.cookieconsent.init(function() {
+      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+        createTimeline();
+      }
+    });
+    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      createTimeline();
+    }
+  })(window)
 </script>
+</body>
 </html>
