@@ -16,7 +16,6 @@
 	<script src="public/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
 	<script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
 
-	<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script src="public/javascripts/common.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
 	<script src="public/javascripts/cookieconsent.js" type="text/javascript"></script>
@@ -447,11 +446,17 @@
   (function(w) {
     w.cookieconsent.init(function() {
       if (getCookie("eclipse_cookieconsent_status") === "allow") {
-        createTimeline();
+		$.getScript(
+		  "https://platform.twitter.com/widgets.js",
+		  function () { createTimeline() }
+		);
       }
     });
     if (getCookie("eclipse_cookieconsent_status") === "allow") {
-      createTimeline();
+      $.getScript(
+        "https://platform.twitter.com/widgets.js",
+        function() { createTimeline() }
+	  );
     }
   })(window)
 </script>
