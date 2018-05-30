@@ -6,11 +6,7 @@ function getCookie(name, expected) {
   return cookieValues.reduce(function (acc, val) { return acc && val === expected }, true);
 }
 
-function hasCookie(name) {
-  return getCookies(name).length > 0;
-}
-
-function getCookies(name){
+var getCookies = function(name){
   var pairs = document.cookie.split(";");
   var cookies = [];
   for (var i = 0; i < pairs.length; i++){
@@ -22,7 +18,6 @@ function getCookies(name){
   return cookies;
 }
 
-
 function createTimeline() {
   var twitterContainer = document.getElementById("twitter-container");
   twttr.widgets.createTimeline(
@@ -33,4 +28,15 @@ function createTimeline() {
     }
   );
   twitterContainer.innerText = '';
+}
+
+function createTwitterWidget() {
+  if (getCookie("eclipse_cookieconsent_status", "allow")) {
+    $.getScript(
+      "https://platform.twitter.com/widgets.js",
+      function () {
+        createTimeline()
+      }
+    );
+  }
 }
