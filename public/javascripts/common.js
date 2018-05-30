@@ -6,7 +6,11 @@ function getCookie(name, expected) {
   return cookieValues.reduce(function (acc, val) { return acc && val === expected }, true);
 }
 
-var getCookies = function(name){
+function hasCookie(name) {
+  return getCookies(name).length > 0;
+}
+
+function getCookies(name){
   var pairs = document.cookie.split(";");
   var cookies = [];
   for (var i = 0; i < pairs.length; i++){

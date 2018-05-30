@@ -444,19 +444,24 @@
 <!-- End Google Tag Manager -->
 <script>
   (function(w) {
-    w.cookieconsent.init(function() {
+    if (hasCookie("eclipse_cookieconsent_status")) {
       if (getCookie("eclipse_cookieconsent_status", "allow")) {
-		$.getScript(
-		  "https://platform.twitter.com/widgets.js",
-		  function () { createTimeline() }
-		);
+        $.getScript(
+          "https://platform.twitter.com/widgets.js",
+          function() { createTimeline() }
+        );
       }
-    });
-    if (getCookie("eclipse_cookieconsent_status", "allow")) {
-      $.getScript(
-        "https://platform.twitter.com/widgets.js",
-        function() { createTimeline() }
-	  );
+    } else {
+      w.cookieconsent.init(function () {
+        if (getCookie("eclipse_cookieconsent_status", "allow")) {
+          $.getScript(
+            "https://platform.twitter.com/widgets.js",
+            function () {
+              createTimeline()
+            }
+          );
+        }
+      });
     }
   })(window)
 </script>
