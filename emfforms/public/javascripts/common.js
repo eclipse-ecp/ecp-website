@@ -18,6 +18,10 @@ var getCookies = function(name){
   return cookies;
 }
 
+function hasCookie(name) {
+  return getCookies(name).length > 0;
+}
+
 
 function createTimeline() {
   var twitterContainer = document.getElementById("twitter-container");
