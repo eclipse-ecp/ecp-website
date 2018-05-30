@@ -576,7 +576,7 @@
       i({})
     }, e.utils = t, e.hasInitialised = !0, window.cookieconsent = e
   }
-}(window.cookieconsent || {}),  window.cookieconsent.init =  function(onStatusChangeCallback) {
+}(window.cookieconsent || {}),  window.cookieconsent.init =  function(onStatusChangeCallback, onFinishedCallback) {
   window.cookieconsent.Popup.prototype.revokeChoice = function(e) {
     this.options.enabled = !0, this.options.onRevokeChoice.call(this), e || this.autoOpen(), this.open()
   }, window.cookieconsent.Popup.prototype.removeCookies = function() {
@@ -604,9 +604,10 @@
       onStatusChangeCallback();
     },
     onInitialise: function(e, t) {
-      console.log(e), setTimeout(function() {
+      setTimeout(function() {
         document.getElementsByClassName("cc-revoke")[0].style.display = "block"
       })
+      onFinishedCallback();
     },
     revokeBtn: '<div class="cc-revoke {{classes}}">Cookie settings</div>',
     palette: {

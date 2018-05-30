@@ -18,11 +18,6 @@ var getCookies = function(name){
   return cookies;
 }
 
-function hasCookie(name) {
-  return getCookies(name).length > 0;
-}
-
-
 function createTimeline() {
   var twitterContainer = document.getElementById("twitter-container");
   twttr.widgets.createTimeline(
@@ -34,3 +29,14 @@ function createTimeline() {
   );
   twitterContainer.innerText = '';
 }
+
+function createTwitterWidget() {
+  if (getCookie("eclipse_cookieconsent_status", "allow")) {
+    $.getScript(
+      "https://platform.twitter.com/widgets.js",
+      function () {
+        createTimeline()
+      }
+    );
+  }
+},
