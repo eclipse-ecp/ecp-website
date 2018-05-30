@@ -1,21 +1,23 @@
-// via https://stackoverflow.com/questions/5968196/check-cookie-if-cookie-exists
-function getCookie(name) {
-  var dc = document.cookie;
-  var prefix = name + "=";
-  var begin = dc.indexOf("; " + prefix);
-  if (begin === -1) {
-    begin = dc.indexOf(prefix);
-    if (begin !== 0) return null;
-  } else {
-    begin += 2;
-    var end = document.cookie.indexOf(";", begin);
-    if (end === -1) {
-      end = dc.length;
+function getCookie(name, expected) {
+  var cookieValues = getCookies(name);
+  if (cookieValues.length === 0) {
+    return false;
+  }
+  return cookieValues.reduce(function (acc, val) { return acc && val === expected }, true);
+}
+
+var getCookies = function(name){
+  var pairs = document.cookie.split(";");
+  var cookies = [];
+  for (var i = 0; i < pairs.length; i++){
+    var pair = pairs[i].split("=");
+    if (pair[0].trim() === name) {
+      cookies.push(decodeURI(pair[1]))
     }
   }
-
-  return decodeURI(dc.substring(begin + prefix.length, end));
+  return cookies;
 }
+
 
 function createTimeline() {
   var twitterContainer = document.getElementById("twitter-container");

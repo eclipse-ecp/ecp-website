@@ -445,14 +445,14 @@
 <script>
   (function(w) {
     w.cookieconsent.init(function() {
-      if (getCookie("eclipse_cookieconsent_status") === "allow") {
+      if (getCookie("eclipse_cookieconsent_status", "allow")) {
 		$.getScript(
 		  "https://platform.twitter.com/widgets.js",
 		  function () { createTimeline() }
 		);
       }
     });
-    if (getCookie("eclipse_cookieconsent_status") === "allow") {
+    if (getCookie("eclipse_cookieconsent_status", "allow")) {
       $.getScript(
         "https://platform.twitter.com/widgets.js",
         function() { createTimeline() }
