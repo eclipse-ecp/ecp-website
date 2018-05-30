@@ -24,7 +24,7 @@
       getCookie: function(e) {
         var t = "; " + document.cookie,
           i = t.split("; " + e + "=");
-        return 2 != i.length ? void 0 : i.pop().split(";").shift()
+        return i.length < 2 ? void 0 : i.pop().split(";").shift()
       },
       setCookie: function(e, t, i, o, n) {
         var s = new Date;
@@ -124,7 +124,9 @@
           i = "top" == e.position || "bottom" == e.position ? "banner" : "floating";
         t.isMobile() && (i = "floating");
         var o = ["cc-" + i, "cc-type-" + e.type, "cc-theme-" + e.theme];
-        return e.static && o.push("cc-static"), o.push.apply(o, a.call(this)), h.call(this, this.options.palette), this.customStyleSelector && o.push(this.customStyleSelector), o
+        e.static && o.push("cc-static"), o.push.apply(o, a.call(this));
+        h.call(this, this.options.palette);
+        return this.customStyleSelector && o.push(this.customStyleSelector), o
       }
 
       function l() {
@@ -452,7 +454,8 @@
               url: "//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js",
               isScript: !0,
               callback: function(e) {
-                return window.geoip2 ? void geoip2.country(function(t) {
+                if (!window.geoip2) return void e(new Error("Unexpected response format. The downloaded script should have exported `geoip2` to the global scope"));
+                geoip2.country(function(t) {
                   try {
                     e({
                       code: t.country.iso_code
@@ -462,7 +465,7 @@
                   }
                 }, function(t) {
                   e(n(t))
-                }) : void e(new Error("Unexpected response format. The downloaded script should have exported `geoip2` to the global scope"))
+                })
               }
             }
           }
@@ -483,7 +486,8 @@
         return "string" == typeof i ? this.options.serviceDefinitions[i]() : t.isPlainObject(i) ? this.options.serviceDefinitions[i.name](i) : null
       }, e.prototype.locate = function(e, t) {
         var i = this.getNextService();
-        return i ? (this.callbackComplete = e, this.callbackError = t, void this.runService(i, this.runNextServiceOnError.bind(this))) : void t(new Error("No services to run"))
+        if (!i) return void t(new Error("No services to run"));
+        this.callbackComplete = e, this.callbackError = t, this.runService(i, this.runNextServiceOnError.bind(this))
       }, e.prototype.setupUrl = function(e) {
         var t = this.getCurrentServiceOpts();
         return e.url.replace(/\{(.*?)\}/g, function(i, o) {
@@ -572,7 +576,7 @@
       i({})
     }, e.utils = t, e.hasInitialised = !0, window.cookieconsent = e
   }
-}(window.cookieconsent || {}), window.cookieconsent.init =  function(onStatusChangeCallback) {
+}(window.cookieconsent || {}),  window.cookieconsent.init =  function(onStatusChangeCallback, onFinishedCallback) {
   window.cookieconsent.Popup.prototype.revokeChoice = function(e) {
     this.options.enabled = !0, this.options.onRevokeChoice.call(this), e || this.autoOpen(), this.open()
   }, window.cookieconsent.Popup.prototype.removeCookies = function() {
@@ -582,27 +586,28 @@
         s = n > -1 ? o.substr(0, n) : o;
       s = s.trim(), void 0 !== e && 0 != e.length && -1 != e.indexOf(s) || (document.cookie = s + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;")
     }
-  },
-    window.cookieconsent.initialise({
+  }, window.cookieconsent.initialise({
     type: "opt-in",
     position: "bottom",
     revokable: !0,
     enabled: !0,
     cookie: {
       name: "eclipse_cookieconsent_status",
-      expiryDays: 90
+      expiryDays: 90,
+      domain: "." + location.hostname.split(".").reverse()[1] + "." + location.hostname.split(".").reverse()[0]
     },
     compliance: {
       "opt-in": '<div class="cc-compliance cc-highlight">{{deny}}{{allow}}</div>'
     },
     onStatusChange: function(e, t) {
-      "allow" !== e && this.removeCookies();
+      document.cookie = "eclipse_cookieconsent_status=" + e + "; expires=0; path=/;", "allow" !== e && this.removeCookies()
       onStatusChangeCallback();
     },
     onInitialise: function(e, t) {
       setTimeout(function() {
         document.getElementsByClassName("cc-revoke")[0].style.display = "block"
       })
+      onFinishedCallback();
     },
     revokeBtn: '<div class="cc-revoke {{classes}}">Cookie settings</div>',
     palette: {
