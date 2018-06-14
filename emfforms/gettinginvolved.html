@@ -175,6 +175,46 @@ Signed-off-by: &lt;sign off name and email&gt;
 							href="http://eclipse.org/emfclient/communication.html">contact
 						us</a> to find the appropriate place to add your documentation.
 					</p></li>
+					<li><em><strong>Bug report quality policy</strong></em>
+
+					<p>
+						Please note that our bug reports (BRs) are an essential source
+						information for adopters to get an overview about applied changes
+						and new features. Therefore, titles must indicate the affected
+						component and express the goal of a change. <br /> It is the
+						reviewer's responsibility to verify that the BR complies with this
+						policy.
+					</p></li>
+				<li><em><strong>Tag bug reports to be retested</strong></em>
+					<p>If you believe that a change could cause a regression for a
+						consumer please add the "test" keyword to highlight that this
+						feature should be re-tested when a consumer upgrades the affected
+						component. Common instances where this keyword must be added
+						include:</p>
+					<ul>
+						<li>when the behavior of a component has changed</li>
+						<li>when a new feature has been added which is enabled by
+							default</li>
+					</ul>
+					<p>
+						This also includes any changes of the default behavior and
+						adaptations of visible UI elements, even if they are considered an
+						improvement. Further, this includes non-trivial refactorings. If
+						in doubt, prefer to tag a BR. <br> Additionally to the "test"
+						tag, provide a comment like this:
+					</p> <pre>
+TESTING INFORMATION
+Summary of the critical part of the change
+Potential regressions
+Affected areas / use cases
+Things that shall be tested
+</pre>
+					<p>
+						Again, it is part of the code review to check the BR title and the
+						existence of an appropriate comment. <br> If you identify a
+						regression or change of behavior after the fact, please add the
+						"test" keyword and the testing information as well.
+					</p></li>
 			</ul>
 			<h4>Developer Resources for EMF Forms</h4>
 			Using Oomph we want to ease the setup pain for new contributors and committers of EMFForms.
