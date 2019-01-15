@@ -17,26 +17,3 @@ var getCookies = function(name){
   }
   return cookies;
 }
-
-function createTimeline() {
-  var twitterContainer = document.getElementById("twitter-container");
-  twttr.widgets.createTimeline(
-    '344734102089510912',
-    twitterContainer,
-    {
-      height: 400
-    }
-  );
-  twitterContainer.innerText = '';
-}
-
-function createTwitterWidget() {
-  if (getCookie("eclipse_cookieconsent_status", "allow")) {
-    $.getScript(
-      "https://platform.twitter.com/widgets.js",
-      function () {
-        createTimeline()
-      }
-    );
-  }
-}
