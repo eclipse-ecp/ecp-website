@@ -16,4 +16,12 @@ var getCookies = function(name){
     }
   }
   return cookies;
+};
+
+function createTwitterWidget() {
+  if (getCookie("eclipse_cookieconsent_status", "allow")) {
+    $.getScript(
+      "https://platform.twitter.com/widgets.js"
+    );
+  }
 }
