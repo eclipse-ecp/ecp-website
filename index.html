@@ -296,35 +296,34 @@
                 <div class="row-fluid">
                     <div class="span6">
                         <div class="feature">
-                            <h6>Explorer</h6>
+                            <h6>Tree Master Detail Component</h6>
                             <ul>
                                 <li>Displays all entities in a hierarchy</li>
-                                <li>Allows to create, group, move and delete entities</li>
+                                <li>Allows to create, move and delete entities</li>
                                 <li>Works out-of-the-box</li>
                                 <li>Iteratively Customizable</li>
-                                <li class="no-bullets"><a href="#explorer" role="button"
+                                <li class="no-bullets"><a href="#treeMasterDetail" role="button"
                                                           data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-                                    <div id="explorer" class="modal hide fade" tabindex="-1"
-                                         role="dialog" aria-labelledby="explorerLabel"
+                                    <div id="treeMasterDetail" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="tmdLabel"
                                          aria-hidden="true">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal"
                                                     aria-hidden="true">x</button>
-                                            <h3 id="explorerLabel">Explorer</h3>
+                                            <h3 id="tmdLabel">Tree Master Detail Component</h3>
                                         </div>
                                         <div class="modal-body">
-                                            <p>The explorer of the EMF Client Platform provides an
-                                                hierarchical overview of all entities existing in an
-                                                application. It also allows to create projects, grouping
-                                                the data of your application. Within projects, the explorer
-                                                allows the creation of entities and sub-entities. These
-                                                entities can be moved via drag and drop and opened in the
-                                                editor with a double click.</p>
+                                            <p>The Tree Master Detail Component of the EMF Client Platform
+                                            	provides an hierarchical overview of all entities existing 
+                                            	in your model. 
+                                            	The Tree Master Detail Component allows the creation of 
+                                            	entities and sub-entities. These entities can be moved via 
+                                            	drag and drop and opened in the editor with a double click.</p>
 
-                                            <p>All features of the explorer are just based on the
-                                                description of your application data, therefore no
-                                                additional efforts are required to use the explorer for
-                                                your application. However, the look of the displayed
+                                            <p>All features of the Tree Master Detail Component are 
+                                            	just based on the description of your model. You simply need
+                                            	to use the Tree Master Detail Component as a SWT component.
+                                            	However, the look of the displayed
                                                 elements and the hierarchy of displayed elements can be
                                                 highly customized to fit your needs.</p>
                                         </div>
@@ -339,35 +338,35 @@
                     <!--/span-->
                     <div class="span6">
                         <div class="feature">
-                            <h6>Persistence</h6>
+                            <h6>Generic Editor</h6>
                             <ul>
-                                <li>Pre-configured, extensible persistence layer</li>
-                                <li>Exchangeable backends</li>
-                                <li>Server and Repository support</li>
-                                <li>Built-In Support for files, EMFStore and CDO</li>
-                                <li class="no-bullets"><a href="#persistence"
+                                <li>Pre-configured, resource based persistence layer</li>
+                                <li>Pre-configured, error marker support</li>
+                                <li>Usable as RCP Component</li>
+                                <li>Highly adaptable</li>
+                                <li class="no-bullets"><a href="#genericEditor"
                                                           role="button" data-toggle="modal">Details &raquo;</a> <!-- Modal -->
-                                    <div id="persistence" class="modal hide fade" tabindex="-1"
-                                         role="dialog" aria-labelledby="persistenceLabel"
+                                    <div id="genericEditor" class="modal hide fade" tabindex="-1"
+                                         role="dialog" aria-labelledby="genericEditorLabel"
                                          aria-hidden="true">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal"
                                                     aria-hidden="true">x</button>
-                                            <h3 id="persistenceLabel">Persistence</h3>
+                                            <h3 id="genericEditorLabel">Generic Editor</h3>
                                         </div>
                                         <div class="modal-body">
                                             <p>The EMF Client Platform provides a pre-configured
-                                                persistence layer to store the data of your application. It
-                                                allows the usage of different data providers to store your
-                                                data based on your requirements. The platform already ships
-                                                with different data provider implementations to store your
-                                                data in files or in server solutions (repositories) such as
-                                                EMFStore or CDO. Therefore a repository view is provided
-                                                allowing to configure and manage different servers.</p>
+                                                Generic Editor to render your EMF model in your application.
+                                                It allows the usage of plain EMF resources  to load and store
+                                                your data based on your requirements. The Generic Editor 
+                                                already ships with a default loading and saving logic which
+                                                can be customized by you. 
+                                            </p>
 
-                                            <p>Finally the EMF Client Platform is extensible by new
-                                                custom data providers to integrate an existing or custom
-                                                backend technology.</p>
+                                            <p>Finally the Generic Editor shows by default a tree for your data 
+                                               and uses a form to render the actual data you select in the tree.
+                                               All those part are highly adaptable.
+                                           	</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button class="btn" data-dismiss="modal" aria-hidden="true">Awesome!</button>
