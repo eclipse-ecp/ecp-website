@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+
+<head>
+  <meta name="theme" content="Syna">
+  <meta name="theme-version" content="v0.17.2">
+  <meta name="theme-url" content="https://syna.okkur.org">
+  <meta name="theme-description" content="Highly customizable open source theme for Hugo based static websites">
+  <meta name="theme-author" content="Okkur Labs">
+  <meta name="theme-author-url" content="https://about.okkur.org">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google" content="notranslate" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="Everyone is invited to get involved with the EMF Forms project. Before you plan any kind of contribution, it is a good idea to contact the project team.
+Writing bug reports
+Please provide a short and concise explanation of the problem and a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. You are also invited to enter feature requests. Please use Bugzilla to report bugs and feature requests.">
+  <meta property="og:title" content="Documentation" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.eclipse.org/ecp/emfforms/gettinginvolved/" />
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Documentation &amp;middot; EMF Forms" />
+  <meta name="twitter:description" content="Everyone is invited to get involved with the EMF Forms project. Before you plan any kind of contribution, it is a good idea to contact the project team.
+Writing bug reports
+Please provide a short and concise explanation of the problem and a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. You are also invited to enter feature requests. Please use Bugzilla to report bugs and feature requests.">
+  <meta name="twitter:url" content="https://www.eclipse.org/ecp/emfforms/gettinginvolved/" />
+        <meta property="og:image" content="">
+        <meta name="twitter:image" content="">
+  <meta name="author" content="Eclipse Foundation">
+
+  <meta name="generator" content="Hugo 0.59.0" />
+
+  <title>Documentation &middot; EMF Forms</title>
+
+  <!-- Theme Styles -->
+  <style>
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+ 
+@-ms-viewport {
+  width: device-width; }
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 540px;
+  max-width: 720px;
+  max-width: 960px;
+  max-width: 1140px; }
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none; }
+
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.order-first {
+  order: -1; }
+
+.order-last {
+  order: 13; }
+
+.order-0 {
+  order: 0; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 3; }
+
+.order-4 {
+  order: 4; }
+
+.order-5 {
+  order: 5; }
+
+.order-6 {
+  order: 6; }
+
+.order-7 {
+  order: 7; }
+
+.order-8 {
+  order: 8; }
+
+.order-9 {
+  order: 9; }
+
+.order-10 {
+  order: 10; }
+
+.order-11 {
+  order: 11; }
+
+.order-12 {
+  order: 12; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.d-none {
+  display: none !important; }
+
+.d-inline {
+  display: inline !important; }
+
+.d-inline-block {
+  display: inline-block !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-table {
+  display: table !important; }
+
+.d-table-row {
+  display: table-row !important; }
+
+.d-table-cell {
+  display: table-cell !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.d-inline-flex {
+  display: inline-flex !important; }
+
+@media print {
+  .d-print-none {
+    display: none !important; }
+  .d-print-inline {
+    display: inline !important; }
+  .d-print-inline-block {
+    display: inline-block !important; }
+  .d-print-block {
+    display: block !important; }
+  .d-print-table {
+    display: table !important; }
+  .d-print-table-row {
+    display: table-row !important; }
+  .d-print-table-cell {
+    display: table-cell !important; }
+  .d-print-flex {
+    display: flex !important; }
+  .d-print-inline-flex {
+    display: inline-flex !important; } }
+
+.flex-row {
+  flex-direction: row !important; }
+
+.flex-column {
+  flex-direction: column !important; }
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important; }
+
+.flex-column-reverse {
+  flex-direction: column-reverse !important; }
+
+.flex-wrap {
+  flex-wrap: wrap !important; }
+
+.flex-nowrap {
+  flex-wrap: nowrap !important; }
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important; }
+
+.flex-fill {
+  flex: 1 1 auto !important; }
+
+.flex-grow-0 {
+  flex-grow: 0 !important; }
+
+.flex-grow-1 {
+  flex-grow: 1 !important; }
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important; }
+
+.flex-shrink-1 {
+  flex-shrink: 1 !important; }
+
+.justify-content-start {
+  justify-content: flex-start !important; }
+
+.justify-content-end {
+  justify-content: flex-end !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.justify-content-between {
+  justify-content: space-between !important; }
+
+.justify-content-around {
+  justify-content: space-around !important; }
+
+.align-items-start {
+  align-items: flex-start !important; }
+
+.align-items-end {
+  align-items: flex-end !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-items-baseline {
+  align-items: baseline !important; }
+
+.align-items-stretch {
+  align-items: stretch !important; }
+
+.align-content-start {
+  align-content: flex-start !important; }
+
+.align-content-end {
+  align-content: flex-end !important; }
+
+.align-content-center {
+  align-content: center !important; }
+
+.align-content-between {
+  align-content: space-between !important; }
+
+.align-content-around {
+  align-content: space-around !important; }
+
+.align-content-stretch {
+  align-content: stretch !important; }
+
+.align-self-auto {
+  align-self: auto !important; }
+
+.align-self-start {
+  align-self: flex-start !important; }
+
+.align-self-end {
+  align-self: flex-end !important; }
+
+.align-self-center {
+  align-self: center !important; }
+
+.align-self-baseline {
+  align-self: baseline !important; }
+
+.align-self-stretch {
+  align-self: stretch !important; }
+</style>
+
+  <link href="/ecp/emfforms/style.min.e26fe04bbfbc846c254951d08e31682cb314634373202789c0176cbbe0df0065.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="icon" sizes="16x16 32x32" type="image/x-icon" href="/ecp/emfforms/favicon.ico">
+      <link rel="icon" href="/ecp/emfforms/favicon.png">
+      <link rel="apple-touch-icon-precomposed" href="/ecp/emfforms/favicon.png">
+
+  <script>
+    window.syna = {
+      
+    };
+  </script>
+  <script src="/ecp/emfforms/scripts/syna-head.min.0757f18970a0a32d5acac5a2accc5fe82f787821866c545d9ed17ca765f291a3.js"></script></head>
+<body class="bg-secondary">
+    <!-- Navigation --><nav class="overlay fragment navbar navbar-expand-lg py-2 scroll-spy bg-light navbar-light" id="nav" role="navigation">
+  <div class="container">
+      <a class="navbar-brand py-0" href="/ecp/emfforms/#">
+        <img src="/ecp/emfforms/images/logo.png" height="35" class="d-inline-block align-top" alt="EMF Forms">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse justify-content-end collapse show" id="navbarCollapse">
+      <ul class="navbar-nav"><li class="nav-item">
+              <a href="/ecp/emfforms"
+                  class="nav-link">
+                Home
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/gettingstarted"
+                  class="nav-link">
+                Getting started
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/support"
+                  class="nav-link">
+                Support
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/documentation"
+                  class="nav-link">
+                Documentation
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/downloads"
+                  class="nav-link">
+                Downloads
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/gettinginvolved"
+                  class="nav-link">
+                Getting Involved
+              </a>
+            </li><li class="nav-item">
+              <a href="/ecp/emfforms/contact"
+                  class="nav-link">
+                Contact
+              </a>
+            </li><li class="nav-item">
+              <a href="https://git.eclipse.org/r/plugins/gitiles/emfclient/org.eclipse.emf.ecp.core"
+                  class="nav-link">
+                Git
+              </a>
+            </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="scroll-to-top bg-primary has-font-icon"
+  title="Back to top"
+  ><i class="fas fa-angle-up"></i><span class="sr-only">Back to top</span>
+</div>
+<!-- Content -->
+<section id="content" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+    <div class="container py-5 overlay">
+<div class="row">
+      <article class="col-md-12">
+  <div class="title-container row mx-0">
+    <div class="title col px-0 text-center text-body">
+      <h2>Getting Involved</h2>
+    </div>
+  </div>
+<div class="content-body col-12 content px-0 text-body">
+
+<p>Everyone is invited to get involved with the EMF Forms project. Before you plan any kind of contribution, it is a good idea to contact the <a href="/ecp/emfforms/contact/">project team</a>.</p>
+
+<p><strong>Writing bug reports</strong></p>
+
+<p>Please provide a short and concise explanation of the problem and a snippet to reproduce the issue, ideally a JUnit test case that outlines the expected behavior. You are also invited to enter feature requests. Please use <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp">Bugzilla</a> to report bugs and feature requests.</p>
+
+<p><strong>Commit Message Guidelines</strong></p>
+
+<p>We have the following commit message template:</p>
+
+<pre><code>Bug $BugID - $BugTitle | TCI - $FixTitle
+
+$CommitDescription
+Change-Id: $GeneratedGerritChangeID
+Signed-off-by: $SignOffNameAndEmail
+</code></pre>
+
+<p><strong>Instructions (Please continue READING):</strong></p>
+
+<ul>
+<li><em>TCI commits</em>: For trivial code changes please use a TCI commit message. See list below for examples. If in doubt please discuss with reviewer.</li>
+<li><em>Normal Commits</em>: For all other commits use a commit message starting with &lsquo;Bug&rsquo;. Bug reports with Proper Titles: Before using a Bug title for a commit, committer must update the Bug title to a reasonable and descriptive title for the task they have worked on</li>
+<li><em>Commit Description</em>: Additionally to the title, the commit message can describe briefly (2-3 sentences) how this commit fixes the bug from a technical perspective</li>
+<li><em>Multiple Commits for same bug</em>: Of course you may use the same bug and therefore bug title for multiple commits and their message, in this case please provide a unique description</li>
+<li><em>Reviewers responsibility</em>: The reviewer is responsible also for checking that the bug title is descriptive and reflects the committed change and that the description if any reflects the technical change</li>
+</ul>
+
+<p><strong>TCI message examples:</strong></p>
+
+<ul>
+<li>JavaDoc</li>
+<li>NPE</li>
+<li>Version Update of manifest and pom</li>
+<li>anonymous to inner class Conversion</li>
+<li>Renaming local vars, e.g. because of typos</li>
+<li>Externalizing strings</li>
+</ul>
+
+<p><strong>Use Gerrit to contribute to ECP</strong></p>
+
+<p>We use <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a> code review so you can easily contribute to ECP and get a review for your changes. Please make sure that all your commits refer to a <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp">Bugzilla</a> Bug.</p>
+
+<p><strong>Providing a patch to fix a bug or add a feature</strong></p>
+
+<p>Please attach your patch to the bug report in question or create a new report using <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ecp">Bugzilla</a> .</p>
+
+<p><strong>Contribute documentation</strong></p>
+
+<p>If you found something that is not documented yet, please share your knowledge with other users. Please <a href="/ecp/emfforms/contact/">contact us</a> to find the appropriate place to add your documentation.</p>
+
+<p><strong>Bug report quality policy</strong></p>
+
+<p>Please note that our bug reports (BRs) are an essential source information for adopters to get an overview about applied changes and new features. Therefore, titles must indicate the affected component and express the goal of a change.<br />
+It is the reviewer&rsquo;s responsibility to verify that the BR complies with this policy.</p>
+
+<p><strong>Tag bug reports to be retested</strong></p>
+
+<p>If you believe that a change could cause a regression for a consumer please add the &ldquo;test&rdquo; keyword to highlight that this feature should be re-tested when a consumer upgrades the affected component. Common instances where this keyword must be added include:
+*   when the behavior of a component has changed
+*   when a new feature has been added which is enabled by default</p>
+
+<p>This also includes any changes of the default behavior and adaptations of visible UI elements, even if they are considered an improvement. Further, this includes non-trivial refactorings. If in doubt, prefer to tag a BR.<br />
+Additionally to the &ldquo;test&rdquo; tag, provide a comment like this:</p>
+
+<pre><code>TESTING INFORMATION
+Summary of the critical part of the change
+Potential regressions
+Affected areas / use cases
+Things that shall be tested
+</code></pre>
+
+<p>Again, it is part of the code review to check the BR title and the existence of an appropriate comment.<br />
+If you identify a regression or change of behavior after the fact, please add the &ldquo;test&rdquo; keyword and the testing information as well.</p>
+
+<p><strong>Tag &ldquo;noteworthy&rdquo; bug reports</strong></p>
+
+<p>Use this tags on bug reports, that are &ldquo;noteworthy&rdquo; especially:</p>
+
+<ul>
+<li>New features</li>
+<li>Process changes<br /></li>
+</ul>
+
+<p>In general, consider if you would write an article about a release and ask yourself, whether you would mention this bug report. If yes, it is noteworthy. Adopters and developers will use this information to learn what&rsquo;s noteworthy in a release. So please make sure, that &ldquo;noteworthy&rdquo; bug reports have a proper description.</p>
+
+<p><strong>Tag bug reports with &ldquo;Help wanted&rdquo;</strong></p>
+
+<p>If you want to encourage that other contributors or committers pick up a Bug report, please tag the Br with the &ldquo;help wanted&rdquo; keyword. In turn, if you want to contribute to the project, the &ldquo;help wanted&rdquo; BRs are a good starting point.</p>
+
+<h4 id="developer-resources-for-emf-forms">Developer Resources for EMF Forms</h4>
+
+<p>Using Oomph we want to ease the setup pain for new contributors and committers of EMFForms. Here are the necessary steps:</p>
+
+<ul>
+<li><strong>Step 1: Download <a href="https://wiki.eclipse.org/Eclipse_Installer">Oomph</a> for your Platform</strong></li>
+<li><strong>Step 2: Start Oomph</strong>
+
+<ul>
+<li>Update Oomph to the latest version if required (Simple Mode: Upper right corner or Advance Mode: left bottom)</li>
+<li>Switch to Advanced Mode (Upper Right corner, Advanced Mode)</li>
+<li>Drag and Drop / add (&ldquo;+&rdquo; in the upper right corner) this profile <a href="https://raw.githubusercontent.com/eclipsesource/oomph/master/EclipseSource.setup">EclipseSource Profile</a>
+<img src="../images/image_profile.png" alt="" /></li>
+<li>Select the &lsquo;EclipseSource IDE&rsquo; entry and press next</li>
+<li>Drag and Drop / add (&ldquo;+&rdquo; in the upper right corner) this setup file: <a href="http://git.eclipse.org/c/emfclient/org.eclipse.emf.ecp.core.git/plain/releng/org.eclipse.emf.ecp.releng/EMFForms.setup?h=develop">EMFForms.setup</a> into the top list. You should now see a new Entry at the top:<br />
+<img src="../images/image_emfforms.png" alt="" /><br /></li>
+<li>Select the EMFForms entry and <strong>double click</strong> it, it should be <strong>BOLD</strong> now:<br />
+<img src="../images/image_emfforms_selected.png" alt="" /></li>
+<li>Press next and select the way you want Oomph to install your Eclipse and Workspace</li>
+<li>Press Finish and let Oomph do the magic</li>
+</ul></li>
+<li><strong>Step 3: When Oomph finishes you still have to do some manual steps</strong>
+
+<ul>
+<li>Locate and open the ecp.target file in the org.eclipse.emf.ecp.target.rcp bundle imported from the repository. When it is resolved, set this definition as the target platform. This may take quite some time at first.</li>
+</ul></li>
+<li><strong>Step 4: Start developing using ECP</strong></li>
+</ul>
+
+<h4 id="branching-scheme">Branching scheme</h4>
+
+<ul>
+<li><p>In our GIT Repositories, we are using the branching scheme described <a href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.</p></li>
+
+<li><p>We have a master branch containing the last release. A development branch containing the current development state and (hopefully) some feature branches containing new feature developments.</p></li>
+
+<li><p>So if you are a developer, please commit on the develop branch in the future. If you develop a new feature, please open a feature branch and merge it back to the develop branch when your feature is finished. Don&rsquo;t commit on the master branch because it should only contain stable release versions merged there by the release engineer.</p></li>
+</ul>
+
+<p><img src="../images/branchStrategy.png" height="500" style="display: block; margin: auto;" /></p>
+
+<h4 id="profiling-and-performance-debugging">Profiling and Performance Debugging</h4>
+
+<ul>
+<li>YourKit is kindly supporting the EMF Forms open source project with its full-featured <a href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>, which helped us to greatly improve EMFForms.</li>
+</ul>
+
+<h4 id="framework-developer-guidelines">Framework Developer Guidelines</h4>
+
+<p>The following sections describe the guidelines for creating new plugins and features for EMFForms.</p>
+
+<h5 id="general-settings">General settings</h5>
+
+<p>These settings can be modified in the &ldquo;New Plug-in Project/New Feature&rdquo; wizards.</p>
+
+<ul>
+<li><strong>Namespace:</strong> The plugin-name should begin with &ldquo;org.eclipse.emfforms&rdquo;. Therefore the name of our example plugin and the prefix for the packages would be &ldquo;org.eclipse.emfforms.example&rdquo;. The name of a feature would be e.g. &ldquo;org.eclipse.emfforms.example.feature&rdquo;.</li>
+<li><strong>Execution Environment:</strong> As JRE version the plugin should use 1.6, so please select &ldquo;J2SE-1.6&rdquo;. (Note that a feature does not have this setting.)</li>
+<li><strong>Version:</strong> As version please use the current version (see in other plugin) plus the qualifier, e.g. &ldquo;1.0.0.qualifier&rdquo;.</li>
+<li><strong>Name:</strong> Enter a describing name for your plugin, e.g. &ldquo;Cool Example Plugin&rdquo;.</li>
+<li><strong>Provider:</strong> For the provider please enter &ldquo;Eclipse Modeling Project&rdquo;.</li>
+</ul>
+
+<h5 id="plugin-runtime">Plugin runtime</h5>
+
+<p>When defining the export packages on the runtime tab, please note the following:<br />
+Plugins should export all defined packages. The exported packages should not be visible by default.</p>
+
+<ul>
+<li>Internal packages (not visible) should follow the &ldquo;org.eclipse.emfforms.internal&rdquo; naming convention</li>
+<li>SPI packages (visible, breaking changes allowed in minor releases) must follow the &ldquo;org.eclipse.emfforms.spi&rdquo; naming convention</li>
+<li>API packages (visible, no breaking changes allowed in minor releases) should follow the &ldquo;org.eclipse.emfforms&rdquo; naming convention</li>
+</ul>
+
+<p>If you don&rsquo;t want to make a potential API package visible yet, please follow the &ldquo;org.eclipse.emfforms&rdquo; naming convention but mark the package as not visible.</p>
+
+<h5 id="plugin-dependencies">Plugin dependencies</h5>
+
+<p>When adding dependencies to your project please note the following giudelines:<br />
+Usually we use &ldquo;Required Plug-ins&rdquo; to add dependencies that we need. There is one exceptions: If you add dependencies to SWT/JFace you have to use &ldquo;Imported Packages&rdquo;.</p>
+
+<ul>
+<li><strong>Plugins</strong> should have the needed minimum version and the next major version as maximum version, e.g. &ldquo;[4.8.1, 5.0.0)&ldquo;.</li>
+<li><strong>Reexport dependencies</strong> when you use classes from the other plugins in your API.</li>
+<li><strong>Imported Packages</strong> should have the needed minimum version and the next major version as maximum version, e.g. &ldquo;[4.8.1, 5.0.0)&ldquo;.</li>
+</ul>
+
+<h5 id="required-legal-files">Required legal files</h5>
+
+<p>When creating a new plugin make sure to copy the &ldquo;about.html&rdquo; from an existing plugin to your project. Then open the build.properties and add the about.html to the Binary as well as to the Source Build.</p>
+
+<h5 id="formatting-co">Formatting &amp; co</h5>
+
+<ul>
+<li>We set all setting in a project specific way. Therefore no action is required for existing projects. If you want to create a new bundle, please follow these instructions:</li>
+<li>The lazy and best way is to copy all files from the .settings (<strong>except</strong> any .api_filters file) folder into the newly created project. You also must copy the .checkstyle file. After that you have to open the project properties and activate checkstyle. The config will already be set to the correct value.</li>
+</ul>
+
+<h5 id="generating-new-models">Generating new models</h5>
+
+<p>If you have to create a new EMF Model follow these steps before generating:</p>
+
+<ul>
+<li>Set the formatting of the project according the formatting rules</li>
+<li>Set the Code Formatting and the Comment Formatting to true in the genmodel</li>
+
+<li><p>In the genmodel file Set the Copyright Text to:</p>
+
+<p>Copyright &copy; 2011-2020 EclipseSource Muenchen GmbH and others.</p>
+
+<p>All rights reserved. This program and the accompanying materials<br />
+ are made available under the terms of the Eclipse Public License v1.0<br />
+ which accompanies this distribution, and is available at<br />
+ <a href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a></p>
+
+<p>Contributors:<br />
+ {userId} - initial API and implementation</p></li>
+</ul>
+
+<h5 id="extension-point-guidelines">Extension Point Guidelines</h5>
+
+<p>When adding a new extension point please mind the following guidelines:</p>
+
+<ul>
+<li>The plug-in ID must be the same as the ID of the project defining the extension point</li>
+<li>The point ID must not be fully qualified. The name must be camel cased</li>
+<li>The point name must be understandable and give a good hint at what the extension point is doing</li>
+<li>The Description tab must contain a description for the extension point. If the point is experimental (API not fixed) add the following line:<br />
+This extension point is experimental and is likely to change in the future releases as the activity support evolves.</li>
+<li>The Since tab must contain the Version of the plugin since which it is part of the API. (Even if it is experimental). The Version format is maj.min, e.g. 1.1</li>
+<li>The Examples tab should contain an example of an usage of this extension point. Use the &ldquo;pre&rdquo; tags to display markup.</li>
+<li>The API Information tab should contain a description of classes being used for defining this extension point.</li>
+<li>The Supplied Implementation tab should contain a description of a supplied implementation of this extension point, if one implementation is supplied.</li>
+
+<li><p>The Copyright tab must contain the copyright agreement, it looks like this:</p>
+
+<p>Copyright &copy; 2011-2020 EclipseSource Muenchen GmbH and others.<br />
+All rights reserved. This program and the accompanying materials<br />
+are made available under the terms of the Eclipse Public License v1.0<br />
+which accompanies this distribution, and is available at<br />
+<a href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a></p>
+
+<p>The company name must be adjusted if necessary.</p></li>
+
+<li><p>You can use HTML tags in all tabs. Use this possibility to improve the readability of your texts.</p></li>
+</ul>
+</div>
+    </article>
+  </div>
+    </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="footer" class="fragment ">
+    <div class="container-fluid bg-light ">
+    <div class="container py-5 ">
+
+  <div class="row">
+    <div class="col-md m-2 text-body">
+        <h4></h4>
+        <a href="#">
+          <img src="/ecp/emfforms/images/logo.png" class="img-fluid w-50" alt="EMF Forms">
+        </a>
+        <div class="row justify-content-left ml-0">
+            <span class="fa-stack fa-2x mt-3 mr-1" title="twitter">
+              <a href="https://twitter.com/emfforms" class="ignore-color-change">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-fw text-light"></i>
+                <span class="sr-only">twitter</span>
+              </a>
+            </span>
+            <span class="fa-stack fa-2x mt-3 mr-1" title="forum">
+              <a href="http://www.eclipse.org/forums/index.php/f/19/" class="ignore-color-change">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-comments fa-stack-1x fa-fw text-light"></i>
+                <span class="sr-only">forum</span>
+              </a>
+            </span>
+            <span class="fa-stack fa-2x mt-3 mr-1" title="Git">
+              <a href="https://git.eclipse.org/r/plugins/gitiles/emfclient/org.eclipse.emf.ecp.core" class="ignore-color-change">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-fw text-light"></i>
+                <span class="sr-only">Git</span>
+              </a>
+            </span>
+        </div>
+    </div>
+    <div class="col-md m-2 text-body">
+        <h4>Related Projects</h4>
+        <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link p-0 display-5" href="https://emf.cloud">EMF Cloud</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 display-5" href="https://eclipse.org/ecp">EMF Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 display-5" href="https://jsonforms.io">JSON Forms</a>
+              </li>
+        </ul>
+    </div>
+    <div class="col-md m-2 text-body">
+        <div>
+
+<h4 id="emf-forms-emf-client-platform">EMF Forms / EMF Client Platform</h4>
+
+<p>EMF Forms / EMF Client Platform is a project hosted at the Eclipse Foundation, lead by <a href="https://projects.eclipse.org/projects/modeling.emft.emf-client/who">Eugen Neufeld</a>, <a href="https://projects.eclipse.org/projects/modeling.emft.emf-client/who">Johannes Faltermeier</a>, <a href="https://projects.eclipse.org/projects/modeling.emft.emf-client/who">Jonas Helming</a> and <a href="https://projects.eclipse.org/projects/modeling.emft.emf-client/who">Maximilian Koegel</a>.</p>
+</div>
+    </div>
+  </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- Copyright -->
+<footer class="overlay fragment container-fluid bg-secondary" id="copyright">
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-md">
+        <div class="row mx-0 my-2 justify-content-center text-center text-lg-none text-black-50">
+          <div class="row mx-0 mr-lg-auto justify-content-center">
+              <div class="col-auto px-1 copyright-legal">© Copyright&nbsp;2020</div>
+              <div class="col-auto px-0 copyright-by"> by  Eclipse Foundation</div>
+          </div>
+        </div>
+      </div>
+        <div class="col-md">
+          <div class="row mx-0 my-2 justify-content-center">
+            <ul class="nav ml-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link py-0" href="https://projects.eclipse.org/projects/modeling.emft.emf-client"
+                  >About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-0" href="https://www.eclipse.org/legal/privacy.php"
+                  >Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-0" href="https://www.eclipse.org/legal/termsofuse.php"
+                  >Terms of Use</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-0" href="https://www.eclipse.org/legal/copyright.php"
+                  >Copyright</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-0" href="https://www.eclipse.org/legal/"
+                  >Legal</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</footer>
+<div id="react"></div>
+
+    <!-- Theme Code -->
+      <script async defer src="/ecp/emfforms/scripts/syna-main.min.68ae1ae47948304c9c224cfc1a97ffe16c57514bc587dd6140dcb82389a8d299.js"></script>
+      <script async defer src="/ecp/emfforms/scripts/syna-content.min.bf537eb5ace369e45e8b4ed41b8d235a65db92236a400ed5659f7a3c41d0f221.js"></script>
+  </body>
+</html>

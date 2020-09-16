@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/gettinginvolved/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/downloads/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/gettingstarted/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/support/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.eclipse.org/ecp/emfforms/tags/</loc>
+  </url>
+  
+</urlset>
